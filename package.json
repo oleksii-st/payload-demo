@@ -23,7 +23,7 @@
     "@lexical/rich-text": "0.18.0",
     "@lexical/table": "0.18.0",
     "@payloadcms/db-mongodb": "3.0.0-beta.119",
-    "@payloadcms/next": "3.0.0-beta.119",
+    "@payloadcms/next": "3.0.0-canary.5866281",
     "@payloadcms/plugin-nested-docs": "3.0.0-beta.119",
     "@payloadcms/plugin-redirects": "3.0.0-beta.119",
     "@payloadcms/plugin-seo": "3.0.0-beta.119",
