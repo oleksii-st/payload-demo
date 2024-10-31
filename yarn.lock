@@ -1875,12 +1875,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@payloadcms/plugin-redirects@npm:3.0.0-beta.119":
-  version: 3.0.0-beta.119
-  resolution: "@payloadcms/plugin-redirects@npm:3.0.0-beta.119"
+"@payloadcms/plugin-redirects@npm:3.0.0-canary.5866281":
+  version: 3.0.0-canary.5866281
+  resolution: "@payloadcms/plugin-redirects@npm:3.0.0-canary.5866281"
   peerDependencies:
-    payload: 3.0.0-beta.119
-  checksum: 10c0/7de15112d165e337f81ec43083ed3da2f8e48d23e0d129679cabdf57fe83628f3ceb7bcb5820be7f358255c69ad100d6c77dc5573219ba8447cdc7a5145a16d6
+    payload: 3.0.0-canary.5866281
+  checksum: 10c0/3fe659430bfac86be53d0a38a123658a3e4a9e9ebf54604403368be28f8b1a87c2fa187857ce959376f6e8c181c2dcc6702f52a12e19282a73353e1d6e740dcf
   languageName: node
   linkType: hard
 
@@ -6892,7 +6892,7 @@ __metadata:
     "@payloadcms/db-mongodb": "npm:3.0.0-beta.119"
     "@payloadcms/next": "npm:3.0.0-canary.5866281"
     "@payloadcms/plugin-nested-docs": "npm:3.0.0-beta.119"
-    "@payloadcms/plugin-redirects": "npm:3.0.0-beta.119"
+    "@payloadcms/plugin-redirects": "npm:3.0.0-canary.5866281"
     "@payloadcms/plugin-seo": "npm:3.0.0-beta.119"
     "@payloadcms/richtext-lexical": "npm:3.0.0-beta.119"
     "@payloadcms/storage-vercel-blob": "npm:3.0.0-beta.119"
