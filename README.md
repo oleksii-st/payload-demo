@@ -31,7 +31,15 @@ yarn install
 
 3. Set up your environment variables (create a `.env` file based on `.env.example`)
 
-4. Run the development server:
+4. You can use restore database to not fill it manual with `yarn preset`. This step is optional
+
+User's conditionals for this DB:
+
+admin path: http://localhost:3000/admin
+login: `test@gmail.com`
+password: `Test`
+
+5. Run the development server:
 
 ```bash
 yarn dev

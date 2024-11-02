@@ -7,6 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint .",
+    "preset": "mongorestore -d payload-demo dump/payload-demo",
     "generate:types": "payload generate:types",
     "lint:fix": "eslint . --fix",
     "format": "prettier --write \"**/*.{ts,tsx,js,json,md}\"",

@@ -38,3 +38,14 @@ next-env.d.ts
 .env
 
 /public/media
+!public/media/1.png
+!public/media/2.png
+!public/media/3.png
+!public/media/4.png
+!public/media/5.png
+!public/media/6.png
+!public/media/7.png
+!public/media/Grid.png
+!public/media/Hero.png
+!public/media/RichText.png
+!public/media/favicon.ico
