@@ -4,9 +4,9 @@ import { CMSLink } from '@/components/ui/CMSLink';
 import { Footer as FooterType } from '@/payload-types';
 import { cn } from '@/utils/cn';
 
-type HeaderProps = ComponentProps<'footer'> & FooterType;
+type FooterProps = ComponentProps<'footer'> & FooterType;
 
-export const Footer = ({ columns, copyright, className, ...rest }: HeaderProps) => {
+export const Footer = ({ columns, copyright, className, ...rest }: FooterProps) => {
   const copyrighText = copyright?.replaceAll('{{year}}', String(new Date().getFullYear()));
 
   return (
