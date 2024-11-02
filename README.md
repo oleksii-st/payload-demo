@@ -55,6 +55,7 @@ yarn dev
 - `yarn format` - Format code using Prettier
 - `yarn generate:types` - Generate Payload types
 - `yarn prepare` - Setup Husky git hooks
+- `yarn presets` - Restore database from example
 
 ## Code Quality Tools
 
