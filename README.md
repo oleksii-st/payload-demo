@@ -35,9 +35,9 @@ yarn install
 
 User's conditionals for this DB:
 
-admin path: http://localhost:3000/admin
-login: `test@gmail.com`
-password: `Test`
+**Admin path**: http://localhost:3000/admin <br/> 
+**Login**: `test@gmail.com` <br/>
+**Password**: `Test` <br/>
 
 5. Run the development server:
 
