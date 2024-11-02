@@ -33,7 +33,7 @@ yarn install
 
 4. You can use restore database to not fill it manual with `yarn preset`. This step is optional
 
-User's conditionals for this DB:
+User's credentials for this DB:
 
 **Admin path**: http://localhost:3000/admin <br/> 
 **Login**: `test@gmail.com` <br/>
