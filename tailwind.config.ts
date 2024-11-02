@@ -8,10 +8,6 @@ const config: Config = {
     './src/blocks/**/*.{js,ts,jsx,tsx}',
     './src/app/**/*.{js,ts,jsx,tsx}',
   ],
-  darkMode: [
-    'variant',
-    ['@media (prefers-color-scheme: dark) { &:not(.light *) }', '&:is(.dark *)'],
-  ],
   theme: {
     screens: {
       xs: '576px',
