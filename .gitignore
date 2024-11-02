@@ -37,7 +37,7 @@ next-env.d.ts
 
 .env
 
-/public/media
+/public/media/*
 !public/media/1.png
 !public/media/2.png
 !public/media/3.png
