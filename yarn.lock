@@ -1928,20 +1928,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@payloadcms/db-mongodb@npm:3.0.0-beta.122":
-  version: 3.0.0-beta.122
-  resolution: "@payloadcms/db-mongodb@npm:3.0.0-beta.122"
+"@payloadcms/db-mongodb@npm:3.0.0-canary.5866281":
+  version: 3.0.0-canary.5866281
+  resolution: "@payloadcms/db-mongodb@npm:3.0.0-canary.5866281"
   dependencies:
     bson-objectid: "npm:2.0.4"
     http-status: "npm:1.6.2"
     mongoose: "npm:6.12.3"
-    mongoose-aggregate-paginate-v2: "npm:1.0.6"
     mongoose-paginate-v2: "npm:1.7.22"
     prompts: "npm:2.4.2"
     uuid: "npm:10.0.0"
   peerDependencies:
-    payload: 3.0.0-beta.122
-  checksum: 10c0/630ecb43b3eb46bdb2a094cac82f6cb2bee1e42bde0b188c04aa5e816ba670c48f75a83d298d0e7ad873a6ae4499fde8ff3e012095bd27377655652a06bc1525
+    payload: 3.0.0-canary.5866281
+  checksum: 10c0/fcdba745a2c40151684213978b46e0b6483324ee3d314365f5796f2b2f8d2f66333998056f8cb365aa2e72aaf398cb83ea6b7c3d9d9d47f5fe708aff7fde97bd
   languageName: node
   linkType: hard
 
@@ -6326,13 +6325,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mongoose-aggregate-paginate-v2@npm:1.0.6":
-  version: 1.0.6
-  resolution: "mongoose-aggregate-paginate-v2@npm:1.0.6"
-  checksum: 10c0/9dd9e4e40059bae4fd66051142aabc4e1279a8b25bdda9e8599e7e59481dcda1bca39f0b0305ac8424a7a5aa347c52e968d5a64471a7befe6f9a0921587b320c
-  languageName: node
-  linkType: hard
-
 "mongoose-paginate-v2@npm:1.7.22":
   version: 1.7.22
   resolution: "mongoose-paginate-v2@npm:1.7.22"
@@ -6784,7 +6776,7 @@ __metadata:
     "@lexical/list": "npm:0.18.0"
     "@lexical/rich-text": "npm:0.18.0"
     "@lexical/table": "npm:0.18.0"
-    "@payloadcms/db-mongodb": "npm:3.0.0-beta.122"
+    "@payloadcms/db-mongodb": "npm:3.0.0-canary.5866281"
     "@payloadcms/next": "npm:3.0.0-beta.122"
     "@payloadcms/plugin-nested-docs": "npm:3.0.0-beta.122"
     "@payloadcms/plugin-redirects": "npm:3.0.0-beta.122"
