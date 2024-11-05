@@ -35,7 +35,7 @@ yarn install
 
 User's credentials for this DB:
 
-**Admin path**: http://localhost:3000/admin <br/> 
+**Admin path**: http://localhost:3000/admin <br/>
 **Login**: `test@gmail.com` <br/>
 **Password**: `Test` <br/>
 
