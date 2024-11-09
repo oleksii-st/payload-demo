@@ -6893,7 +6893,7 @@ __metadata:
     graphql: "npm:^16.9.0"
     husky: "npm:^9.1.6"
     jsonwebtoken: "npm:^9.0.2"
-    lexical: "npm:0.18.0"
+    lexical: "npm:0.20.0"
     lint-staged: "npm:^15.2.10"
     next: "npm:15.0.2"
     payload: "npm:3.0.0-beta.122"
