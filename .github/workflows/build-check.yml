@@ -1,4 +1,4 @@
-name: Quality Check
+name: Build Check
 
 on:
   push:
@@ -11,19 +11,19 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Setup Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: "23"
 
       - name: Get yarn cache directory path
         id: yarn-cache-dir-path
         run: echo "dir=$(yarn config get cacheFolder)" >> $GITHUB_OUTPUT
 
       - name: Cache yarn dependencies
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         id: yarn-cache
         with:
           path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
@@ -37,5 +37,5 @@ jobs:
       - name: Lint
         run: yarn lint
 
-      - name: Generate types
-        run: yarn generate:types
+      - name: Build
+        run: yarn build
