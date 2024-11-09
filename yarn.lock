@@ -6982,7 +6982,7 @@ __metadata:
     "@eslint/js": "npm:^9.13.0"
     "@faceless-ui/modal": "npm:^3.0.0-beta.2"
     "@faceless-ui/scroll-info": "npm:2.0.0-beta.0"
-    "@lexical/list": "npm:0.18.0"
+    "@lexical/list": "npm:0.20.0"
     "@lexical/rich-text": "npm:0.20.0"
     "@lexical/table": "npm:0.18.0"
     "@payloadcms/db-mongodb": "npm:3.0.0-beta.122"
