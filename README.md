@@ -10,8 +10,8 @@ A Next.js project using Payload CMS with TypeScript and modern React.
 
 ## Tech Stack
 
-- **Framework:** Next.js 15.0.1
-- **CMS:** Payload CMS 3.0.0-beta.119
+- **Framework:** Next.js 15
+- **CMS:** Payload CMS 3
 - **Database:** MongoDB
 - **UI Libraries:**
   - @faceless-ui/modal
