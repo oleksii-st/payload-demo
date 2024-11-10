@@ -17,6 +17,7 @@ import { Footer } from '@/payload/globals/Footer';
 import { Header } from '@/payload/globals/Header';
 import { NotFound } from '@/payload/globals/NotFound';
 import { Settings } from '@/payload/globals/Settings/Settings';
+import { BASE_URL } from '@/utils/constants';
 
 const filename = fileURLToPath(import.meta.url);
 const dirname = path.dirname(filename);
@@ -24,6 +25,30 @@ const dirname = path.dirname(filename);
 export default buildConfig({
   admin: {
     user: Users.slug,
+    livePreview: {
+      url: `${BASE_URL}/preview`,
+      collections: ['pages'],
+      breakpoints: [
+        {
+          label: 'Mobile',
+          name: 'mobile',
+          width: 375,
+          height: 667,
+        },
+        {
+          label: 'Tablet',
+          name: 'tablet',
+          width: 768,
+          height: 1024,
+        },
+        {
+          label: 'Desktop',
+          name: 'desktop',
+          width: 1440,
+          height: 900,
+        },
+      ],
+    },
   },
   editor: lexicalEditor({
     features: ({ defaultFeatures }) => [

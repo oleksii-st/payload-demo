@@ -1962,6 +1962,25 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@payloadcms/live-preview-react@npm:3.0.0-beta.126":
+  version: 3.0.0-beta.126
+  resolution: "@payloadcms/live-preview-react@npm:3.0.0-beta.126"
+  dependencies:
+    "@payloadcms/live-preview": "npm:3.0.0-beta.126"
+  peerDependencies:
+    react: ^19.0.0 || ^19.0.0-rc-65a56d0e-20241020
+    react-dom: ^19.0.0 || ^19.0.0-rc-65a56d0e-20241020
+  checksum: 10c0/569d98df15c04ebc6276f8119899412bd3ff2182f0e4e7483088a071b86733cb731ee452c607a52f9bbb924293474ba28f30a127715d736ee61c84735e275710
+  languageName: node
+  linkType: hard
+
+"@payloadcms/live-preview@npm:3.0.0-beta.126":
+  version: 3.0.0-beta.126
+  resolution: "@payloadcms/live-preview@npm:3.0.0-beta.126"
+  checksum: 10c0/8b82c0cc98db1650e64150bcd531870b1ef180b8790c64554a534c136c029b9d243860db3b9873c43ef127414df4abf4c5a4c4a875d08e3b137534f5a95ac77e
+  languageName: node
+  linkType: hard
+
 "@payloadcms/next@npm:3.0.0-beta.126":
   version: 3.0.0-beta.126
   resolution: "@payloadcms/next@npm:3.0.0-beta.126"
@@ -6785,6 +6804,7 @@ __metadata:
     "@lexical/rich-text": "npm:0.18.0"
     "@lexical/table": "npm:0.18.0"
     "@payloadcms/db-mongodb": "npm:3.0.0-beta.126"
+    "@payloadcms/live-preview-react": "npm:3.0.0-beta.126"
     "@payloadcms/next": "npm:3.0.0-beta.126"
     "@payloadcms/plugin-nested-docs": "npm:3.0.0-beta.126"
     "@payloadcms/plugin-redirects": "npm:3.0.0-beta.126"

@@ -19,7 +19,7 @@ type BlocksProps = {
 };
 
 export const Blocks = ({ blocks, isFirst = true }: BlocksProps) => {
-  if (!blocks.length) {
+  if (!blocks?.length) {
     return null;
   }
 
