@@ -10,12 +10,14 @@ export const SECTION_LAYOUT: Field = {
       name: 'paddingTop',
       label: 'Padding top',
       defaultValue: 24,
+      required: true,
     },
     {
       type: 'number',
-      name: 'paddingBottom',
+      name: 'paddingTop',
       label: 'Padding Bottom',
       defaultValue: 24,
+      required: true,
     },
   ],
 };

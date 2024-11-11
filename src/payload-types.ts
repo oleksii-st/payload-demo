@@ -27,9 +27,7 @@ export interface Config {
     'reusable-content': ReusableContentSelect<false> | ReusableContentSelect<true>;
     users: UsersSelect<false> | UsersSelect<true>;
     redirects: RedirectsSelect<false> | RedirectsSelect<true>;
-    'payload-locked-documents':
-      | PayloadLockedDocumentsSelect<false>
-      | PayloadLockedDocumentsSelect<true>;
+    'payload-locked-documents': PayloadLockedDocumentsSelect<false> | PayloadLockedDocumentsSelect<true>;
     'payload-preferences': PayloadPreferencesSelect<false> | PayloadPreferencesSelect<true>;
     'payload-migrations': PayloadMigrationsSelect<false> | PayloadMigrationsSelect<true>;
   };
@@ -131,9 +129,9 @@ export interface Hero {
   image: string | Media;
   heading: string;
   subheading?: string | null;
-  sectionLayout?: {
-    paddingTop?: number | null;
-    paddingBottom?: number | null;
+  sectionLayout: {
+    paddingTop: number;
+    paddingBottom: number;
   };
   id?: string | null;
   blockName?: string | null;
@@ -151,9 +149,9 @@ export interface Grid {
         id?: string | null;
       }[]
     | null;
-  sectionLayout?: {
-    paddingTop?: number | null;
-    paddingBottom?: number | null;
+  sectionLayout: {
+    paddingTop: number;
+    paddingBottom: number;
   };
   id?: string | null;
   blockName?: string | null;
@@ -179,9 +177,9 @@ export interface Richtext {
     };
     [k: string]: unknown;
   };
-  sectionLayout?: {
-    paddingTop?: number | null;
-    paddingBottom?: number | null;
+  sectionLayout: {
+    paddingTop: number;
+    paddingBottom: number;
   };
   id?: string | null;
   blockName?: string | null;
