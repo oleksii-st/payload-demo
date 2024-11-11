@@ -2058,17 +2058,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@payloadcms/plugin-seo@npm:3.0.0-beta.126":
-  version: 3.0.0-beta.126
-  resolution: "@payloadcms/plugin-seo@npm:3.0.0-beta.126"
-  dependencies:
-    "@payloadcms/translations": "npm:3.0.0-beta.126"
-    "@payloadcms/ui": "npm:3.0.0-beta.126"
+"@payloadcms/plugin-seo@npm:3.0.0-canary.5866281":
+  version: 3.0.0-canary.5866281
+  resolution: "@payloadcms/plugin-seo@npm:3.0.0-canary.5866281"
   peerDependencies:
-    payload: 3.0.0-beta.126
-    react: ^19.0.0 || ^19.0.0-rc-65a56d0e-20241020
-    react-dom: ^19.0.0 || ^19.0.0-rc-65a56d0e-20241020
-  checksum: 10c0/2aa923b269c83daa17e5f5a614802118e670a743652685f91fe95a6a712749cb4128b8b4f363b43d7e554fc4cab775d41cea334a7950fb9bde897917e9f39f03
+    "@payloadcms/translations": 3.0.0-canary.5866281
+    "@payloadcms/ui": 3.0.0-canary.5866281
+    payload: 3.0.0-canary.5866281
+    react: ^19.0.0 || ^19.0.0-rc-06d0b89e-20240801
+    react-dom: ^19.0.0 || ^19.0.0-rc-06d0b89e-20240801
+  checksum: 10c0/aac41c1e47823450b19a841e3467b9b6166c5542e417b90d11b783fa82f10a71534522eeee421de4958dcfbc062b902cf0b2cc8a4aae810377a05d36a022a93d
   languageName: node
   linkType: hard
 
@@ -6808,7 +6807,7 @@ __metadata:
     "@payloadcms/next": "npm:3.0.0-beta.126"
     "@payloadcms/plugin-nested-docs": "npm:3.0.0-beta.126"
     "@payloadcms/plugin-redirects": "npm:3.0.0-beta.126"
-    "@payloadcms/plugin-seo": "npm:3.0.0-beta.126"
+    "@payloadcms/plugin-seo": "npm:3.0.0-canary.5866281"
     "@payloadcms/richtext-lexical": "npm:3.0.0-beta.126"
     "@payloadcms/storage-vercel-blob": "npm:3.0.0-beta.126"
     "@tailwindcss/typography": "npm:^0.5.15"
