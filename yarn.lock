@@ -1962,22 +1962,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@payloadcms/live-preview-react@npm:3.0.0-beta.126":
-  version: 3.0.0-beta.126
-  resolution: "@payloadcms/live-preview-react@npm:3.0.0-beta.126"
+"@payloadcms/live-preview-react@npm:3.0.0-canary.5866281":
+  version: 3.0.0-canary.5866281
+  resolution: "@payloadcms/live-preview-react@npm:3.0.0-canary.5866281"
   dependencies:
-    "@payloadcms/live-preview": "npm:3.0.0-beta.126"
+    "@payloadcms/live-preview": "npm:3.0.0-canary.5866281"
   peerDependencies:
-    react: ^19.0.0 || ^19.0.0-rc-65a56d0e-20241020
-    react-dom: ^19.0.0 || ^19.0.0-rc-65a56d0e-20241020
-  checksum: 10c0/569d98df15c04ebc6276f8119899412bd3ff2182f0e4e7483088a071b86733cb731ee452c607a52f9bbb924293474ba28f30a127715d736ee61c84735e275710
+    react: ^19.0.0 || ^19.0.0-rc-06d0b89e-20240801
+    react-dom: ^19.0.0 || ^19.0.0-rc-06d0b89e-20240801
+  checksum: 10c0/b429d05418b5486945dcdc25d07ec1188f9e0bd4efa57a1901a96ccbbfa495e26f1d2006484896256eeadbdc54272e5111f22856f7feb43e9fbca9328fe66134
   languageName: node
   linkType: hard
 
-"@payloadcms/live-preview@npm:3.0.0-beta.126":
-  version: 3.0.0-beta.126
-  resolution: "@payloadcms/live-preview@npm:3.0.0-beta.126"
-  checksum: 10c0/8b82c0cc98db1650e64150bcd531870b1ef180b8790c64554a534c136c029b9d243860db3b9873c43ef127414df4abf4c5a4c4a875d08e3b137534f5a95ac77e
+"@payloadcms/live-preview@npm:3.0.0-canary.5866281":
+  version: 3.0.0-canary.5866281
+  resolution: "@payloadcms/live-preview@npm:3.0.0-canary.5866281"
+  checksum: 10c0/763509109c4c3a00ad9ced2c50b1512cd433d33670d0147a06eed4800507e187276f13fd3de828721bfac89f791d5a9ddfe8149ac6b47e766d6057599a92bbef
   languageName: node
   linkType: hard
 
@@ -6804,7 +6804,7 @@ __metadata:
     "@lexical/rich-text": "npm:0.18.0"
     "@lexical/table": "npm:0.18.0"
     "@payloadcms/db-mongodb": "npm:3.0.0-beta.126"
-    "@payloadcms/live-preview-react": "npm:3.0.0-beta.126"
+    "@payloadcms/live-preview-react": "npm:3.0.0-canary.5866281"
     "@payloadcms/next": "npm:3.0.0-beta.126"
     "@payloadcms/plugin-nested-docs": "npm:3.0.0-beta.126"
     "@payloadcms/plugin-redirects": "npm:3.0.0-beta.126"
