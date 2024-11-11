@@ -5,15 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4a527949-a7aa-487d-a13e-c6d902ec3730" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/app/(app)/(pages)/preview/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Preview.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/(payload)/admin/importMap.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(payload)/admin/importMap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Blocks.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Blocks.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/payload-types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/payload-types.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/payload.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/payload.config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,20 +33,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "D:/projects/payload-demo/src/app/(app)/preview",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "yarn",
-    "ts.external.directory.path": "D:\\projects\\payload-demo\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/projects/payload-demo/src/app/(app)/preview&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;D:\\projects\\payload-demo\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\projects\payload-demo\src\app\(app)\preview" />
@@ -104,7 +96,9 @@
       <workItem from="1731174829376" duration="53000" />
       <workItem from="1731178655082" duration="915000" />
       <workItem from="1731180100925" duration="201000" />
-      <workItem from="1731247755097" duration="10314000" />
+      <workItem from="1731247755097" duration="10637000" />
+      <workItem from="1731259604833" duration="630000" />
+      <workItem from="1731345956034" duration="1348000" />
     </task>
     <servers />
   </component>

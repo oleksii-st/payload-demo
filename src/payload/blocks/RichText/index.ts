@@ -1,5 +1,7 @@
 import type { Block } from 'payload';
 
+import { SECTION_LAYOUT } from '@/payload/fields/sectionLayout';
+
 export const RichText: Block = {
   imageURL: '/api/media/file/RichText.png',
   slug: 'richText',
@@ -15,5 +17,6 @@ export const RichText: Block = {
       label: 'Content',
       required: true,
     },
+    SECTION_LAYOUT,
   ],
 };

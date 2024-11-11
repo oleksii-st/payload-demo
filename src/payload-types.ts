@@ -131,6 +131,10 @@ export interface Hero {
   image: string | Media;
   heading: string;
   subheading?: string | null;
+  sectionLayout?: {
+    paddingTop?: number | null;
+    paddingBottom?: number | null;
+  };
   id?: string | null;
   blockName?: string | null;
   blockType: 'hero';
@@ -147,6 +151,10 @@ export interface Grid {
         id?: string | null;
       }[]
     | null;
+  sectionLayout?: {
+    paddingTop?: number | null;
+    paddingBottom?: number | null;
+  };
   id?: string | null;
   blockName?: string | null;
   blockType: 'grid';
@@ -170,6 +178,10 @@ export interface Richtext {
       version: number;
     };
     [k: string]: unknown;
+  };
+  sectionLayout?: {
+    paddingTop?: number | null;
+    paddingBottom?: number | null;
   };
   id?: string | null;
   blockName?: string | null;
@@ -336,6 +348,12 @@ export interface PagesSelect<T extends boolean = true> {
               image?: T;
               heading?: T;
               subheading?: T;
+              sectionLayout?:
+                | T
+                | {
+                    paddingTop?: T;
+                    paddingBottom?: T;
+                  };
               id?: T;
               blockName?: T;
             };
@@ -349,6 +367,12 @@ export interface PagesSelect<T extends boolean = true> {
                     icon?: T;
                     id?: T;
                   };
+              sectionLayout?:
+                | T
+                | {
+                    paddingTop?: T;
+                    paddingBottom?: T;
+                  };
               id?: T;
               blockName?: T;
             };
@@ -356,6 +380,12 @@ export interface PagesSelect<T extends boolean = true> {
           | T
           | {
               content?: T;
+              sectionLayout?:
+                | T
+                | {
+                    paddingTop?: T;
+                    paddingBottom?: T;
+                  };
               id?: T;
               blockName?: T;
             };
@@ -406,6 +436,12 @@ export interface ReusableContentSelect<T extends boolean = true> {
               image?: T;
               heading?: T;
               subheading?: T;
+              sectionLayout?:
+                | T
+                | {
+                    paddingTop?: T;
+                    paddingBottom?: T;
+                  };
               id?: T;
               blockName?: T;
             };
@@ -419,6 +455,12 @@ export interface ReusableContentSelect<T extends boolean = true> {
                     icon?: T;
                     id?: T;
                   };
+              sectionLayout?:
+                | T
+                | {
+                    paddingTop?: T;
+                    paddingBottom?: T;
+                  };
               id?: T;
               blockName?: T;
             };
@@ -426,6 +468,12 @@ export interface ReusableContentSelect<T extends boolean = true> {
           | T
           | {
               content?: T;
+              sectionLayout?:
+                | T
+                | {
+                    paddingTop?: T;
+                    paddingBottom?: T;
+                  };
               id?: T;
               blockName?: T;
             };

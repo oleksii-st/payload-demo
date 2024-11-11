@@ -1,5 +1,7 @@
 import type { Block } from 'payload';
 
+import { SECTION_LAYOUT } from '@/payload/fields/sectionLayout';
+
 export const Grid: Block = {
   imageURL: '/api/media/file/Grid.png',
   slug: 'grid',
@@ -29,5 +31,6 @@ export const Grid: Block = {
         },
       ],
     },
+    SECTION_LAYOUT,
   ],
 };
