@@ -17,6 +17,6 @@ export const RichText: Block = {
       label: 'Content',
       required: true,
     },
-    SECTION_LAYOUT,
+    SECTION_LAYOUT(),
   ],
 };

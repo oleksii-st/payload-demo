@@ -31,6 +31,6 @@ export const Grid: Block = {
         },
       ],
     },
-    SECTION_LAYOUT,
+    SECTION_LAYOUT(),
   ],
 };
