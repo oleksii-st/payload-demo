@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { Media } from '@/components/Media';
+import { Section } from '@/components/Section';
 import { SectionHeading } from '@/components/SectionHeading';
 import { Hero as HeroType } from '@/payload-types';
 import { cn } from '@/utils/cn';
@@ -8,11 +9,11 @@ import { Block } from '@/utils/types';
 
 export type HeroProps = Block<HeroType>;
 
-export const Hero = ({ image, heading, subheading, isFirst }: HeroProps) => {
+export const Hero = ({ image, heading, subheading, isFirst, sectionLayout }: HeroProps) => {
   const loading = isFirst ? 'eager' : 'lazy';
 
   return (
-    <section className="my-5 sm:my-8">
+    <Section {...sectionLayout}>
       <div className="container">
         <div
           className={cn(
@@ -49,6 +50,6 @@ export const Hero = ({ image, heading, subheading, isFirst }: HeroProps) => {
           )}
         </div>
       </div>
-    </section>
+    </Section>
   );
 };

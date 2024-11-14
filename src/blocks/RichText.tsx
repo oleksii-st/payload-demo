@@ -3,17 +3,18 @@
 import React from 'react';
 
 import { RichText } from '@/components/RichText';
+import { Section } from '@/components/Section';
 import { Richtext as RichTextBlockType } from '@/payload-types';
 import { Block } from '@/utils/types';
 
 export type RichTextBlockProps = Block<RichTextBlockType>;
 
-export const RichTextBlock = ({ content }: RichTextBlockProps) => {
+export const RichTextBlock = ({ content, sectionLayout }: RichTextBlockProps) => {
   return (
-    <section className="my-5 sm:my-8">
+    <Section {...sectionLayout}>
       <div className="container">
         <RichText content={content} />
       </div>
-    </section>
+    </Section>
   );
 };

@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { Media } from '@/components/Media';
+import { Section } from '@/components/Section';
 import { SectionHeading } from '@/components/SectionHeading';
 import { Grid as GridType } from '@/payload-types';
 import { cn } from '@/utils/cn';
@@ -8,11 +9,11 @@ import { Block } from '@/utils/types';
 
 export type SocialsProps = Block<GridType>;
 
-export const Grid = ({ heading, images, isFirst }: SocialsProps) => {
+export const Grid = ({ heading, images, isFirst, sectionLayout }: SocialsProps) => {
   const loading = isFirst ? 'eager' : 'lazy';
 
   return (
-    <section className="my-5 sm:my-8">
+    <Section {...sectionLayout}>
       <div className="container">
         {heading && <SectionHeading isFirst={isFirst}>{heading}</SectionHeading>}
 
@@ -39,6 +40,6 @@ export const Grid = ({ heading, images, isFirst }: SocialsProps) => {
           </div>
         )}
       </div>
-    </section>
+    </Section>
   );
 };

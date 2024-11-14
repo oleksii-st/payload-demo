@@ -5,12 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4a527949-a7aa-487d-a13e-c6d902ec3730" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/Section.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(payload)/admin/importMap.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(payload)/admin/importMap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/Grid.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/Grid.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/Hero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/Hero.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/RichText.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/RichText.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/payload-types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/payload-types.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/payload/blocks/Grid/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/payload/blocks/Grid/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/payload/blocks/Hero/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/payload/blocks/Hero/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/payload/blocks/RichText/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/payload/blocks/RichText/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/payload/fields/sectionLayout.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/payload/fields/sectionLayout.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +25,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -109,7 +111,8 @@
       <workItem from="1731247755097" duration="10637000" />
       <workItem from="1731259604833" duration="630000" />
       <workItem from="1731345956034" duration="1348000" />
-      <workItem from="1731519216971" duration="1040000" />
+      <workItem from="1731519216971" duration="3128000" />
+      <workItem from="1731608041194" duration="4474000" />
     </task>
     <servers />
   </component>
