@@ -30,7 +30,6 @@ export const Hero: Block = {
       label: 'Subheading',
     },
     SECTION_LAYOUT({
-      paddingTop: 0,
       breakpoints: [
         {
           minWidth: 767,
