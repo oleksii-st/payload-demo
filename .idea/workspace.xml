@@ -5,13 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4a527949-a7aa-487d-a13e-c6d902ec3730" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Section.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/(payload)/admin/importMap.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(payload)/admin/importMap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/Grid.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/Grid.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/Hero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/Hero.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/RichText.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/RichText.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/payload-types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/payload-types.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Blocks.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Blocks.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

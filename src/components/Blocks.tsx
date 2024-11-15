@@ -50,8 +50,10 @@ export const Blocks = ({ blocks, isFirst = true }: BlocksProps) => {
       );
     }
 
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    return <Block key={index} {...(block as any)} isFirst={isFirst && index === 0} />;
+    return (
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      <Block key={JSON.stringify(block)} {...(block as any)} isFirst={isFirst && index === 0} />
+    );
   };
 
   return <>{blocks.filter(getBlocksToShow).map(renderBlocks)}</>;
