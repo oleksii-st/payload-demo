@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4a527949-a7aa-487d-a13e-c6d902ec3730" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/payload-types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/payload-types.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/payload/blocks/Hero/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/payload/blocks/Hero/index.ts" afterDir="false" />
-    </list>
+    <list default="true" id="4a527949-a7aa-487d-a13e-c6d902ec3730" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
