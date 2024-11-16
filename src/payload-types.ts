@@ -131,9 +131,27 @@ export interface Hero {
   image: string | Media;
   heading: string;
   subheading?: string | null;
+  sectionLayout: SectionLayout;
   id?: string | null;
   blockName?: string | null;
   blockType: 'hero';
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "sectionLayout".
+ */
+export interface SectionLayout {
+  hideSection?: boolean | null;
+  paddingTop: number;
+  paddingBottom: number;
+  breakpoints?:
+    | {
+        minWidth: number;
+        paddingTop: number;
+        paddingBottom: number;
+        id?: string | null;
+      }[]
+    | null;
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
@@ -147,6 +165,7 @@ export interface Grid {
         id?: string | null;
       }[]
     | null;
+  sectionLayout: SectionLayout;
   id?: string | null;
   blockName?: string | null;
   blockType: 'grid';
@@ -171,6 +190,7 @@ export interface Richtext {
     };
     [k: string]: unknown;
   };
+  sectionLayout: SectionLayout;
   id?: string | null;
   blockName?: string | null;
   blockType: 'richText';
@@ -336,6 +356,21 @@ export interface PagesSelect<T extends boolean = true> {
               image?: T;
               heading?: T;
               subheading?: T;
+              sectionLayout?:
+                | T
+                | {
+                    hideSection?: T;
+                    paddingTop?: T;
+                    paddingBottom?: T;
+                    breakpoints?:
+                      | T
+                      | {
+                          minWidth?: T;
+                          paddingTop?: T;
+                          paddingBottom?: T;
+                          id?: T;
+                        };
+                  };
               id?: T;
               blockName?: T;
             };
@@ -349,6 +384,21 @@ export interface PagesSelect<T extends boolean = true> {
                     icon?: T;
                     id?: T;
                   };
+              sectionLayout?:
+                | T
+                | {
+                    hideSection?: T;
+                    paddingTop?: T;
+                    paddingBottom?: T;
+                    breakpoints?:
+                      | T
+                      | {
+                          minWidth?: T;
+                          paddingTop?: T;
+                          paddingBottom?: T;
+                          id?: T;
+                        };
+                  };
               id?: T;
               blockName?: T;
             };
@@ -356,6 +406,21 @@ export interface PagesSelect<T extends boolean = true> {
           | T
           | {
               content?: T;
+              sectionLayout?:
+                | T
+                | {
+                    hideSection?: T;
+                    paddingTop?: T;
+                    paddingBottom?: T;
+                    breakpoints?:
+                      | T
+                      | {
+                          minWidth?: T;
+                          paddingTop?: T;
+                          paddingBottom?: T;
+                          id?: T;
+                        };
+                  };
               id?: T;
               blockName?: T;
             };
@@ -406,6 +471,21 @@ export interface ReusableContentSelect<T extends boolean = true> {
               image?: T;
               heading?: T;
               subheading?: T;
+              sectionLayout?:
+                | T
+                | {
+                    hideSection?: T;
+                    paddingTop?: T;
+                    paddingBottom?: T;
+                    breakpoints?:
+                      | T
+                      | {
+                          minWidth?: T;
+                          paddingTop?: T;
+                          paddingBottom?: T;
+                          id?: T;
+                        };
+                  };
               id?: T;
               blockName?: T;
             };
@@ -419,6 +499,21 @@ export interface ReusableContentSelect<T extends boolean = true> {
                     icon?: T;
                     id?: T;
                   };
+              sectionLayout?:
+                | T
+                | {
+                    hideSection?: T;
+                    paddingTop?: T;
+                    paddingBottom?: T;
+                    breakpoints?:
+                      | T
+                      | {
+                          minWidth?: T;
+                          paddingTop?: T;
+                          paddingBottom?: T;
+                          id?: T;
+                        };
+                  };
               id?: T;
               blockName?: T;
             };
@@ -426,6 +521,21 @@ export interface ReusableContentSelect<T extends boolean = true> {
           | T
           | {
               content?: T;
+              sectionLayout?:
+                | T
+                | {
+                    hideSection?: T;
+                    paddingTop?: T;
+                    paddingBottom?: T;
+                    breakpoints?:
+                      | T
+                      | {
+                          minWidth?: T;
+                          paddingTop?: T;
+                          paddingBottom?: T;
+                          id?: T;
+                        };
+                  };
               id?: T;
               blockName?: T;
             };

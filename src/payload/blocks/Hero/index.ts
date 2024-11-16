@@ -1,5 +1,7 @@
 import type { Block } from 'payload';
 
+import { SECTION_LAYOUT } from '@/payload/fields/sectionLayout';
+
 export const Hero: Block = {
   imageURL: '/api/media/file/Hero.png',
   slug: 'hero',
@@ -27,5 +29,14 @@ export const Hero: Block = {
       name: 'subheading',
       label: 'Subheading',
     },
+    SECTION_LAYOUT({
+      breakpoints: [
+        {
+          minWidth: 767,
+          paddingTop: 0,
+          paddingBottom: 48,
+        },
+      ],
+    }),
   ],
 };
