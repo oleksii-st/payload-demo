@@ -2,6 +2,10 @@
 
 A Next.js project using Payload CMS with TypeScript and modern React.
 
+## Guides
+
+- [How to manage section layout in Payload CMS](https://oleksii-s.dev/blog/how-to-manage-section-layout-in-payload-cms#frontend-implementation-code) - [PR](https://github.com/oleksii-st/payload-demo/pull/31)
+
 ## Prerequisites
 
 - Node.js (LTS version recommended)
