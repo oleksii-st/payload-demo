@@ -6833,7 +6833,7 @@ __metadata:
     next: "npm:15.0.3"
     payload: "npm:3.0.0-beta.126"
     prettier: "npm:^3.3.3"
-    react: "npm:19.0.0-rc-65a56d0e-20241020"
+    react: "npm:19.0.0-rc.1"
     react-dom: "npm:19.0.0-rc-65a56d0e-20241020"
     sharp: "npm:^0.33.5"
     tailwind-merge: "npm:^2.5.4"
@@ -7382,10 +7382,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react@npm:19.0.0-rc-65a56d0e-20241020":
-  version: 19.0.0-rc-65a56d0e-20241020
-  resolution: "react@npm:19.0.0-rc-65a56d0e-20241020"
-  checksum: 10c0/4199dd282163ad411373e8e06a5e4f2d9b7d9ab938b4ef5483d045973eebca2cdd02db02431e7b22426b429c7ff252db9cbe80f77cdbaa15a632927d4e124c75
+"react@npm:19.0.0-rc.1":
+  version: 19.0.0-rc.1
+  resolution: "react@npm:19.0.0-rc.1"
+  checksum: 10c0/8f453ee0ff05ec4b11701cf4240fb0039217e73f576d2a9b871a91e34ff17d66e16294ebd0fc72c237918a3a997cc42f0328c860bc0a2cfa18e6a41f49a1c871
   languageName: node
   linkType: hard
 
