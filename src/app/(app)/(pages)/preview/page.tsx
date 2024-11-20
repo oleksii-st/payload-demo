@@ -1,6 +1,6 @@
 import configPromise from '@payload-config';
-import { getPayloadHMR } from '@payloadcms/next/utilities';
 import { draftMode } from 'next/headers';
+import { getPayload } from 'payload';
 import { cache } from 'react';
 
 import { PayloadRedirects } from '@/components/PayloadRedirects';
@@ -27,7 +27,7 @@ export default Page;
 const queryPageBySlug = cache(async (slug: string[]) => {
   const { isEnabled: draft } = await draftMode();
 
-  const payload = await getPayloadHMR({ config: configPromise });
+  const payload = await getPayload({ config: configPromise });
 
   const result = await payload.find({
     collection: 'pages',

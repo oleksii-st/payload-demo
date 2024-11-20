@@ -1,7 +1,7 @@
 import configPromise from '@payload-config';
-import { getPayloadHMR } from '@payloadcms/next/utilities';
 import { Metadata } from 'next';
 import { draftMode } from 'next/headers';
+import { getPayload } from 'payload';
 import { cache } from 'react';
 
 import { Blocks } from '@/components/Blocks';
@@ -33,7 +33,7 @@ const Page = async ({ params }: PageProps) => {
 export default Page;
 
 export async function generateStaticParams() {
-  const payload = await getPayloadHMR({ config: configPromise });
+  const payload = await getPayload({ config: configPromise });
   const pages = await payload.find({
     collection: 'pages',
     draft: false,
@@ -95,7 +95,7 @@ function getOgImage(baseUrl: string, image: string | { url?: string }): string {
 const queryPageBySlug = cache(async (slug: string[]) => {
   const { isEnabled: draft } = await draftMode();
 
-  const payload = await getPayloadHMR({ config: configPromise });
+  const payload = await getPayload({ config: configPromise });
 
   const result = await payload.find({
     collection: 'pages',

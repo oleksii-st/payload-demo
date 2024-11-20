@@ -1,5 +1,5 @@
 import configPromise from '@payload-config';
-import { getPayloadHMR } from '@payloadcms/next/utilities';
+import { getPayload } from 'payload';
 
 import { IS_PRODUCTION } from '@/utils/constants';
 import { getCachedRedirects } from '@/utils/getRedirects';
@@ -10,7 +10,7 @@ export default async function sitemap() {
     return [];
   }
 
-  const payload = await getPayloadHMR({ config: configPromise });
+  const payload = await getPayload({ config: configPromise });
   const pages = await payload.find({
     collection: 'pages',
     draft: false,
