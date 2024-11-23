@@ -52,9 +52,9 @@ export interface Config {
   user: User & {
     collection: 'users';
   };
-  jobs?: {
+  jobs: {
     tasks: unknown;
-    workflows?: unknown;
+    workflows: unknown;
   };
 }
 export interface UserAuthOperations {
@@ -131,6 +131,21 @@ export interface Hero {
   image: string | Media;
   heading: string;
   subheading?: string | null;
+  description?: {
+    root: {
+      type: string;
+      children: {
+        type: string;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  } | null;
   sectionLayout: SectionLayout;
   id?: string | null;
   blockName?: string | null;
@@ -356,6 +371,7 @@ export interface PagesSelect<T extends boolean = true> {
               image?: T;
               heading?: T;
               subheading?: T;
+              description?: T;
               sectionLayout?:
                 | T
                 | {
@@ -471,6 +487,7 @@ export interface ReusableContentSelect<T extends boolean = true> {
               image?: T;
               heading?: T;
               subheading?: T;
+              description?: T;
               sectionLayout?:
                 | T
                 | {

@@ -1,6 +1,7 @@
 import type { Block } from 'payload';
 
 import { SECTION_LAYOUT } from '@/payload/fields/sectionLayout';
+import { SIMPLE_RICH_TEXT } from '@/payload/fields/simpleRichText';
 
 export const Hero: Block = {
   imageURL: '/api/media/file/Hero.png',
@@ -29,6 +30,7 @@ export const Hero: Block = {
       name: 'subheading',
       label: 'Subheading',
     },
+    SIMPLE_RICH_TEXT(),
     SECTION_LAYOUT({
       breakpoints: [
         {
