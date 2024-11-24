@@ -1,5 +1,6 @@
 import type { Block } from 'payload';
 
+import { INLINE_RICH_TEXT } from '@/payload/fields/inlineRichText';
 import { SECTION_LAYOUT } from '@/payload/fields/sectionLayout';
 import { SIMPLE_RICH_TEXT } from '@/payload/fields/simpleRichText';
 
@@ -19,12 +20,11 @@ export const Hero: Block = {
       relationTo: 'media',
       required: true,
     },
-    {
-      type: 'text',
+    INLINE_RICH_TEXT({
       name: 'heading',
       label: 'Heading',
       required: true,
-    },
+    }),
     {
       type: 'text',
       name: 'subheading',

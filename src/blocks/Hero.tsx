@@ -46,8 +46,11 @@ export const Hero = ({
           {Boolean(heading || subheading || description) && (
             <div className={cn('text-center', 'sm:text-left sm:w-[calc(50%-16px)]')}>
               {heading && (
-                <SectionHeading isFirst={isFirst} className={cn('h1 mb-4', 'sm:md-8 sm:text-left')}>
-                  {heading}
+                <SectionHeading
+                  isFirst={isFirst}
+                  className={cn('h1 mb-4 font-normal', 'sm:md-8 sm:text-left')}
+                >
+                  <RichText content={heading} />
                 </SectionHeading>
               )}
 

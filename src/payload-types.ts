@@ -129,7 +129,21 @@ export interface Page {
  */
 export interface Hero {
   image: string | Media;
-  heading: string;
+  heading: {
+    root: {
+      type: string;
+      children: {
+        type: string;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  };
   subheading?: string | null;
   description?: {
     root: {
