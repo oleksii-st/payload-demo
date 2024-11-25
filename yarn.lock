@@ -1419,22 +1419,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@payloadcms/live-preview-react@npm:3.0.1":
-  version: 3.0.1
-  resolution: "@payloadcms/live-preview-react@npm:3.0.1"
+"@payloadcms/live-preview-react@npm:3.1.0":
+  version: 3.1.0
+  resolution: "@payloadcms/live-preview-react@npm:3.1.0"
   dependencies:
-    "@payloadcms/live-preview": "npm:3.0.1"
+    "@payloadcms/live-preview": "npm:3.1.0"
   peerDependencies:
     react: ^19.0.0 || ^19.0.0-rc-65a56d0e-20241020
     react-dom: ^19.0.0 || ^19.0.0-rc-65a56d0e-20241020
-  checksum: 10c0/0a1fd616a0a1e4bf6b56037f09758c5fabbf93aa6e7e344b8a9aadaed7f14379800743af3b1ef6280d32a587342c5739618b58ff1038e51b5de2266acc637bf7
+  checksum: 10c0/158ec12b2d9d112145aedbcc6ed925f1ca76faacf83b311284073b100889bca2a43b0b63b368a12323df8bc8a20d08f12eac2e1cb80a32955729ff0e619442f1
   languageName: node
   linkType: hard
 
-"@payloadcms/live-preview@npm:3.0.1":
-  version: 3.0.1
-  resolution: "@payloadcms/live-preview@npm:3.0.1"
-  checksum: 10c0/b0061d22211c044d423d6f6bfdcca1202f332dcf7dbd706db3da0c4c311ce9bc3a1e3565a09b2bd8e7c36102ec2f957a35dda46c9397f9612da8c981fe111b25
+"@payloadcms/live-preview@npm:3.1.0":
+  version: 3.1.0
+  resolution: "@payloadcms/live-preview@npm:3.1.0"
+  checksum: 10c0/ded26891954e9cc5570f4ecf770af1218935b2834cd0bcef8158afb179e97e2e8dc03cf97679cbf3e2145c178de605c9c58c9a2febe80795968028e8c7b6307c
   languageName: node
   linkType: hard
 
@@ -6320,7 +6320,7 @@ __metadata:
     "@lexical/rich-text": "npm:0.20.0"
     "@lexical/table": "npm:0.20.0"
     "@payloadcms/db-mongodb": "npm:3.0.1"
-    "@payloadcms/live-preview-react": "npm:3.0.1"
+    "@payloadcms/live-preview-react": "npm:3.1.0"
     "@payloadcms/next": "npm:3.0.1"
     "@payloadcms/plugin-nested-docs": "npm:3.0.1"
     "@payloadcms/plugin-redirects": "npm:3.0.1"
