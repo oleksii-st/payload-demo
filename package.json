@@ -43,7 +43,7 @@
     "jsonwebtoken": "^9.0.2",
     "lexical": "0.20.0",
     "next": "15.0.3",
-    "payload": "3.0.1",
+    "payload": "3.1.0",
     "prettier": "^3.3.3",
     "react": "19.0.0-rc-65a56d0e-20241020",
     "react-dom": "19.0.0-rc-65a56d0e-20241020",

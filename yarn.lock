@@ -1598,6 +1598,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@payloadcms/translations@npm:3.1.0":
+  version: 3.1.0
+  resolution: "@payloadcms/translations@npm:3.1.0"
+  dependencies:
+    date-fns: "npm:4.1.0"
+  checksum: 10c0/f45e6ba7c094bee883d88a9cdb94063b59c3dd318e4a1f3c716b57a2c2f283290c61afcb55d7d9afd9e4efe1d44ad09c19f01bfd5d436d7556e29c5ee18dc63a
+  languageName: node
+  linkType: hard
+
 "@payloadcms/ui@npm:3.0.1":
   version: 3.0.1
   resolution: "@payloadcms/ui@npm:3.0.1"
@@ -6347,7 +6356,7 @@ __metadata:
     lexical: "npm:0.20.0"
     lint-staged: "npm:^15.2.10"
     next: "npm:15.0.3"
-    payload: "npm:3.0.1"
+    payload: "npm:3.1.0"
     prettier: "npm:^3.3.3"
     react: "npm:19.0.0-rc-65a56d0e-20241020"
     react-dom: "npm:19.0.0-rc-65a56d0e-20241020"
@@ -6359,13 +6368,13 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"payload@npm:3.0.1":
-  version: 3.0.1
-  resolution: "payload@npm:3.0.1"
+"payload@npm:3.1.0":
+  version: 3.1.0
+  resolution: "payload@npm:3.1.0"
   dependencies:
     "@monaco-editor/react": "npm:4.6.0"
     "@next/env": "npm:^15.0.0"
-    "@payloadcms/translations": "npm:3.0.1"
+    "@payloadcms/translations": "npm:3.1.0"
     "@types/busboy": "npm:1.5.4"
     ajv: "npm:8.17.1"
     bson-objectid: "npm:2.0.4"
@@ -6394,7 +6403,7 @@ __metadata:
     graphql: ^16.8.1
   bin:
     payload: bin.js
-  checksum: 10c0/e4029aa3ca9623ff9cf444ae35f3adeffde264cd7e103cfbbb82a5775bb1d64c6a565f1a39edacfe02e0cbf1ea185df5c8cf16b3eb96047c1618b1ad40af9d7b
+  checksum: 10c0/63e79ae9d950a2d748ba557d3db4ed123bb9bed2cfa9786873fd6362f4a0ef003f97399f71113741770489f3111e475f5e91bf1ea3a8e28ee0a577c4772a3eb5
   languageName: node
   linkType: hard
 
