@@ -1402,9 +1402,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@payloadcms/graphql@npm:3.0.1":
-  version: 3.0.1
-  resolution: "@payloadcms/graphql@npm:3.0.1"
+"@payloadcms/graphql@npm:3.1.0":
+  version: 3.1.0
+  resolution: "@payloadcms/graphql@npm:3.1.0"
   dependencies:
     graphql-scalars: "npm:1.22.2"
     pluralize: "npm:8.0.0"
@@ -1412,10 +1412,10 @@ __metadata:
     tsx: "npm:4.19.2"
   peerDependencies:
     graphql: ^16.8.1
-    payload: 3.0.1
+    payload: 3.1.0
   bin:
     payload-graphql: bin.js
-  checksum: 10c0/347269eef7ce8d8b41a89311a541dd7ecdd96523463372068b2f5db42dad3897c590e6d3c18cfd6e472e18239504b65f8f615ee7f98196dabfe917fb1c3a4a03
+  checksum: 10c0/7499531827dbca53d9d85c0ea3ad05547c42b9b30b542045bde479ce1e3c8184ffb9f050efe02cf39cfd9ee00f21f5328ec3c3c5a9542b4121be1b0a64339fe4
   languageName: node
   linkType: hard
 
@@ -1438,14 +1438,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@payloadcms/next@npm:3.0.1":
-  version: 3.0.1
-  resolution: "@payloadcms/next@npm:3.0.1"
+"@payloadcms/next@npm:3.1.0":
+  version: 3.1.0
+  resolution: "@payloadcms/next@npm:3.1.0"
   dependencies:
     "@dnd-kit/core": "npm:6.0.8"
-    "@payloadcms/graphql": "npm:3.0.1"
-    "@payloadcms/translations": "npm:3.0.1"
-    "@payloadcms/ui": "npm:3.0.1"
+    "@payloadcms/graphql": "npm:3.1.0"
+    "@payloadcms/translations": "npm:3.1.0"
+    "@payloadcms/ui": "npm:3.1.0"
     busboy: "npm:^1.6.0"
     file-type: "npm:19.3.0"
     graphql-http: "npm:^1.22.0"
@@ -1460,8 +1460,8 @@ __metadata:
   peerDependencies:
     graphql: ^16.8.1
     next: ^15.0.0
-    payload: 3.0.1
-  checksum: 10c0/c123c72acaeb65829123bcf44697be61fa5c47d8e4fe83b7538a288cd00e4485fa1660e93bc854c1adec82f99280f7713e92af281bf5739226cc6961b5593cf9
+    payload: 3.1.0
+  checksum: 10c0/be28db45b74457d402e9aafc19c2ba70cfe760edb3dd5363e528807d3ee30ead0954ff38b025184b8365b4903d5311e757847e60e9e1c67c6b149a0238e931e5
   languageName: node
   linkType: hard
 
@@ -1598,6 +1598,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@payloadcms/translations@npm:3.1.0":
+  version: 3.1.0
+  resolution: "@payloadcms/translations@npm:3.1.0"
+  dependencies:
+    date-fns: "npm:4.1.0"
+  checksum: 10c0/f45e6ba7c094bee883d88a9cdb94063b59c3dd318e4a1f3c716b57a2c2f283290c61afcb55d7d9afd9e4efe1d44ad09c19f01bfd5d436d7556e29c5ee18dc63a
+  languageName: node
+  linkType: hard
+
 "@payloadcms/ui@npm:3.0.1":
   version: 3.0.1
   resolution: "@payloadcms/ui@npm:3.0.1"
@@ -1631,6 +1640,42 @@ __metadata:
     react: ^19.0.0 || ^19.0.0-rc-65a56d0e-20241020
     react-dom: ^19.0.0 || ^19.0.0-rc-65a56d0e-20241020
   checksum: 10c0/2f2dd48318640f04ba22bac171faf353ec559d938d6240a0b5ab6bd133f6a00d07cbe94cbf95c1a4a87309b68424040eb43a84c9800192bbfcb0fb456748a1b7
+  languageName: node
+  linkType: hard
+
+"@payloadcms/ui@npm:3.1.0":
+  version: 3.1.0
+  resolution: "@payloadcms/ui@npm:3.1.0"
+  dependencies:
+    "@dnd-kit/core": "npm:6.0.8"
+    "@dnd-kit/sortable": "npm:7.0.2"
+    "@faceless-ui/modal": "npm:3.0.0-beta.2"
+    "@faceless-ui/scroll-info": "npm:2.0.0-beta.0"
+    "@faceless-ui/window-info": "npm:3.0.0-beta.0"
+    "@monaco-editor/react": "npm:4.6.0"
+    "@payloadcms/translations": "npm:3.1.0"
+    body-scroll-lock: "npm:4.0.0-beta.0"
+    bson-objectid: "npm:2.0.4"
+    date-fns: "npm:4.1.0"
+    dequal: "npm:2.0.3"
+    md5: "npm:2.3.0"
+    object-to-formdata: "npm:4.5.1"
+    qs-esm: "npm:7.0.2"
+    react-animate-height: "npm:2.1.2"
+    react-datepicker: "npm:6.9.0"
+    react-image-crop: "npm:10.1.8"
+    react-select: "npm:5.8.0"
+    scheduler: "npm:0.0.0-experimental-3edc000d-20240926"
+    sonner: "npm:^1.5.0"
+    ts-essentials: "npm:10.0.3"
+    use-context-selector: "npm:2.0.0"
+    uuid: "npm:10.0.0"
+  peerDependencies:
+    next: ^15.0.0
+    payload: 3.1.0
+    react: ^19.0.0 || ^19.0.0-rc-65a56d0e-20241020
+    react-dom: ^19.0.0 || ^19.0.0-rc-65a56d0e-20241020
+  checksum: 10c0/e9100b1ef8ab23eec003d4d41cfa2021cc2abd247fc1007fe20456c0395cc0e0993c71a670eda100fee2b26a5b81301766858d4c1d140c675154cdaf5114b048
   languageName: node
   linkType: hard
 
@@ -6321,7 +6366,7 @@ __metadata:
     "@lexical/table": "npm:0.20.0"
     "@payloadcms/db-mongodb": "npm:3.0.1"
     "@payloadcms/live-preview-react": "npm:3.0.1"
-    "@payloadcms/next": "npm:3.0.1"
+    "@payloadcms/next": "npm:3.1.0"
     "@payloadcms/plugin-nested-docs": "npm:3.0.1"
     "@payloadcms/plugin-redirects": "npm:3.0.1"
     "@payloadcms/plugin-seo": "npm:3.0.1"
