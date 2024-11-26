@@ -7,7 +7,6 @@ const INLINE_RICH_TEXT_FIELDS = [
   'italic',
   'underline',
   'strikethrough',
-  'superscript',
   'inlineCode',
   'align',
 ];
@@ -15,7 +14,7 @@ const INLINE_RICH_TEXT_FIELDS = [
 export const INLINE_RICH_TEXT = (
   overrides?: Omit<RichTextField, 'editor' | 'type'>,
 ): RichTextField => {
-  const { name = 'text', label = 'Text', ...rest } = overrides ?? {};
+  const { name = 'text', label = 'Text', admin, ...rest } = overrides ?? {};
 
   return {
     type: 'richText',
@@ -30,6 +29,7 @@ export const INLINE_RICH_TEXT = (
       ],
     }),
     admin: {
+      ...admin,
       components: {
         Field: '@/payload/components/InlineRichText/',
       },

@@ -10,14 +10,7 @@ import { Block } from '@/utils/types';
 
 export type HeroProps = Block<HeroType>;
 
-export const Hero = ({
-  image,
-  heading,
-  subheading,
-  description,
-  isFirst,
-  sectionLayout,
-}: HeroProps) => {
+export const Hero = ({ image, heading, description, isFirst, sectionLayout }: HeroProps) => {
   const loading = isFirst ? 'eager' : 'lazy';
 
   return (
@@ -43,7 +36,7 @@ export const Hero = ({
             </div>
           )}
 
-          {Boolean(heading || subheading || description) && (
+          {Boolean(heading || description) && (
             <div className={cn('text-center', 'sm:text-left sm:w-[calc(50%-16px)]')}>
               {heading && (
                 <SectionHeading
@@ -52,10 +45,6 @@ export const Hero = ({
                 >
                   <RichText content={heading} />
                 </SectionHeading>
-              )}
-
-              {subheading && (
-                <p className={cn('m-0 text-xl', 'sm:text-2xl', 'md:text-4xl')}>{subheading}</p>
               )}
 
               {description && <RichText content={description} />}

@@ -1,0 +1,51 @@
+.inline-rich-text {
+    margin-bottom: 20px;
+}
+
+.inline-rich-text .add-block-menu {
+    display: none;
+}
+
+.inline-rich-text .draggable-block-menu {
+    display: none;
+}
+
+.inline-rich-text .editor {
+    box-shadow: 0 2px 2px -1px #0000001a;
+    font-family: var(--font-body);
+    width: 100%;
+    border: 1px solid var(--theme-elevation-150);
+    border-radius: var(--style-radius-s);
+    background: var(--theme-input-bg);
+    color: var(--theme-elevation-800);
+    font-size: 1rem;
+    height: 40px;
+    line-height: 20px;
+    padding: 8px 15px;
+    -webkit-appearance: none;
+    transition-property: border, box-shadow, background-color;
+    transition-duration: .1s, .1s, .5s;
+    transition-timing-function: cubic-bezier(0,.2,.2,1);
+}
+
+.inline-rich-text .editor:focus-within {
+    border-color: var(--theme-elevation-400);
+}
+
+.inline-rich-text .editor p {
+    font-size: 1rem;
+    line-height: 20px;
+}
+
+.inline-rich-text .editor > div {
+    margin: 0;
+    padding: 0;
+}
+
+.inline-rich-text .editor .editor-placeholder {
+    display: none;
+}
+
+.inline-rich-text .editor [data-lexical-editor="true"] > *:not(:first-child) {
+    display: none;
+}

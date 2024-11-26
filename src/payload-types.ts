@@ -144,7 +144,6 @@ export interface Hero {
     };
     [k: string]: unknown;
   };
-  subheading?: string | null;
   description?: {
     root: {
       type: string;
@@ -384,7 +383,6 @@ export interface PagesSelect<T extends boolean = true> {
           | {
               image?: T;
               heading?: T;
-              subheading?: T;
               description?: T;
               sectionLayout?:
                 | T
@@ -500,7 +498,6 @@ export interface ReusableContentSelect<T extends boolean = true> {
           | {
               image?: T;
               heading?: T;
-              subheading?: T;
               description?: T;
               sectionLayout?:
                 | T

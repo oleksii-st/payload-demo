@@ -25,11 +25,6 @@ export const Hero: Block = {
       label: 'Heading',
       required: true,
     }),
-    {
-      type: 'text',
-      name: 'subheading',
-      label: 'Subheading',
-    },
     SIMPLE_RICH_TEXT(),
     SECTION_LAYOUT({
       breakpoints: [

@@ -9,12 +9,28 @@ import {
   LinkFeatureClient,
   RichTextField,
   StrikethroughFeatureClient,
-  SuperscriptFeatureClient,
   UnderlineFeatureClient,
 } from '@payloadcms/richtext-lexical/client';
-import { ComponentProps } from 'react';
+import { useField } from '@payloadcms/ui';
+import { ComponentProps, useEffect } from 'react';
+import './styles.css';
 
 type RichTextFieldProps = ComponentProps<typeof RichTextField>;
+type RichTextValue = {
+  root: {
+    type: string;
+    children: {
+      type: string;
+      version: number;
+      [k: string]: unknown;
+    }[];
+    direction: ('ltr' | 'rtl') | null;
+    format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+    indent: number;
+    version: number;
+  };
+  [k: string]: unknown;
+};
 
 const InlineRichText = ({
   field,
@@ -55,38 +71,31 @@ const InlineRichText = ({
       },
       clientFeatureProvider: InlineCodeFeatureClient,
     },
-    superscript: {
-      clientFeatureProps: {
-        featureKey: 'superscript',
-        order: 4,
-      },
-      clientFeatureProvider: SuperscriptFeatureClient,
-    },
     strikethrough: {
       clientFeatureProps: {
         featureKey: 'strikethrough',
-        order: 5,
+        order: 4,
       },
       clientFeatureProvider: StrikethroughFeatureClient,
     },
     underline: {
       clientFeatureProps: {
         featureKey: 'underline',
-        order: 6,
+        order: 5,
       },
       clientFeatureProvider: UnderlineFeatureClient,
     },
     bold: {
       clientFeatureProps: {
         featureKey: 'bold',
-        order: 7,
+        order: 6,
       },
       clientFeatureProvider: BoldFeatureClient,
     },
     italic: {
       clientFeatureProps: {
         featureKey: 'italic',
-        order: 8,
+        order: 7,
       },
       clientFeatureProvider: ItalicFeatureClient,
     },
@@ -137,6 +146,20 @@ const InlineRichText = ({
       ],
     },
   };
+  const { value, setValue } = useField<RichTextValue>({ path });
+
+  useEffect(() => {
+    const children = value?.root?.children;
+
+    if (children && children.length > 1) {
+      setValue({
+        root: {
+          ...(value.root ?? {}),
+          children: [children[0]],
+        },
+      });
+    }
+  }, [value]);
 
   return (
     <div className="inline-rich-text">
@@ -145,7 +168,7 @@ const InlineRichText = ({
         schemaPath={schemaPath}
         initialLexicalFormState={{}}
         field={field}
-        admin={{ hideGutter: false }}
+        admin={{ hideGutter: true }}
         permissions={true}
         clientFeatures={clientFeatures}
         featureClientSchemaMap={
