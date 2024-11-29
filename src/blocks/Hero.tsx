@@ -43,7 +43,7 @@ export const Hero = ({ image, heading, description, isFirst, sectionLayout }: He
                   isFirst={isFirst}
                   className={cn('h1 mb-4 font-normal', 'sm:md-8 sm:text-left')}
                 >
-                  <RichText content={heading} />
+                  <RichText content={heading} inline />
                 </SectionHeading>
               )}
 

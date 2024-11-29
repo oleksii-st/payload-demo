@@ -8,9 +8,10 @@ import { RichTextType } from '@/utils/types';
 
 type RichTextProps = Omit<ComponentProps<'div'>, 'content'> & {
   content?: RichTextType;
+  inline?: boolean;
 };
 
-export const RichText = ({ className, content, ...rest }: RichTextProps) => {
+export const RichText = ({ className, content, inline = false, ...rest }: RichTextProps) => {
   if (!content) {
     return null;
   }
@@ -25,11 +26,7 @@ export const RichText = ({ className, content, ...rest }: RichTextProps) => {
 
   return (
     <div className={cn('rich-text', className)} {...rest}>
-      {content &&
-        !Array.isArray(content) &&
-        typeof content === 'object' &&
-        'root' in content &&
-        serializeLexical({ nodes: contentTyped.root.children })}
+      {serializeLexical({ nodes: contentTyped.root.children, inline })}
     </div>
   );
 };

@@ -23,9 +23,10 @@ import { toKebabCase } from '@/utils/toKebabCase';
 
 interface Props {
   nodes: SerializedLexicalNode[];
+  inline?: boolean;
 }
 
-export function serializeLexical({ nodes }: Props) {
+export function serializeLexical({ nodes, inline = false }: Props) {
   return (
     <Fragment>
       {nodes?.map((_node, index) => {
@@ -81,9 +82,9 @@ export function serializeLexical({ nodes }: Props) {
                   }
                 }
               }
-              return serializeLexical({ nodes: node.children });
+              return serializeLexical({ nodes: node.children, inline });
             } else {
-              return serializeLexical({ nodes: node.children });
+              return serializeLexical({ nodes: node.children, inline });
             }
           }
         };
@@ -91,8 +92,31 @@ export function serializeLexical({ nodes }: Props) {
         const serializedChildren =
           'children' in _node ? serializedChildrenFn(_node as SerializedElementNode) : '';
 
+        if (_node.type === 'link') {
+          const node = _node as SerializedLinkNode;
+          const fields: LinkFields = node.fields;
+
+          return (
+            <CMSLink
+              key={index}
+              newTab={Boolean(fields.newTab)}
+              disableIndex={Boolean(fields.newTab)}
+              reference={fields.doc as Link['reference']}
+              type={fields.linkType === 'internal' ? 'reference' : 'custom'}
+              url={fields.url}
+            >
+              {serializedChildren}
+            </CMSLink>
+          );
+        }
+
+        if (inline) {
+          return <Fragment key={index}>{serializedChildren}</Fragment>;
+        }
+
         switch (_node.type) {
           case 'linebreak': {
+            if (inline) return <Fragment key={index} />;
             return <br key={index} />;
           }
           case 'paragraph': {
@@ -152,25 +176,6 @@ export function serializeLexical({ nodes }: Props) {
               <blockquote key={index} className={format}>
                 {serializedChildren}
               </blockquote>
-            );
-          }
-
-          case 'link': {
-            const node = _node as SerializedLinkNode;
-
-            const fields: LinkFields = node.fields;
-
-            return (
-              <CMSLink
-                key={index}
-                newTab={Boolean(fields?.newTab)}
-                disableIndex={Boolean(fields?.newTab)}
-                reference={fields.doc as Link['reference']}
-                type={fields.linkType === 'internal' ? 'reference' : 'custom'}
-                url={fields.url}
-              >
-                {serializedChildren}
-              </CMSLink>
             );
           }
 
