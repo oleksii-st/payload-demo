@@ -27,7 +27,7 @@
     "@payloadcms/db-mongodb": "3.0.1",
     "@payloadcms/live-preview-react": "3.0.1",
     "@payloadcms/next": "3.1.0",
-    "@payloadcms/plugin-nested-docs": "3.0.1",
+    "@payloadcms/plugin-nested-docs": "3.2.2",
     "@payloadcms/plugin-redirects": "3.0.1",
     "@payloadcms/plugin-seo": "3.1.0",
     "@payloadcms/richtext-lexical": "3.0.1",
