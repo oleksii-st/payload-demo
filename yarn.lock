@@ -1528,21 +1528,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@payloadcms/richtext-lexical@npm:3.0.1":
-  version: 3.0.1
-  resolution: "@payloadcms/richtext-lexical@npm:3.0.1"
+"@payloadcms/richtext-lexical@npm:3.2.2":
+  version: 3.2.2
+  resolution: "@payloadcms/richtext-lexical@npm:3.2.2"
   dependencies:
     "@lexical/headless": "npm:0.20.0"
     "@lexical/link": "npm:0.20.0"
     "@lexical/list": "npm:0.20.0"
     "@lexical/mark": "npm:0.20.0"
-    "@lexical/markdown": "npm:0.20.0"
     "@lexical/react": "npm:0.20.0"
     "@lexical/rich-text": "npm:0.20.0"
     "@lexical/selection": "npm:0.20.0"
     "@lexical/utils": "npm:0.20.0"
-    "@payloadcms/translations": "npm:3.0.1"
-    "@payloadcms/ui": "npm:3.0.1"
+    "@payloadcms/translations": "npm:3.2.2"
+    "@payloadcms/ui": "npm:3.2.2"
     "@types/uuid": "npm:10.0.0"
     acorn: "npm:8.12.1"
     bson-objectid: "npm:2.0.4"
@@ -1552,7 +1551,7 @@ __metadata:
     mdast-util-from-markdown: "npm:2.0.2"
     mdast-util-mdx-jsx: "npm:3.1.3"
     micromark-extension-mdx-jsx: "npm:3.0.1"
-    react-error-boundary: "npm:4.0.13"
+    react-error-boundary: "npm:4.1.2"
     ts-essentials: "npm:10.0.3"
     uuid: "npm:10.0.0"
   peerDependencies:
@@ -1562,18 +1561,17 @@ __metadata:
     "@lexical/link": 0.20.0
     "@lexical/list": 0.20.0
     "@lexical/mark": 0.20.0
-    "@lexical/markdown": 0.20.0
     "@lexical/react": 0.20.0
     "@lexical/rich-text": 0.20.0
     "@lexical/selection": 0.20.0
     "@lexical/table": 0.20.0
     "@lexical/utils": 0.20.0
-    "@payloadcms/next": 3.0.1
+    "@payloadcms/next": 3.2.2
     lexical: 0.20.0
-    payload: 3.0.1
+    payload: 3.2.2
     react: ^19.0.0 || ^19.0.0-rc-65a56d0e-20241020
     react-dom: ^19.0.0 || ^19.0.0-rc-65a56d0e-20241020
-  checksum: 10c0/b3ef7f26b54a801b510adf023f5cb5ccbdac4d6b0fd215e057bbce8ffd0d7e8654aec32a0b0ef983746e9aec0a78d46cc262e4f27f82e9c21d666b91d5e71f40
+  checksum: 10c0/a1db79898a19c8f175845af46fd03787cc39cf0771d8fbb05c435b79e510731fd1e98d3f1451892290853b4b92dfc67189712809eda718ae4634ea708bc5804d
   languageName: node
   linkType: hard
 
@@ -1613,42 +1611,6 @@ __metadata:
   dependencies:
     date-fns: "npm:4.1.0"
   checksum: 10c0/31ceae81475c50ddb66d1aaf002b6dd43e5e3ca0128215b496684c1c431ac5b4381722b51a92e6727a2ae037dd9d76f53487911c84ff68d7a86b9fb8f00a9ef2
-  languageName: node
-  linkType: hard
-
-"@payloadcms/ui@npm:3.0.1":
-  version: 3.0.1
-  resolution: "@payloadcms/ui@npm:3.0.1"
-  dependencies:
-    "@dnd-kit/core": "npm:6.0.8"
-    "@dnd-kit/sortable": "npm:7.0.2"
-    "@faceless-ui/modal": "npm:3.0.0-beta.2"
-    "@faceless-ui/scroll-info": "npm:2.0.0-beta.0"
-    "@faceless-ui/window-info": "npm:3.0.0-beta.0"
-    "@monaco-editor/react": "npm:4.6.0"
-    "@payloadcms/translations": "npm:3.0.1"
-    body-scroll-lock: "npm:4.0.0-beta.0"
-    bson-objectid: "npm:2.0.4"
-    date-fns: "npm:4.1.0"
-    dequal: "npm:2.0.3"
-    md5: "npm:2.3.0"
-    object-to-formdata: "npm:4.5.1"
-    qs-esm: "npm:7.0.2"
-    react-animate-height: "npm:2.1.2"
-    react-datepicker: "npm:6.9.0"
-    react-image-crop: "npm:10.1.8"
-    react-select: "npm:5.8.0"
-    scheduler: "npm:0.0.0-experimental-3edc000d-20240926"
-    sonner: "npm:^1.5.0"
-    ts-essentials: "npm:10.0.3"
-    use-context-selector: "npm:2.0.0"
-    uuid: "npm:10.0.0"
-  peerDependencies:
-    next: ^15.0.0
-    payload: 3.0.1
-    react: ^19.0.0 || ^19.0.0-rc-65a56d0e-20241020
-    react-dom: ^19.0.0 || ^19.0.0-rc-65a56d0e-20241020
-  checksum: 10c0/2f2dd48318640f04ba22bac171faf353ec559d938d6240a0b5ab6bd133f6a00d07cbe94cbf95c1a4a87309b68424040eb43a84c9800192bbfcb0fb456748a1b7
   languageName: node
   linkType: hard
 
@@ -6414,7 +6376,7 @@ __metadata:
     "@payloadcms/plugin-nested-docs": "npm:3.2.2"
     "@payloadcms/plugin-redirects": "npm:3.0.1"
     "@payloadcms/plugin-seo": "npm:3.1.0"
-    "@payloadcms/richtext-lexical": "npm:3.0.1"
+    "@payloadcms/richtext-lexical": "npm:3.2.2"
     "@payloadcms/storage-vercel-blob": "npm:3.2.2"
     "@tailwindcss/typography": "npm:^0.5.15"
     "@types/escape-html": "npm:^1.0.4"
@@ -6904,14 +6866,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-error-boundary@npm:4.0.13":
-  version: 4.0.13
-  resolution: "react-error-boundary@npm:4.0.13"
+"react-error-boundary@npm:4.1.2":
+  version: 4.1.2
+  resolution: "react-error-boundary@npm:4.1.2"
   dependencies:
     "@babel/runtime": "npm:^7.12.5"
   peerDependencies:
     react: ">=16.13.1"
-  checksum: 10c0/6f3e0e4d7669f680ccf49c08c9571519c6e31f04dcfc30a765a7136c7e6fbbbe93423dd5a9fce12107f8166e54133e9dd5c2079a00c7a38201ac811f7a28b8e7
+  checksum: 10c0/0737e5259bed40ce14eb0823b3c7b152171921f2179e604f48f3913490cdc594d6c22d43d7abb4ffb1512c832850228db07aa69d3b941db324953a5e393cb399
   languageName: node
   linkType: hard
 
