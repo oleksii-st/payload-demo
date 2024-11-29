@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { Media } from '@/components/Media';
+import { RichText } from '@/components/RichText';
 import { Section } from '@/components/Section';
 import { SectionHeading } from '@/components/SectionHeading';
 import { Hero as HeroType } from '@/payload-types';
@@ -9,7 +10,7 @@ import { Block } from '@/utils/types';
 
 export type HeroProps = Block<HeroType>;
 
-export const Hero = ({ image, heading, subheading, isFirst, sectionLayout }: HeroProps) => {
+export const Hero = ({ image, heading, description, isFirst, sectionLayout }: HeroProps) => {
   const loading = isFirst ? 'eager' : 'lazy';
 
   return (
@@ -35,17 +36,18 @@ export const Hero = ({ image, heading, subheading, isFirst, sectionLayout }: Her
             </div>
           )}
 
-          {Boolean(heading || subheading) && (
+          {Boolean(heading || description) && (
             <div className={cn('text-center', 'sm:text-left sm:w-[calc(50%-16px)]')}>
               {heading && (
-                <SectionHeading isFirst={isFirst} className={cn('h1 mb-4', 'sm:md-8 sm:text-left')}>
-                  {heading}
+                <SectionHeading
+                  isFirst={isFirst}
+                  className={cn('h1 mb-4 font-normal', 'sm:md-8 sm:text-left')}
+                >
+                  <RichText content={heading} inline />
                 </SectionHeading>
               )}
 
-              {subheading && (
-                <p className={cn('m-0 text-xl', 'sm:text-2xl', 'md:text-4xl')}>{subheading}</p>
-              )}
+              {description && <RichText content={description} />}
             </div>
           )}
         </div>
