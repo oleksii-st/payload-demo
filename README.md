@@ -4,7 +4,8 @@ A Next.js project using Payload CMS with TypeScript and modern React.
 
 ## Guides
 
-- [How to manage section layout in Payload CMS](https://oleksii-s.dev/blog/how-to-manage-section-layout-in-payload-cms#frontend-implementation-code) - [PR](https://github.com/oleksii-st/payload-demo/pull/31)
+- [How to manage section layout in Payload CMS](https://oleksii-s.dev/blog/how-to-manage-section-layout-in-payload-cms) - [PR](https://github.com/oleksii-st/payload-demo/pull/31)
+- [How to build inline rich text field in Payload CMS](https://oleksii-s.dev/blog/how-to-build-inline-rich-text-field-in-payload-cms) - [PR](https://github.com/oleksii-st/payload-demo/pull/49)
 
 ## Prerequisites
 
