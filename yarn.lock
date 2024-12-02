@@ -5054,6 +5054,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"lexical@npm:0.20.2":
+  version: 0.20.2
+  resolution: "lexical@npm:0.20.2"
+  checksum: 10c0/72310d1353d107d3b18976a4924d79ca3206df761450bf59fd2786eec2ce0954fd52d9e04e99e77f3d0df010201d3e8d268fbb367a142c6793903026974d0e1f
+  languageName: node
+  linkType: hard
+
 "lilconfig@npm:^2.1.0":
   version: 2.1.0
   resolution: "lilconfig@npm:2.1.0"
@@ -6341,7 +6348,7 @@ __metadata:
     graphql: "npm:^16.9.0"
     husky: "npm:^9.1.7"
     jsonwebtoken: "npm:^9.0.2"
-    lexical: "npm:0.20.0"
+    lexical: "npm:0.20.2"
     lint-staged: "npm:^15.2.10"
     next: "npm:15.0.3"
     payload: "npm:3.2.2"
