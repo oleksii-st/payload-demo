@@ -24,7 +24,7 @@ import { SubscriptFeatureClient as SubscriptFeatureClient_e70f5e05f09f93e00b997e
 import { RscEntryLexicalField as RscEntryLexicalField_44fe37237e0ebf4470c9990d8cb7b07e } from '@payloadcms/richtext-lexical/rsc';
 import { RscEntryLexicalCell as RscEntryLexicalCell_44fe37237e0ebf4470c9990d8cb7b07e } from '@payloadcms/richtext-lexical/rsc';
 
-import { default as default_78b39f784b86cf844383560b5f1a85bf } from '@/components/ColorPicker/';
+import { default as default_eaf0325d509b572e61f4a8e0b5a4d8f7 } from '@/payload/components/ColorPicker/';
 import { default as default_1a5e66e681ed270d6475628247af7d06 } from '@/payload/components/InlineRichText/';
 
 export const importMap = {
@@ -59,7 +59,7 @@ export const importMap = {
     ParagraphFeatureClient_e70f5e05f09f93e00b997edb1ef0c864,
   '@payloadcms/richtext-lexical/client#SuperscriptFeatureClient':
     SuperscriptFeatureClient_e70f5e05f09f93e00b997edb1ef0c864,
-  '@/components/ColorPicker/#default': default_78b39f784b86cf844383560b5f1a85bf,
+  '@/payload/components/ColorPicker/#default': default_eaf0325d509b572e61f4a8e0b5a4d8f7,
   '@payloadcms/richtext-lexical/client#HorizontalRuleFeatureClient':
     HorizontalRuleFeatureClient_e70f5e05f09f93e00b997edb1ef0c864,
   '@payloadcms/richtext-lexical/client#UploadFeatureClient':

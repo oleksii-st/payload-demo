@@ -10,7 +10,7 @@ export const COLOR = (overrides?: Omit<TextField, 'type'>): TextField => {
     admin: {
       ...admin,
       components: {
-        Field: '@/components/ColorPicker/',
+        Field: '@/payload/components/ColorPicker/',
       },
     },
     ...rest,
