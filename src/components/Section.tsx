@@ -28,6 +28,7 @@ export const Section = ({
   paddingTop,
   paddingBottom,
   breakpoints,
+  backgroundColor,
   children,
   ...rest
 }: SectionProps) => {
@@ -41,6 +42,7 @@ export const Section = ({
   [id="${id}"] {
     padding-top: ${paddingTop}px;
     padding-bottom: ${paddingBottom}px;
+    background-color: ${backgroundColor};
   }
 `;
 

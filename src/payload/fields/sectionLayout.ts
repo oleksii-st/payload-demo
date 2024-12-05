@@ -1,5 +1,6 @@
 import { Field, NumberFieldSingleValidation } from 'payload';
 
+import { COLOR } from '@/payload/fields/color';
 import { SectionLayout } from '@/payload-types';
 
 const minValueValidator: NumberFieldSingleValidation = (value: number | null | undefined) =>
@@ -37,6 +38,11 @@ export const SECTION_LAYOUT = (overrideDefaults?: Partial<SectionLayout>): Field
       label: 'Hide section',
       defaultValue: false,
     },
+    COLOR({
+      name: 'backgroundColor',
+      label: 'Background Color',
+      defaultValue: '#FFFFFF',
+    }),
     {
       type: 'number',
       name: 'paddingTop',

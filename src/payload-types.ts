@@ -27,7 +27,9 @@ export interface Config {
     'reusable-content': ReusableContentSelect<false> | ReusableContentSelect<true>;
     users: UsersSelect<false> | UsersSelect<true>;
     redirects: RedirectsSelect<false> | RedirectsSelect<true>;
-    'payload-locked-documents': PayloadLockedDocumentsSelect<false> | PayloadLockedDocumentsSelect<true>;
+    'payload-locked-documents':
+      | PayloadLockedDocumentsSelect<false>
+      | PayloadLockedDocumentsSelect<true>;
     'payload-preferences': PayloadPreferencesSelect<false> | PayloadPreferencesSelect<true>;
     'payload-migrations': PayloadMigrationsSelect<false> | PayloadMigrationsSelect<true>;
   };
@@ -168,6 +170,7 @@ export interface Hero {
  */
 export interface SectionLayout {
   hideSection?: boolean | null;
+  backgroundColor?: string | null;
   paddingTop: number;
   paddingBottom: number;
   breakpoints?:
@@ -386,6 +389,7 @@ export interface PagesSelect<T extends boolean = true> {
                 | T
                 | {
                     hideSection?: T;
+                    backgroundColor?: T;
                     paddingTop?: T;
                     paddingBottom?: T;
                     breakpoints?:
@@ -414,6 +418,7 @@ export interface PagesSelect<T extends boolean = true> {
                 | T
                 | {
                     hideSection?: T;
+                    backgroundColor?: T;
                     paddingTop?: T;
                     paddingBottom?: T;
                     breakpoints?:
@@ -436,6 +441,7 @@ export interface PagesSelect<T extends boolean = true> {
                 | T
                 | {
                     hideSection?: T;
+                    backgroundColor?: T;
                     paddingTop?: T;
                     paddingBottom?: T;
                     breakpoints?:
@@ -499,6 +505,7 @@ export interface ReusableContentSelect<T extends boolean = true> {
                 | T
                 | {
                     hideSection?: T;
+                    backgroundColor?: T;
                     paddingTop?: T;
                     paddingBottom?: T;
                     breakpoints?:
@@ -527,6 +534,7 @@ export interface ReusableContentSelect<T extends boolean = true> {
                 | T
                 | {
                     hideSection?: T;
+                    backgroundColor?: T;
                     paddingTop?: T;
                     paddingBottom?: T;
                     breakpoints?:
@@ -549,6 +557,7 @@ export interface ReusableContentSelect<T extends boolean = true> {
                 | T
                 | {
                     hideSection?: T;
+                    backgroundColor?: T;
                     paddingTop?: T;
                     paddingBottom?: T;
                     breakpoints?:
