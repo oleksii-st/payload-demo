@@ -3,7 +3,7 @@ import type { SerializedHeadingNode } from '@lexical/rich-text';
 import type { LinkFields, SerializedLinkNode } from '@payloadcms/richtext-lexical';
 import escapeHTML from 'escape-html';
 import type { SerializedElementNode, SerializedLexicalNode, SerializedTextNode } from 'lexical';
-import React, { Fragment } from 'react';
+import React, { Fragment, JSX } from 'react';
 
 import {
   IS_BOLD,
