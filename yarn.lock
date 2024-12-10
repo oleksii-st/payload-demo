@@ -1402,9 +1402,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@payloadcms/graphql@npm:3.4.0":
-  version: 3.4.0
-  resolution: "@payloadcms/graphql@npm:3.4.0"
+"@payloadcms/graphql@npm:3.5.0":
+  version: 3.5.0
+  resolution: "@payloadcms/graphql@npm:3.5.0"
   dependencies:
     graphql-scalars: "npm:1.22.2"
     pluralize: "npm:8.0.0"
@@ -1412,10 +1412,10 @@ __metadata:
     tsx: "npm:4.19.2"
   peerDependencies:
     graphql: ^16.8.1
-    payload: 3.4.0
+    payload: 3.5.0
   bin:
     payload-graphql: bin.js
-  checksum: 10c0/c9f7a6071bcb3f93f0c012c1c822d652eee7faa91aeb9f79c737a22f834f4f91bd948440986ab3461a30f14d5ce48a2be0431af4f6147eb23c0f519473332c89
+  checksum: 10c0/d06f467bb35745c86b8da3db6f32a50c6b3d4869c61048fb8258ae07209b01452e75d99ceddba93f1c0cc44fd944525a295151f1150c7bf1007a6070a4823bbf
   languageName: node
   linkType: hard
 
@@ -1438,14 +1438,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@payloadcms/next@npm:3.4.0":
-  version: 3.4.0
-  resolution: "@payloadcms/next@npm:3.4.0"
+"@payloadcms/next@npm:3.5.0":
+  version: 3.5.0
+  resolution: "@payloadcms/next@npm:3.5.0"
   dependencies:
     "@dnd-kit/core": "npm:6.0.8"
-    "@payloadcms/graphql": "npm:3.4.0"
-    "@payloadcms/translations": "npm:3.4.0"
-    "@payloadcms/ui": "npm:3.4.0"
+    "@payloadcms/graphql": "npm:3.5.0"
+    "@payloadcms/translations": "npm:3.5.0"
+    "@payloadcms/ui": "npm:3.5.0"
     busboy: "npm:^1.6.0"
     file-type: "npm:19.3.0"
     graphql-http: "npm:^1.22.0"
@@ -1460,8 +1460,8 @@ __metadata:
   peerDependencies:
     graphql: ^16.8.1
     next: ^15.0.0
-    payload: 3.4.0
-  checksum: 10c0/69fecff017116309cb157fec7644b8cd0b49136ac5087b77ead11699152069cba904509938e6ce5c8a115101a8470568240c0c5a2e577c39e1bc6ff20b0c27cb
+    payload: 3.5.0
+  checksum: 10c0/51ab2a6ee3f9ebf9b7a208a51485396e0289beeb3f8b5223f65d9721d24f0007489a34629521050c0f3d0e316536679d9d93381849b1a7749681593ceeb987a5
   languageName: node
   linkType: hard
 
@@ -1602,41 +1602,6 @@ __metadata:
   dependencies:
     date-fns: "npm:4.1.0"
   checksum: 10c0/e6d92326d568d69acea256118e688e8e54230bd127b4d1a94692f54658df7611533ad82e6892998d1e9b3bb6795fa69ca2a5b4e890f8a55d12d8dac5c85c4cc0
-  languageName: node
-  linkType: hard
-
-"@payloadcms/ui@npm:3.4.0":
-  version: 3.4.0
-  resolution: "@payloadcms/ui@npm:3.4.0"
-  dependencies:
-    "@dnd-kit/core": "npm:6.0.8"
-    "@dnd-kit/sortable": "npm:7.0.2"
-    "@faceless-ui/modal": "npm:3.0.0-beta.2"
-    "@faceless-ui/scroll-info": "npm:2.0.0-beta.0"
-    "@faceless-ui/window-info": "npm:3.0.0-beta.0"
-    "@monaco-editor/react": "npm:4.6.0"
-    "@payloadcms/translations": "npm:3.4.0"
-    body-scroll-lock: "npm:4.0.0-beta.0"
-    bson-objectid: "npm:2.0.4"
-    date-fns: "npm:4.1.0"
-    dequal: "npm:2.0.3"
-    md5: "npm:2.3.0"
-    object-to-formdata: "npm:4.5.1"
-    qs-esm: "npm:7.0.2"
-    react-datepicker: "npm:7.5.0"
-    react-image-crop: "npm:10.1.8"
-    react-select: "npm:5.8.3"
-    scheduler: "npm:0.25.0-rc-66855b96-20241106"
-    sonner: "npm:^1.7.0"
-    ts-essentials: "npm:10.0.3"
-    use-context-selector: "npm:2.0.0"
-    uuid: "npm:10.0.0"
-  peerDependencies:
-    next: ^15.0.0
-    payload: 3.4.0
-    react: ^19.0.0 || ^19.0.0-rc-65a56d0e-20241020
-    react-dom: ^19.0.0 || ^19.0.0-rc-65a56d0e-20241020
-  checksum: 10c0/dadeee491e970f318855781abda8c1382944661b96be863ee1ce7b5fe4ce05ed0a0898a5338a51805b29fe025d2388c55559ea4cbe34529d1e5acd8312957e63
   languageName: node
   linkType: hard
 
@@ -6347,7 +6312,7 @@ __metadata:
     "@lexical/table": "npm:0.20.0"
     "@payloadcms/db-mongodb": "npm:3.5.0"
     "@payloadcms/live-preview-react": "npm:3.4.0"
-    "@payloadcms/next": "npm:3.4.0"
+    "@payloadcms/next": "npm:3.5.0"
     "@payloadcms/plugin-nested-docs": "npm:3.5.0"
     "@payloadcms/plugin-redirects": "npm:3.5.0"
     "@payloadcms/plugin-seo": "npm:3.5.0"
@@ -7166,13 +7131,6 @@ __metadata:
   version: 0.25.0
   resolution: "scheduler@npm:0.25.0"
   checksum: 10c0/a4bb1da406b613ce72c1299db43759526058fdcc413999c3c3e0db8956df7633acf395cb20eb2303b6a65d658d66b6585d344460abaee8080b4aa931f10eaafe
-  languageName: node
-  linkType: hard
-
-"scheduler@npm:0.25.0-rc-66855b96-20241106":
-  version: 0.25.0-rc-66855b96-20241106
-  resolution: "scheduler@npm:0.25.0-rc-66855b96-20241106"
-  checksum: 10c0/65f1187d4b472ad674b91d98661c54dfc312e0ba850713b57411a05db722b5a9cdc7a46683c776116668c251c90cd4d3973b9f021d3821762fa224f94275c85a
   languageName: node
   linkType: hard
 
