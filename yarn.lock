@@ -1528,9 +1528,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@payloadcms/richtext-lexical@npm:3.4.0":
-  version: 3.4.0
-  resolution: "@payloadcms/richtext-lexical@npm:3.4.0"
+"@payloadcms/richtext-lexical@npm:3.5.0":
+  version: 3.5.0
+  resolution: "@payloadcms/richtext-lexical@npm:3.5.0"
   dependencies:
     "@lexical/headless": "npm:0.20.0"
     "@lexical/link": "npm:0.20.0"
@@ -1540,8 +1540,8 @@ __metadata:
     "@lexical/rich-text": "npm:0.20.0"
     "@lexical/selection": "npm:0.20.0"
     "@lexical/utils": "npm:0.20.0"
-    "@payloadcms/translations": "npm:3.4.0"
-    "@payloadcms/ui": "npm:3.4.0"
+    "@payloadcms/translations": "npm:3.5.0"
+    "@payloadcms/ui": "npm:3.5.0"
     "@types/uuid": "npm:10.0.0"
     acorn: "npm:8.12.1"
     bson-objectid: "npm:2.0.4"
@@ -1566,12 +1566,12 @@ __metadata:
     "@lexical/selection": 0.20.0
     "@lexical/table": 0.20.0
     "@lexical/utils": 0.20.0
-    "@payloadcms/next": 3.4.0
+    "@payloadcms/next": 3.5.0
     lexical: 0.20.0
-    payload: 3.4.0
+    payload: 3.5.0
     react: ^19.0.0 || ^19.0.0-rc-65a56d0e-20241020
     react-dom: ^19.0.0 || ^19.0.0-rc-65a56d0e-20241020
-  checksum: 10c0/6665cbde42eb9274f250741a4d4366b298388d76a869f0f983db9d270957e7e75eca685ab1045291709c73ccb4ccfed8098b13bd38d3d14ab6cbc52947d0b38f
+  checksum: 10c0/3cd2141e1ca0d1ba3f718db404dc6507cc6743e735de6fcc1ba613ad240c39c9ea2af2c9266d95bbbf482f39247a97da344a3dae770b08816467cda76db41d27
   languageName: node
   linkType: hard
 
@@ -6351,7 +6351,7 @@ __metadata:
     "@payloadcms/plugin-nested-docs": "npm:3.4.0"
     "@payloadcms/plugin-redirects": "npm:3.4.0"
     "@payloadcms/plugin-seo": "npm:3.5.0"
-    "@payloadcms/richtext-lexical": "npm:3.4.0"
+    "@payloadcms/richtext-lexical": "npm:3.5.0"
     "@payloadcms/storage-vercel-blob": "npm:3.5.0"
     "@tailwindcss/typography": "npm:^0.5.15"
     "@types/escape-html": "npm:^1.0.4"
