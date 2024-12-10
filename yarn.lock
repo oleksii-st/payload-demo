@@ -1514,17 +1514,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@payloadcms/plugin-seo@npm:3.4.0":
-  version: 3.4.0
-  resolution: "@payloadcms/plugin-seo@npm:3.4.0"
+"@payloadcms/plugin-seo@npm:3.5.0":
+  version: 3.5.0
+  resolution: "@payloadcms/plugin-seo@npm:3.5.0"
   dependencies:
-    "@payloadcms/translations": "npm:3.4.0"
-    "@payloadcms/ui": "npm:3.4.0"
+    "@payloadcms/translations": "npm:3.5.0"
+    "@payloadcms/ui": "npm:3.5.0"
   peerDependencies:
-    payload: 3.4.0
+    payload: 3.5.0
     react: ^19.0.0 || ^19.0.0-rc-65a56d0e-20241020
     react-dom: ^19.0.0 || ^19.0.0-rc-65a56d0e-20241020
-  checksum: 10c0/84665cff32d92a422ba6d8066510b96c28714c60450836c4a1ba8dfa6d5ef300c051aa6c32c3c47b1e5b834a7cbaf74223ffb0577727446e37858ce70804773a
+  checksum: 10c0/8bb7512dbc80912581334047391312c0928b03cab375cab2c90c0a2bf936e0900a6289c83805bd97f484ee7a88e7f5cbd50c92d8af0b7c56b95c8d051a471287
   languageName: node
   linkType: hard
 
@@ -1596,6 +1596,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@payloadcms/translations@npm:3.5.0":
+  version: 3.5.0
+  resolution: "@payloadcms/translations@npm:3.5.0"
+  dependencies:
+    date-fns: "npm:4.1.0"
+  checksum: 10c0/e6d92326d568d69acea256118e688e8e54230bd127b4d1a94692f54658df7611533ad82e6892998d1e9b3bb6795fa69ca2a5b4e890f8a55d12d8dac5c85c4cc0
+  languageName: node
+  linkType: hard
+
 "@payloadcms/ui@npm:3.4.0":
   version: 3.4.0
   resolution: "@payloadcms/ui@npm:3.4.0"
@@ -1628,6 +1637,41 @@ __metadata:
     react: ^19.0.0 || ^19.0.0-rc-65a56d0e-20241020
     react-dom: ^19.0.0 || ^19.0.0-rc-65a56d0e-20241020
   checksum: 10c0/dadeee491e970f318855781abda8c1382944661b96be863ee1ce7b5fe4ce05ed0a0898a5338a51805b29fe025d2388c55559ea4cbe34529d1e5acd8312957e63
+  languageName: node
+  linkType: hard
+
+"@payloadcms/ui@npm:3.5.0":
+  version: 3.5.0
+  resolution: "@payloadcms/ui@npm:3.5.0"
+  dependencies:
+    "@dnd-kit/core": "npm:6.0.8"
+    "@dnd-kit/sortable": "npm:7.0.2"
+    "@faceless-ui/modal": "npm:3.0.0-beta.2"
+    "@faceless-ui/scroll-info": "npm:2.0.0-beta.0"
+    "@faceless-ui/window-info": "npm:3.0.0-beta.0"
+    "@monaco-editor/react": "npm:4.6.0"
+    "@payloadcms/translations": "npm:3.5.0"
+    body-scroll-lock: "npm:4.0.0-beta.0"
+    bson-objectid: "npm:2.0.4"
+    date-fns: "npm:4.1.0"
+    dequal: "npm:2.0.3"
+    md5: "npm:2.3.0"
+    object-to-formdata: "npm:4.5.1"
+    qs-esm: "npm:7.0.2"
+    react-datepicker: "npm:7.5.0"
+    react-image-crop: "npm:10.1.8"
+    react-select: "npm:5.8.3"
+    scheduler: "npm:0.25.0"
+    sonner: "npm:^1.7.0"
+    ts-essentials: "npm:10.0.3"
+    use-context-selector: "npm:2.0.0"
+    uuid: "npm:10.0.0"
+  peerDependencies:
+    next: ^15.0.0
+    payload: 3.5.0
+    react: ^19.0.0 || ^19.0.0-rc-65a56d0e-20241020
+    react-dom: ^19.0.0 || ^19.0.0-rc-65a56d0e-20241020
+  checksum: 10c0/df0a422d7f68ae92bb2649a51a2676576a8d40fdb9bfabba7af1bf7e8f37f857ca9b3410759a5fd60470b3ca3392cf90b600384b468a07e00433b157c2b44eb3
   languageName: node
   linkType: hard
 
@@ -6306,7 +6350,7 @@ __metadata:
     "@payloadcms/next": "npm:3.4.0"
     "@payloadcms/plugin-nested-docs": "npm:3.4.0"
     "@payloadcms/plugin-redirects": "npm:3.4.0"
-    "@payloadcms/plugin-seo": "npm:3.4.0"
+    "@payloadcms/plugin-seo": "npm:3.5.0"
     "@payloadcms/richtext-lexical": "npm:3.4.0"
     "@payloadcms/storage-vercel-blob": "npm:3.4.0"
     "@tailwindcss/typography": "npm:^0.5.15"
@@ -7118,17 +7162,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"scheduler@npm:0.25.0, scheduler@npm:^0.25.0":
+  version: 0.25.0
+  resolution: "scheduler@npm:0.25.0"
+  checksum: 10c0/a4bb1da406b613ce72c1299db43759526058fdcc413999c3c3e0db8956df7633acf395cb20eb2303b6a65d658d66b6585d344460abaee8080b4aa931f10eaafe
+  languageName: node
+  linkType: hard
+
 "scheduler@npm:0.25.0-rc-66855b96-20241106":
   version: 0.25.0-rc-66855b96-20241106
   resolution: "scheduler@npm:0.25.0-rc-66855b96-20241106"
   checksum: 10c0/65f1187d4b472ad674b91d98661c54dfc312e0ba850713b57411a05db722b5a9cdc7a46683c776116668c251c90cd4d3973b9f021d3821762fa224f94275c85a
-  languageName: node
-  linkType: hard
-
-"scheduler@npm:^0.25.0":
-  version: 0.25.0
-  resolution: "scheduler@npm:0.25.0"
-  checksum: 10c0/a4bb1da406b613ce72c1299db43759526058fdcc413999c3c3e0db8956df7633acf395cb20eb2303b6a65d658d66b6585d344460abaee8080b4aa931f10eaafe
   languageName: node
   linkType: hard
 
