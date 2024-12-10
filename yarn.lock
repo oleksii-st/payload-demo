@@ -6373,7 +6373,7 @@ __metadata:
     lexical: "npm:0.20.0"
     lint-staged: "npm:^15.2.10"
     next: "npm:15.0.4"
-    payload: "npm:3.4.0"
+    payload: "npm:3.5.0"
     prettier: "npm:^3.4.2"
     react: "npm:19.0.0"
     react-dom: "npm:19.0.0"
@@ -6385,13 +6385,13 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"payload@npm:3.4.0":
-  version: 3.4.0
-  resolution: "payload@npm:3.4.0"
+"payload@npm:3.5.0":
+  version: 3.5.0
+  resolution: "payload@npm:3.5.0"
   dependencies:
     "@monaco-editor/react": "npm:4.6.0"
     "@next/env": "npm:^15.0.0"
-    "@payloadcms/translations": "npm:3.4.0"
+    "@payloadcms/translations": "npm:3.5.0"
     "@types/busboy": "npm:1.5.4"
     ajv: "npm:8.17.1"
     bson-objectid: "npm:2.0.4"
@@ -6420,7 +6420,7 @@ __metadata:
     graphql: ^16.8.1
   bin:
     payload: bin.js
-  checksum: 10c0/663a2ac0e95e2b3511f327d0823ccc6ea968e545409abfcf92c49308e8fa06f294194f5403cd642146856c72d6e5f0ef6f95e2d3633d9a78805a6f769ae32c5a
+  checksum: 10c0/82ca1c29f0fbe1d60b933c40dfd2f8952e0ce71b7a800d9047bb3e3d429801da1d62c297e049e4b097bdc3cde9df32f931e0040f898850a9bb9a63134af43b5b
   languageName: node
   linkType: hard
 
