@@ -1496,12 +1496,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@payloadcms/plugin-nested-docs@npm:3.4.0":
-  version: 3.4.0
-  resolution: "@payloadcms/plugin-nested-docs@npm:3.4.0"
+"@payloadcms/plugin-nested-docs@npm:3.5.0":
+  version: 3.5.0
+  resolution: "@payloadcms/plugin-nested-docs@npm:3.5.0"
   peerDependencies:
-    payload: 3.4.0
-  checksum: 10c0/b49ba807f0265cb7e9f4ae9cbfd2952bbe150d83a77ef4a70b98ae6305004d99a2811b630daa6f88a0625fa5e39952c3a2e356386f46ec1480019ad2643bcf5c
+    payload: 3.5.0
+  checksum: 10c0/6d76f8d4c97e55fae9b391ecc7f1ced48c0479f6dd177284bec9438c25d0c756d1b0d19cb4af8dd0bb03c1f8017df34c94940d61699308c30b597ec3154c7344
   languageName: node
   linkType: hard
 
@@ -6348,7 +6348,7 @@ __metadata:
     "@payloadcms/db-mongodb": "npm:3.5.0"
     "@payloadcms/live-preview-react": "npm:3.4.0"
     "@payloadcms/next": "npm:3.4.0"
-    "@payloadcms/plugin-nested-docs": "npm:3.4.0"
+    "@payloadcms/plugin-nested-docs": "npm:3.5.0"
     "@payloadcms/plugin-redirects": "npm:3.5.0"
     "@payloadcms/plugin-seo": "npm:3.5.0"
     "@payloadcms/richtext-lexical": "npm:3.5.0"
