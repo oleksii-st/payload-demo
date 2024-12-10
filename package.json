@@ -25,7 +25,7 @@
     "@lexical/rich-text": "0.20.0",
     "@lexical/table": "0.20.0",
     "@payloadcms/db-mongodb": "3.5.0",
-    "@payloadcms/live-preview-react": "3.4.0",
+    "@payloadcms/live-preview-react": "3.5.0",
     "@payloadcms/next": "3.5.0",
     "@payloadcms/plugin-nested-docs": "3.5.0",
     "@payloadcms/plugin-redirects": "3.5.0",
@@ -51,7 +51,7 @@
     "tailwind-merge": "^2.5.5"
   },
   "devDependencies": {
-    "@eslint/js": "^9.15.0",
+    "@eslint/js": "^9.16.0",
     "@types/node": "^22.10.1",
     "@types/react": "19.0.1",
     "eslint": "^9.16.0",
@@ -60,10 +60,10 @@
     "eslint-plugin-react": "^7.37.2",
     "globals": "^15.13.0",
     "husky": "^9.1.7",
-    "lint-staged": "^15.2.10",
+    "lint-staged": "^15.2.11",
     "tailwindcss": "^3.4.16",
     "typescript": "^5.7.2",
-    "typescript-eslint": "^8.17.0"
+    "typescript-eslint": "^8.18.0"
   },
   "packageManager": "yarn@4.5.3"
 }
