@@ -1386,19 +1386,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@payloadcms/db-mongodb@npm:3.4.0":
-  version: 3.4.0
-  resolution: "@payloadcms/db-mongodb@npm:3.4.0"
+"@payloadcms/db-mongodb@npm:3.5.0":
+  version: 3.5.0
+  resolution: "@payloadcms/db-mongodb@npm:3.5.0"
   dependencies:
     http-status: "npm:1.6.2"
-    mongoose: "npm:8.8.1"
+    mongoose: "npm:8.8.3"
     mongoose-aggregate-paginate-v2: "npm:1.1.2"
     mongoose-paginate-v2: "npm:1.8.5"
     prompts: "npm:2.4.2"
     uuid: "npm:10.0.0"
   peerDependencies:
-    payload: 3.4.0
-  checksum: 10c0/4f776570f0985bb9509d7f4bf1173996420a1e0f0f04817f63fb93ea184162073945ee6ea5c092547af3734661774b4c98944573c28e9cf61614be59c81a400e
+    payload: 3.5.0
+  checksum: 10c0/a76ed1a3fa8d656e0ca696bfefa98f9d9e9375c51624ed572419c669e0a8f07876a2aae6f49c0648987dbc5f36e0c195a07d51a86b0cd6f05fe8d241d151b0b8
   languageName: node
   linkType: hard
 
@@ -5885,9 +5885,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mongoose@npm:8.8.1":
-  version: 8.8.1
-  resolution: "mongoose@npm:8.8.1"
+"mongoose@npm:8.8.3":
+  version: 8.8.3
+  resolution: "mongoose@npm:8.8.3"
   dependencies:
     bson: "npm:^6.7.0"
     kareem: "npm:2.6.3"
@@ -5896,7 +5896,7 @@ __metadata:
     mquery: "npm:5.0.0"
     ms: "npm:2.1.3"
     sift: "npm:17.1.3"
-  checksum: 10c0/b9888738826025eced38e90a172901148cc58ad475c32d053006eab4945687413cd2681cfbdf917c3902604d30f5545cfc53716bed7ab25fccdd8a2a1565a4ef
+  checksum: 10c0/e06f0680e7f3237545dae0123f5a0aa385427136f5ae655fe43f19ad5d2b5236bac21dbff1e16324524cf4f28d9c38114f3d51f48a371b638165139a1482f1e1
   languageName: node
   linkType: hard
 
@@ -6345,7 +6345,7 @@ __metadata:
     "@lexical/list": "npm:0.20.0"
     "@lexical/rich-text": "npm:0.20.0"
     "@lexical/table": "npm:0.20.0"
-    "@payloadcms/db-mongodb": "npm:3.4.0"
+    "@payloadcms/db-mongodb": "npm:3.5.0"
     "@payloadcms/live-preview-react": "npm:3.4.0"
     "@payloadcms/next": "npm:3.4.0"
     "@payloadcms/plugin-nested-docs": "npm:3.4.0"
