@@ -1,14 +1,13 @@
 import React, { ComponentProps } from 'react';
 
+import { RichText } from '@/components/RichText';
 import { CMSLink } from '@/components/ui/CMSLink';
 import { Footer as FooterType } from '@/payload-types';
 import { cn } from '@/utils/cn';
 
 type FooterProps = ComponentProps<'footer'> & FooterType;
 
-export const Footer = ({ columns, copyright, className, ...rest }: FooterProps) => {
-  const copyrighText = copyright?.replaceAll('{{year}}', String(new Date().getFullYear()));
-
+export const Footer = ({ columns, copyrightMessage, className, ...rest }: FooterProps) => {
   return (
     <footer className={cn('shadow-3xl sm:shadow-none', className)} {...rest}>
       <div className="container">
@@ -28,7 +27,11 @@ export const Footer = ({ columns, copyright, className, ...rest }: FooterProps) 
             </div>
           )}
 
-          <div className="text-center">{copyrighText}</div>
+          {copyrightMessage && (
+            <div className="text-center">
+              <RichText content={copyrightMessage} inline />
+            </div>
+          )}
         </div>
       </div>
     </footer>

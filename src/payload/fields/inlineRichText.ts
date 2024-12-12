@@ -1,5 +1,7 @@
-import { lexicalEditor, LinkFeature } from '@payloadcms/richtext-lexical';
+import { BlocksFeature, lexicalEditor, LinkFeature } from '@payloadcms/richtext-lexical';
 import { RichTextField } from 'payload';
+
+import { INLINE_BLOCKS } from '@/payload/fields/inlineBlocks';
 
 const INLINE_RICH_TEXT_FIELDS = [
   'toolbarInline',
@@ -25,6 +27,9 @@ export const INLINE_RICH_TEXT = (
         ...defaultFeatures.filter(({ key }) => INLINE_RICH_TEXT_FIELDS.includes(key)),
         LinkFeature({
           enabledCollections: ['pages'],
+        }),
+        BlocksFeature({
+          inlineBlocks: INLINE_BLOCKS,
         }),
       ],
     }),
