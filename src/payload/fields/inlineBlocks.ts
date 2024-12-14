@@ -30,4 +30,22 @@ export const YEARS_FROM: Block = {
   ],
 };
 
-export const INLINE_BLOCKS: Block[] = [CURRENT_YEAR, YEARS_FROM];
+export const DYNAMIC_DATA_INSTANCE: Block = {
+  slug: 'dynamicDataInstance',
+  fields: [
+    {
+      type: 'relationship',
+      relationTo: 'richTextDataInstances',
+      name: 'dataInstance',
+      label: 'Data instance',
+      required: true,
+      admin: {
+        components: {
+          Description: '@/payload/components/RichTextDataInstancesDescription/',
+        },
+      },
+    },
+  ],
+};
+
+export const INLINE_BLOCKS: Block[] = [CURRENT_YEAR, YEARS_FROM, DYNAMIC_DATA_INSTANCE];

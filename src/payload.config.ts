@@ -12,6 +12,7 @@ import { buildConfig } from 'payload';
 import { Media } from '@/payload/collections/Media';
 import { Pages } from '@/payload/collections/Pages';
 import { ReusableContent } from '@/payload/collections/ReusableContent';
+import { RichTextDataInstances } from '@/payload/collections/RichTextDataInstances';
 import Users from '@/payload/collections/Users';
 import { INLINE_BLOCKS } from '@/payload/fields/inlineBlocks';
 import { Footer } from '@/payload/globals/Footer';
@@ -64,7 +65,7 @@ export default buildConfig({
       }),
     ],
   }),
-  collections: [Media, Pages, ReusableContent, Users],
+  collections: [Media, Pages, ReusableContent, Users, RichTextDataInstances],
   globals: [Header, Footer, NotFound, Settings],
   typescript: {
     outputFile: path.resolve(dirname, 'payload-types.ts'),

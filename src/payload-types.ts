@@ -15,6 +15,7 @@ export interface Config {
     pages: Page;
     'reusable-content': ReusableContent;
     users: User;
+    richTextDataInstances: RichTextDataInstance;
     redirects: Redirect;
     'payload-locked-documents': PayloadLockedDocument;
     'payload-preferences': PayloadPreference;
@@ -26,6 +27,7 @@ export interface Config {
     pages: PagesSelect<false> | PagesSelect<true>;
     'reusable-content': ReusableContentSelect<false> | ReusableContentSelect<true>;
     users: UsersSelect<false> | UsersSelect<true>;
+    richTextDataInstances: RichTextDataInstancesSelect<false> | RichTextDataInstancesSelect<true>;
     redirects: RedirectsSelect<false> | RedirectsSelect<true>;
     'payload-locked-documents':
       | PayloadLockedDocumentsSelect<false>
@@ -266,6 +268,17 @@ export interface User {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "richTextDataInstances".
+ */
+export interface RichTextDataInstance {
+  id: string;
+  name: string;
+  value: string;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "redirects".
  */
 export interface Redirect {
@@ -304,6 +317,10 @@ export interface PayloadLockedDocument {
     | ({
         relationTo: 'users';
         value: string | User;
+      } | null)
+    | ({
+        relationTo: 'richTextDataInstances';
+        value: string | RichTextDataInstance;
       } | null)
     | ({
         relationTo: 'redirects';
@@ -592,6 +609,16 @@ export interface UsersSelect<T extends boolean = true> {
   hash?: T;
   loginAttempts?: T;
   lockUntil?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "richTextDataInstances_select".
+ */
+export interface RichTextDataInstancesSelect<T extends boolean = true> {
+  name?: T;
+  value?: T;
+  updatedAt?: T;
+  createdAt?: T;
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
