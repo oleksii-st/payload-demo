@@ -16,6 +16,7 @@ import {
 } from './nodeFormat';
 
 import { Media } from '@/components/Media';
+import { InlineBlock, InlineBlocksType } from '@/components/RichText/InlineBlock';
 import { CMSLink } from '@/components/ui/CMSLink';
 import { Link, Media as MediaType } from '@/payload-types';
 import { cn } from '@/utils/cn';
@@ -191,6 +192,15 @@ export function serializeLexical({ nodes, inline = false }: Props) {
                 source={source}
                 className="mx-auto"
                 sizes="(min-width: 1440px) 1408px, (min-width: 768px) calc(100vw - 64px), calc(100vw - 32px)"
+              />
+            );
+          }
+
+          case 'inlineBlock': {
+            return (
+              <InlineBlock
+                key={index}
+                {...(node as unknown as { fields: InlineBlocksType }).fields}
               />
             );
           }
