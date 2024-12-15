@@ -111,6 +111,15 @@ export function serializeLexical({ nodes, inline = false }: Props) {
           );
         }
 
+        if (_node.type === 'inlineBlock') {
+          return (
+            <InlineBlock
+              key={index}
+              {...(node as unknown as { fields: InlineBlocksType }).fields}
+            />
+          );
+        }
+
         if (inline) {
           return <Fragment key={index}>{serializedChildren}</Fragment>;
         }
@@ -192,15 +201,6 @@ export function serializeLexical({ nodes, inline = false }: Props) {
                 source={source}
                 className="mx-auto"
                 sizes="(min-width: 1440px) 1408px, (min-width: 768px) calc(100vw - 64px), calc(100vw - 32px)"
-              />
-            );
-          }
-
-          case 'inlineBlock': {
-            return (
-              <InlineBlock
-                key={index}
-                {...(node as unknown as { fields: InlineBlocksType }).fields}
               />
             );
           }
