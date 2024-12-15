@@ -5,14 +5,16 @@ import { mongooseAdapter } from '@payloadcms/db-mongodb';
 import { nestedDocsPlugin } from '@payloadcms/plugin-nested-docs';
 import { redirectsPlugin } from '@payloadcms/plugin-redirects';
 import { seoPlugin } from '@payloadcms/plugin-seo';
-import { lexicalEditor, LinkFeature } from '@payloadcms/richtext-lexical';
+import { BlocksFeature, lexicalEditor, LinkFeature } from '@payloadcms/richtext-lexical';
 import { vercelBlobStorage } from '@payloadcms/storage-vercel-blob';
 import { buildConfig } from 'payload';
 
 import { Media } from '@/payload/collections/Media';
 import { Pages } from '@/payload/collections/Pages';
 import { ReusableContent } from '@/payload/collections/ReusableContent';
+import { RichTextDataInstances } from '@/payload/collections/RichTextDataInstances';
 import Users from '@/payload/collections/Users';
+import { INLINE_BLOCKS } from '@/payload/fields/inlineBlocks';
 import { Footer } from '@/payload/globals/Footer';
 import { Header } from '@/payload/globals/Header';
 import { NotFound } from '@/payload/globals/NotFound';
@@ -58,9 +60,12 @@ export default buildConfig({
       LinkFeature({
         enabledCollections: ['pages'],
       }),
+      BlocksFeature({
+        inlineBlocks: INLINE_BLOCKS,
+      }),
     ],
   }),
-  collections: [Media, Pages, ReusableContent, Users],
+  collections: [Media, Pages, ReusableContent, Users, RichTextDataInstances],
   globals: [Header, Footer, NotFound, Settings],
   typescript: {
     outputFile: path.resolve(dirname, 'payload-types.ts'),

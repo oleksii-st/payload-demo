@@ -1,5 +1,6 @@
 import type { GlobalConfig } from 'payload';
 
+import { INLINE_RICH_TEXT } from '@/payload/fields/inlineRichText';
 import link from '@/payload/fields/link';
 import { revalidateFooter } from '@/payload/globals/Footer/hooks/revalidateFooter';
 export const Footer: GlobalConfig = {
@@ -24,14 +25,9 @@ export const Footer: GlobalConfig = {
         },
       ],
     },
-    {
-      type: 'text',
-      name: 'copyright',
+    INLINE_RICH_TEXT({
+      name: 'copyrightMessage',
       label: 'Copyright',
-      defaultValue: '© {{year}}. Payload demo',
-      admin: {
-        description: 'Use {{year}} for current year',
-      },
-    },
+    }),
   ],
 };

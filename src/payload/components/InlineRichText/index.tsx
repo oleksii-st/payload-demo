@@ -2,6 +2,7 @@
 
 import {
   AlignFeatureClient,
+  BlocksFeatureClient,
   BoldFeatureClient,
   InlineCodeFeatureClient,
   InlineToolbarFeatureClient,
@@ -99,6 +100,13 @@ const InlineRichText = ({
       },
       clientFeatureProvider: ItalicFeatureClient,
     },
+    blocks: {
+      clientFeatureProps: {
+        featureKey: 'blocks',
+        order: 8,
+      },
+      clientFeatureProvider: BlocksFeatureClient,
+    },
   };
   const featureClientSchemaMap = {
     link: {
@@ -142,6 +150,291 @@ const InlineRichText = ({
           name: 'newTab',
           type: 'checkbox',
           label: 'Open in new tab',
+        },
+      ],
+    },
+    blocks: {
+      [`${schemaPath}.lexical_internal_feature.blocks.lexical_inline_blocks.currentYear.fields.id`]:
+        [
+          {
+            name: 'id',
+            type: 'text',
+            admin: {
+              hidden: true,
+            },
+            label: 'ID',
+          },
+        ],
+      [`${schemaPath}.lexical_internal_feature.blocks.lexical_inline_blocks.currentYear.fields.blockName`]:
+        [
+          {
+            name: 'blockName',
+            type: 'text',
+            admin: {
+              disabled: true,
+            },
+            label: 'Block Name',
+            required: false,
+          },
+        ],
+      [`${schemaPath}.lexical_internal_feature.blocks.lexical_inline_blocks.currentYear.fields`]: [
+        {
+          name: 'id',
+          type: 'text',
+          admin: {
+            hidden: true,
+          },
+          label: 'ID',
+        },
+        {
+          name: 'blockName',
+          type: 'text',
+          admin: {
+            disabled: true,
+          },
+          label: 'Block Name',
+          required: false,
+        },
+      ],
+      [`${schemaPath}.lexical_internal_feature.blocks.lexical_inline_blocks.currentYear`]: [
+        {
+          name: 'lexical_inline_blocks_currentYear',
+          type: 'blocks',
+          blocks: [
+            {
+              slug: 'currentYear',
+              fields: [
+                {
+                  name: 'id',
+                  type: 'text',
+                  admin: {
+                    hidden: true,
+                  },
+                  label: 'ID',
+                },
+                {
+                  name: 'blockName',
+                  type: 'text',
+                  admin: {
+                    disabled: true,
+                  },
+                  label: 'Block Name',
+                  required: false,
+                },
+              ],
+              labels: {
+                singular: 'Current Year',
+                plural: 'Current Years',
+              },
+            },
+          ],
+        },
+      ],
+      [`${schemaPath}.lexical_internal_feature.blocks.lexical_inline_blocks.yearsFrom.fields.year`]:
+        [
+          {
+            type: 'number',
+            name: 'year',
+            label: 'Year',
+            required: true,
+            admin: {},
+          },
+        ],
+      [`${schemaPath}.lexical_internal_feature.blocks.lexical_inline_blocks.yearsFrom.fields.id`]: [
+        {
+          name: 'id',
+          type: 'text',
+          admin: {
+            hidden: true,
+          },
+          label: 'ID',
+        },
+      ],
+      [`${schemaPath}.lexical_internal_feature.blocks.lexical_inline_blocks.yearsFrom.fields.blockName`]:
+        [
+          {
+            name: 'blockName',
+            type: 'text',
+            admin: {
+              disabled: true,
+            },
+            label: 'Block Name',
+            required: false,
+          },
+        ],
+      [`${schemaPath}.lexical_internal_feature.blocks.lexical_inline_blocks.yearsFrom.fields`]: [
+        {
+          type: 'number',
+          name: 'year',
+          label: 'Year',
+          required: true,
+          admin: {},
+        },
+        {
+          name: 'id',
+          type: 'text',
+          admin: {
+            hidden: true,
+          },
+          label: 'ID',
+        },
+        {
+          name: 'blockName',
+          type: 'text',
+          admin: {
+            disabled: true,
+          },
+          label: 'Block Name',
+          required: false,
+        },
+      ],
+      [`${schemaPath}.lexical_internal_feature.blocks.lexical_inline_blocks.yearsFrom`]: [
+        {
+          name: 'lexical_inline_blocks_yearsFrom',
+          type: 'blocks',
+          blocks: [
+            {
+              slug: 'yearsFrom',
+              fields: [
+                {
+                  type: 'number',
+                  name: 'year',
+                  label: 'Year',
+                  required: true,
+                  admin: {},
+                },
+                {
+                  name: 'id',
+                  type: 'text',
+                  admin: {
+                    hidden: true,
+                  },
+                  label: 'ID',
+                },
+                {
+                  name: 'blockName',
+                  type: 'text',
+                  admin: {
+                    disabled: true,
+                  },
+                  label: 'Block Name',
+                  required: false,
+                },
+              ],
+              labels: {
+                singular: 'Years From',
+                plural: 'Years Froms',
+              },
+            },
+          ],
+        },
+      ],
+      [`${schemaPath}.lexical_internal_feature.blocks.lexical_inline_blocks.dynamicDataInstance.fields.dataInstance`]:
+        [
+          {
+            type: 'relationship',
+            relationTo: 'richTextDataInstances',
+            name: 'dataInstance',
+            label: 'Data instance',
+            required: true,
+            admin: {
+              components: {
+                Description: '@/payload/components/RichTextDataInstancesDescription/',
+              },
+            },
+          },
+        ],
+      [`${schemaPath}.lexical_internal_feature.blocks.lexical_inline_blocks.dynamicDataInstance.fields.id`]:
+        [
+          {
+            name: 'id',
+            type: 'text',
+            admin: {
+              hidden: true,
+            },
+            label: 'ID',
+          },
+        ],
+      [`${schemaPath}.lexical_internal_feature.blocks.lexical_inline_blocks.dynamicDataInstance.fields.blockName`]:
+        [
+          {
+            name: 'blockName',
+            type: 'text',
+            admin: {
+              disabled: true,
+            },
+            label: 'Block Name',
+            required: false,
+          },
+        ],
+      [`${schemaPath}.lexical_internal_feature.blocks.lexical_inline_blocks.dynamicDataInstance.fields`]:
+        [
+          {
+            type: 'relationship',
+            relationTo: 'richTextDataInstances',
+            name: 'dataInstance',
+            label: 'Data instance',
+            required: true,
+            admin: {},
+          },
+          {
+            name: 'id',
+            type: 'text',
+            admin: {
+              hidden: true,
+            },
+            label: 'ID',
+          },
+          {
+            name: 'blockName',
+            type: 'text',
+            admin: {
+              disabled: true,
+            },
+            label: 'Block Name',
+            required: false,
+          },
+        ],
+      [`${schemaPath}.lexical_internal_feature.blocks.lexical_inline_blocks.dynamicDataInstance`]: [
+        {
+          name: 'lexical_inline_blocks_dynamicDataInstance',
+          type: 'blocks',
+          blocks: [
+            {
+              slug: 'dynamicDataInstance',
+              fields: [
+                {
+                  type: 'relationship',
+                  relationTo: 'richTextDataInstances',
+                  name: 'dataInstance',
+                  label: 'Data instance',
+                  required: true,
+                  admin: {},
+                },
+                {
+                  name: 'id',
+                  type: 'text',
+                  admin: {
+                    hidden: true,
+                  },
+                  label: 'ID',
+                },
+                {
+                  name: 'blockName',
+                  type: 'text',
+                  admin: {
+                    disabled: true,
+                  },
+                  label: 'Block Name',
+                  required: false,
+                },
+              ],
+              labels: {
+                singular: 'Dynamic Data Instance',
+                plural: 'Dynamic Data Instances',
+              },
+            },
+          ],
         },
       ],
     },
