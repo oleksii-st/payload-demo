@@ -1528,11 +1528,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@payloadcms/richtext-lexical@npm:3.5.0":
-  version: 3.5.0
-  resolution: "@payloadcms/richtext-lexical@npm:3.5.0"
+"@payloadcms/richtext-lexical@npm:3.7.0":
+  version: 3.7.0
+  resolution: "@payloadcms/richtext-lexical@npm:3.7.0"
   dependencies:
     "@lexical/headless": "npm:0.20.0"
+    "@lexical/html": "npm:0.20.0"
     "@lexical/link": "npm:0.20.0"
     "@lexical/list": "npm:0.20.0"
     "@lexical/mark": "npm:0.20.0"
@@ -1540,8 +1541,8 @@ __metadata:
     "@lexical/rich-text": "npm:0.20.0"
     "@lexical/selection": "npm:0.20.0"
     "@lexical/utils": "npm:0.20.0"
-    "@payloadcms/translations": "npm:3.5.0"
-    "@payloadcms/ui": "npm:3.5.0"
+    "@payloadcms/translations": "npm:3.7.0"
+    "@payloadcms/ui": "npm:3.7.0"
     "@types/uuid": "npm:10.0.0"
     acorn: "npm:8.12.1"
     bson-objectid: "npm:2.0.4"
@@ -1558,6 +1559,7 @@ __metadata:
     "@faceless-ui/modal": 3.0.0-beta.2
     "@faceless-ui/scroll-info": 2.0.0-beta.0
     "@lexical/headless": 0.20.0
+    "@lexical/html": 0.20.0
     "@lexical/link": 0.20.0
     "@lexical/list": 0.20.0
     "@lexical/mark": 0.20.0
@@ -1566,12 +1568,12 @@ __metadata:
     "@lexical/selection": 0.20.0
     "@lexical/table": 0.20.0
     "@lexical/utils": 0.20.0
-    "@payloadcms/next": 3.5.0
+    "@payloadcms/next": 3.7.0
     lexical: 0.20.0
-    payload: 3.5.0
+    payload: 3.7.0
     react: ^19.0.0 || ^19.0.0-rc-65a56d0e-20241020
     react-dom: ^19.0.0 || ^19.0.0-rc-65a56d0e-20241020
-  checksum: 10c0/3cd2141e1ca0d1ba3f718db404dc6507cc6743e735de6fcc1ba613ad240c39c9ea2af2c9266d95bbbf482f39247a97da344a3dae770b08816467cda76db41d27
+  checksum: 10c0/578ee0283ecfe36418957539b41f297c2e5f03556ea216db638078ec978ba4b9c480adf9c255fba8c729b81c5823398a62d3b340d89cdb9186a8884fa05dc1c7
   languageName: node
   linkType: hard
 
@@ -1593,6 +1595,15 @@ __metadata:
   dependencies:
     date-fns: "npm:4.1.0"
   checksum: 10c0/e6d92326d568d69acea256118e688e8e54230bd127b4d1a94692f54658df7611533ad82e6892998d1e9b3bb6795fa69ca2a5b4e890f8a55d12d8dac5c85c4cc0
+  languageName: node
+  linkType: hard
+
+"@payloadcms/translations@npm:3.7.0":
+  version: 3.7.0
+  resolution: "@payloadcms/translations@npm:3.7.0"
+  dependencies:
+    date-fns: "npm:4.1.0"
+  checksum: 10c0/589d20275fc18cca1c41fbeeaaaef4b501d728fb808ea13e44f7e83d5459ff6ebc72b74f8df00c4a269e574bfead1bf093713e86e402db4fa085c574ef3d2cf1
   languageName: node
   linkType: hard
 
@@ -1628,6 +1639,41 @@ __metadata:
     react: ^19.0.0 || ^19.0.0-rc-65a56d0e-20241020
     react-dom: ^19.0.0 || ^19.0.0-rc-65a56d0e-20241020
   checksum: 10c0/df0a422d7f68ae92bb2649a51a2676576a8d40fdb9bfabba7af1bf7e8f37f857ca9b3410759a5fd60470b3ca3392cf90b600384b468a07e00433b157c2b44eb3
+  languageName: node
+  linkType: hard
+
+"@payloadcms/ui@npm:3.7.0":
+  version: 3.7.0
+  resolution: "@payloadcms/ui@npm:3.7.0"
+  dependencies:
+    "@dnd-kit/core": "npm:6.0.8"
+    "@dnd-kit/sortable": "npm:7.0.2"
+    "@faceless-ui/modal": "npm:3.0.0-beta.2"
+    "@faceless-ui/scroll-info": "npm:2.0.0-beta.0"
+    "@faceless-ui/window-info": "npm:3.0.0-beta.0"
+    "@monaco-editor/react": "npm:4.6.0"
+    "@payloadcms/translations": "npm:3.7.0"
+    body-scroll-lock: "npm:4.0.0-beta.0"
+    bson-objectid: "npm:2.0.4"
+    date-fns: "npm:4.1.0"
+    dequal: "npm:2.0.3"
+    md5: "npm:2.3.0"
+    object-to-formdata: "npm:4.5.1"
+    qs-esm: "npm:7.0.2"
+    react-datepicker: "npm:7.5.0"
+    react-image-crop: "npm:10.1.8"
+    react-select: "npm:5.8.3"
+    scheduler: "npm:0.25.0"
+    sonner: "npm:^1.7.0"
+    ts-essentials: "npm:10.0.3"
+    use-context-selector: "npm:2.0.0"
+    uuid: "npm:10.0.0"
+  peerDependencies:
+    next: ^15.0.0
+    payload: 3.7.0
+    react: ^19.0.0 || ^19.0.0-rc-65a56d0e-20241020
+    react-dom: ^19.0.0 || ^19.0.0-rc-65a56d0e-20241020
+  checksum: 10c0/a6e361a51c5a7994bf747dde9a69a8f59f55dad9c34e67e26243e4876a6c88b87485d4f766314fc192fa98ee4dd9a0ca34249f238ca61e1d92e7de3ba3905ac3
   languageName: node
   linkType: hard
 
@@ -6298,7 +6344,7 @@ __metadata:
     "@payloadcms/plugin-nested-docs": "npm:3.5.0"
     "@payloadcms/plugin-redirects": "npm:3.5.0"
     "@payloadcms/plugin-seo": "npm:3.5.0"
-    "@payloadcms/richtext-lexical": "npm:3.5.0"
+    "@payloadcms/richtext-lexical": "npm:3.7.0"
     "@payloadcms/storage-vercel-blob": "npm:3.5.0"
     "@tailwindcss/typography": "npm:^0.5.15"
     "@types/escape-html": "npm:^1.0.4"

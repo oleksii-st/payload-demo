@@ -30,7 +30,7 @@
     "@payloadcms/plugin-nested-docs": "3.5.0",
     "@payloadcms/plugin-redirects": "3.5.0",
     "@payloadcms/plugin-seo": "3.5.0",
-    "@payloadcms/richtext-lexical": "3.5.0",
+    "@payloadcms/richtext-lexical": "3.7.0",
     "@payloadcms/storage-vercel-blob": "3.5.0",
     "@tailwindcss/typography": "^0.5.15",
     "@types/escape-html": "^1.0.4",
