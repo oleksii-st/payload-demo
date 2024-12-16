@@ -55,7 +55,7 @@
     "@types/node": "^22.10.1",
     "@types/react": "19.0.1",
     "eslint": "^9.16.0",
-    "eslint-config-next": "^15.0.4",
+    "eslint-config-next": "^15.1.0",
     "eslint-plugin-import": "^2.31.0",
     "eslint-plugin-react": "^7.37.2",
     "globals": "^15.13.0",
