@@ -1596,6 +1596,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@payloadcms/translations@npm:3.7.0":
+  version: 3.7.0
+  resolution: "@payloadcms/translations@npm:3.7.0"
+  dependencies:
+    date-fns: "npm:4.1.0"
+  checksum: 10c0/589d20275fc18cca1c41fbeeaaaef4b501d728fb808ea13e44f7e83d5459ff6ebc72b74f8df00c4a269e574bfead1bf093713e86e402db4fa085c574ef3d2cf1
+  languageName: node
+  linkType: hard
+
 "@payloadcms/ui@npm:3.5.0":
   version: 3.5.0
   resolution: "@payloadcms/ui@npm:3.5.0"
@@ -2872,10 +2881,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"dataloader@npm:2.2.2":
-  version: 2.2.2
-  resolution: "dataloader@npm:2.2.2"
-  checksum: 10c0/125ec69f821478cf7c6b4360095db6cab939fe57876a0d2060c428091a8deee7152345189923b71a6afa694aaec463779f34b585317164016fd6f54f52cd94ba
+"dataloader@npm:2.2.3":
+  version: 2.2.3
+  resolution: "dataloader@npm:2.2.3"
+  checksum: 10c0/9b9a056fbc863ca86da87d59e053e871e263b4966aa4d55e40d61a65e96815fae5530ca220629064ca5f8e3000c0c4ec93292e170c38ff393fb34256b4d7c1aa
   languageName: node
   linkType: hard
 
@@ -6320,7 +6329,7 @@ __metadata:
     lexical: "npm:0.20.0"
     lint-staged: "npm:^15.2.11"
     next: "npm:15.0.4"
-    payload: "npm:3.5.0"
+    payload: "npm:3.7.0"
     prettier: "npm:^3.4.2"
     react: "npm:19.0.0"
     react-dom: "npm:19.0.0"
@@ -6332,20 +6341,20 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"payload@npm:3.5.0":
-  version: 3.5.0
-  resolution: "payload@npm:3.5.0"
+"payload@npm:3.7.0":
+  version: 3.7.0
+  resolution: "payload@npm:3.7.0"
   dependencies:
     "@monaco-editor/react": "npm:4.6.0"
     "@next/env": "npm:^15.0.0"
-    "@payloadcms/translations": "npm:3.5.0"
+    "@payloadcms/translations": "npm:3.7.0"
     "@types/busboy": "npm:1.5.4"
     ajv: "npm:8.17.1"
     bson-objectid: "npm:2.0.4"
     ci-info: "npm:^4.0.0"
     console-table-printer: "npm:2.12.1"
     croner: "npm:9.0.0"
-    dataloader: "npm:2.2.2"
+    dataloader: "npm:2.2.3"
     deepmerge: "npm:4.3.1"
     file-type: "npm:19.3.0"
     get-tsconfig: "npm:4.8.1"
@@ -6367,7 +6376,7 @@ __metadata:
     graphql: ^16.8.1
   bin:
     payload: bin.js
-  checksum: 10c0/82ca1c29f0fbe1d60b933c40dfd2f8952e0ce71b7a800d9047bb3e3d429801da1d62c297e049e4b097bdc3cde9df32f931e0040f898850a9bb9a63134af43b5b
+  checksum: 10c0/c71866025ead8118ad607520e6af8b73f051962703245cefef60fe399e090f9c0d6ccc35b06d7e6e76e2fa7485b09ea94d1405a437e822120365170d2539562f
   languageName: node
   linkType: hard
 
