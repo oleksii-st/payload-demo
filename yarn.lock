@@ -1505,12 +1505,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@payloadcms/plugin-redirects@npm:3.7.0":
-  version: 3.7.0
-  resolution: "@payloadcms/plugin-redirects@npm:3.7.0"
+"@payloadcms/plugin-redirects@npm:3.8.0":
+  version: 3.8.0
+  resolution: "@payloadcms/plugin-redirects@npm:3.8.0"
   peerDependencies:
-    payload: 3.7.0
-  checksum: 10c0/e7580ede02d12938c067fe965f8909494b51ccda2f388d2531ac1f10d1b677cb7b5ee03be666725202add44a93acd4a1a1346321147b122617ba8da8a47a726a
+    payload: 3.8.0
+  checksum: 10c0/93240d7bb40a2a93cadb114f92adbd54cb36d52d2bd656c040eacda4459b68150304252c7bd0b20009d874cc7c9f133e16fdc18c5a668d05d5e79ec0667eb1ca
   languageName: node
   linkType: hard
 
@@ -6314,7 +6314,7 @@ __metadata:
     "@payloadcms/live-preview-react": "npm:3.5.0"
     "@payloadcms/next": "npm:3.5.0"
     "@payloadcms/plugin-nested-docs": "npm:3.8.0"
-    "@payloadcms/plugin-redirects": "npm:3.7.0"
+    "@payloadcms/plugin-redirects": "npm:3.8.0"
     "@payloadcms/plugin-seo": "npm:3.5.0"
     "@payloadcms/richtext-lexical": "npm:3.5.0"
     "@payloadcms/storage-vercel-blob": "npm:3.7.0"
