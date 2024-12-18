@@ -1528,11 +1528,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@payloadcms/richtext-lexical@npm:3.5.0":
-  version: 3.5.0
-  resolution: "@payloadcms/richtext-lexical@npm:3.5.0"
+"@payloadcms/richtext-lexical@npm:3.8.0":
+  version: 3.8.0
+  resolution: "@payloadcms/richtext-lexical@npm:3.8.0"
   dependencies:
     "@lexical/headless": "npm:0.20.0"
+    "@lexical/html": "npm:0.20.0"
     "@lexical/link": "npm:0.20.0"
     "@lexical/list": "npm:0.20.0"
     "@lexical/mark": "npm:0.20.0"
@@ -1540,8 +1541,8 @@ __metadata:
     "@lexical/rich-text": "npm:0.20.0"
     "@lexical/selection": "npm:0.20.0"
     "@lexical/utils": "npm:0.20.0"
-    "@payloadcms/translations": "npm:3.5.0"
-    "@payloadcms/ui": "npm:3.5.0"
+    "@payloadcms/translations": "npm:3.8.0"
+    "@payloadcms/ui": "npm:3.8.0"
     "@types/uuid": "npm:10.0.0"
     acorn: "npm:8.12.1"
     bson-objectid: "npm:2.0.4"
@@ -1558,6 +1559,7 @@ __metadata:
     "@faceless-ui/modal": 3.0.0-beta.2
     "@faceless-ui/scroll-info": 2.0.0-beta.0
     "@lexical/headless": 0.20.0
+    "@lexical/html": 0.20.0
     "@lexical/link": 0.20.0
     "@lexical/list": 0.20.0
     "@lexical/mark": 0.20.0
@@ -1566,12 +1568,12 @@ __metadata:
     "@lexical/selection": 0.20.0
     "@lexical/table": 0.20.0
     "@lexical/utils": 0.20.0
-    "@payloadcms/next": 3.5.0
+    "@payloadcms/next": 3.8.0
     lexical: 0.20.0
-    payload: 3.5.0
+    payload: 3.8.0
     react: ^19.0.0 || ^19.0.0-rc-65a56d0e-20241020
     react-dom: ^19.0.0 || ^19.0.0-rc-65a56d0e-20241020
-  checksum: 10c0/3cd2141e1ca0d1ba3f718db404dc6507cc6743e735de6fcc1ba613ad240c39c9ea2af2c9266d95bbbf482f39247a97da344a3dae770b08816467cda76db41d27
+  checksum: 10c0/32dac470741324dd2d3cc6a45b1441c21e831c7f04571b4949b93cc91b6e9116c0a0c77045fcee143d805a892fc17b9dbbc77089a6ef39f7aad9204452481b97
   languageName: node
   linkType: hard
 
@@ -1602,6 +1604,15 @@ __metadata:
   dependencies:
     date-fns: "npm:4.1.0"
   checksum: 10c0/589d20275fc18cca1c41fbeeaaaef4b501d728fb808ea13e44f7e83d5459ff6ebc72b74f8df00c4a269e574bfead1bf093713e86e402db4fa085c574ef3d2cf1
+  languageName: node
+  linkType: hard
+
+"@payloadcms/translations@npm:3.8.0":
+  version: 3.8.0
+  resolution: "@payloadcms/translations@npm:3.8.0"
+  dependencies:
+    date-fns: "npm:4.1.0"
+  checksum: 10c0/073ec57aa065a7cb79e86dfc0bc067609ea73ae9b49e5cc8856257f336409f7c3c4ff670db1e955da01d8d624377738024d8dcaebabf8f49bb3e39b1b909d0a5
   languageName: node
   linkType: hard
 
@@ -1637,6 +1648,41 @@ __metadata:
     react: ^19.0.0 || ^19.0.0-rc-65a56d0e-20241020
     react-dom: ^19.0.0 || ^19.0.0-rc-65a56d0e-20241020
   checksum: 10c0/df0a422d7f68ae92bb2649a51a2676576a8d40fdb9bfabba7af1bf7e8f37f857ca9b3410759a5fd60470b3ca3392cf90b600384b468a07e00433b157c2b44eb3
+  languageName: node
+  linkType: hard
+
+"@payloadcms/ui@npm:3.8.0":
+  version: 3.8.0
+  resolution: "@payloadcms/ui@npm:3.8.0"
+  dependencies:
+    "@dnd-kit/core": "npm:6.0.8"
+    "@dnd-kit/sortable": "npm:7.0.2"
+    "@faceless-ui/modal": "npm:3.0.0-beta.2"
+    "@faceless-ui/scroll-info": "npm:2.0.0-beta.0"
+    "@faceless-ui/window-info": "npm:3.0.0-beta.0"
+    "@monaco-editor/react": "npm:4.6.0"
+    "@payloadcms/translations": "npm:3.8.0"
+    body-scroll-lock: "npm:4.0.0-beta.0"
+    bson-objectid: "npm:2.0.4"
+    date-fns: "npm:4.1.0"
+    dequal: "npm:2.0.3"
+    md5: "npm:2.3.0"
+    object-to-formdata: "npm:4.5.1"
+    qs-esm: "npm:7.0.2"
+    react-datepicker: "npm:7.5.0"
+    react-image-crop: "npm:10.1.8"
+    react-select: "npm:5.9.0"
+    scheduler: "npm:0.25.0"
+    sonner: "npm:^1.7.0"
+    ts-essentials: "npm:10.0.3"
+    use-context-selector: "npm:2.0.0"
+    uuid: "npm:10.0.0"
+  peerDependencies:
+    next: ^15.0.0
+    payload: 3.8.0
+    react: ^19.0.0 || ^19.0.0-rc-65a56d0e-20241020
+    react-dom: ^19.0.0 || ^19.0.0-rc-65a56d0e-20241020
+  checksum: 10c0/6ef31b239f4e5c77f7bf1b97f6f520a546ea31e5ef6aa5ebb990dbdab677031c0426b5a119cc471cb393854feffc9b8f45a5f814dd9026be8c2cceb761a50b5f
   languageName: node
   linkType: hard
 
@@ -6316,7 +6362,7 @@ __metadata:
     "@payloadcms/plugin-nested-docs": "npm:3.5.0"
     "@payloadcms/plugin-redirects": "npm:3.5.0"
     "@payloadcms/plugin-seo": "npm:3.5.0"
-    "@payloadcms/richtext-lexical": "npm:3.5.0"
+    "@payloadcms/richtext-lexical": "npm:3.8.0"
     "@payloadcms/storage-vercel-blob": "npm:3.7.0"
     "@tailwindcss/typography": "npm:^0.5.15"
     "@types/escape-html": "npm:^1.0.4"
@@ -6847,6 +6893,26 @@ __metadata:
     react: ^16.8.0 || ^17.0.0 || ^18.0.0
     react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
   checksum: 10c0/25aaf0ad964a31dcf991be8b9eb478f94b2ff5dfd2e74a894f692c6dec9247f6ded6258fbf875984d2ada5aeb0ee742b85c6a94f58fae89112e913526cfd0577
+  languageName: node
+  linkType: hard
+
+"react-select@npm:5.9.0":
+  version: 5.9.0
+  resolution: "react-select@npm:5.9.0"
+  dependencies:
+    "@babel/runtime": "npm:^7.12.0"
+    "@emotion/cache": "npm:^11.4.0"
+    "@emotion/react": "npm:^11.8.1"
+    "@floating-ui/dom": "npm:^1.0.1"
+    "@types/react-transition-group": "npm:^4.4.0"
+    memoize-one: "npm:^6.0.0"
+    prop-types: "npm:^15.6.0"
+    react-transition-group: "npm:^4.3.0"
+    use-isomorphic-layout-effect: "npm:^1.2.0"
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
+    react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
+  checksum: 10c0/f21f18ca41a8c866ab69f9c65253e86dcc5323477bbfc729bf6aa9d897e04e27cfffd13c07f10b70dc554e15ad1d238c1283e05e457bf4ead8526a1dd7fbc8b0
   languageName: node
   linkType: hard
 
@@ -8136,6 +8202,18 @@ __metadata:
     "@types/react":
       optional: true
   checksum: 10c0/d8deea8b85e55ac6daba237a889630bfdbf0ebf60e9e22b6a78a78c26fabe6025e04ada7abef1e444e6786227d921e648b2707db8b3564daf757264a148a6e23
+  languageName: node
+  linkType: hard
+
+"use-isomorphic-layout-effect@npm:^1.2.0":
+  version: 1.2.0
+  resolution: "use-isomorphic-layout-effect@npm:1.2.0"
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
+  peerDependenciesMeta:
+    "@types/react":
+      optional: true
+  checksum: 10c0/2e4bdee68d65893b37e716ebdcc111550775189c80e662eda87d6f5b54dc431d3383a18914ea01a893ee5478902a878012713eaebcacbb6611ab88c463accb83
   languageName: node
   linkType: hard
 
