@@ -29,7 +29,9 @@ export interface Config {
     users: UsersSelect<false> | UsersSelect<true>;
     richTextDataInstances: RichTextDataInstancesSelect<false> | RichTextDataInstancesSelect<true>;
     redirects: RedirectsSelect<false> | RedirectsSelect<true>;
-    'payload-locked-documents': PayloadLockedDocumentsSelect<false> | PayloadLockedDocumentsSelect<true>;
+    'payload-locked-documents':
+      | PayloadLockedDocumentsSelect<false>
+      | PayloadLockedDocumentsSelect<true>;
     'payload-preferences': PayloadPreferencesSelect<false> | PayloadPreferencesSelect<true>;
     'payload-migrations': PayloadMigrationsSelect<false> | PayloadMigrationsSelect<true>;
   };
@@ -394,90 +396,10 @@ export interface PagesSelect<T extends boolean = true> {
   layout?:
     | T
     | {
-        hero?:
-          | T
-          | {
-              image?: T;
-              heading?: T;
-              description?: T;
-              sectionLayout?:
-                | T
-                | {
-                    hideSection?: T;
-                    backgroundColor?: T;
-                    paddingTop?: T;
-                    paddingBottom?: T;
-                    breakpoints?:
-                      | T
-                      | {
-                          minWidth?: T;
-                          paddingTop?: T;
-                          paddingBottom?: T;
-                          id?: T;
-                        };
-                  };
-              id?: T;
-              blockName?: T;
-            };
-        grid?:
-          | T
-          | {
-              heading?: T;
-              images?:
-                | T
-                | {
-                    icon?: T;
-                    id?: T;
-                  };
-              sectionLayout?:
-                | T
-                | {
-                    hideSection?: T;
-                    backgroundColor?: T;
-                    paddingTop?: T;
-                    paddingBottom?: T;
-                    breakpoints?:
-                      | T
-                      | {
-                          minWidth?: T;
-                          paddingTop?: T;
-                          paddingBottom?: T;
-                          id?: T;
-                        };
-                  };
-              id?: T;
-              blockName?: T;
-            };
-        richText?:
-          | T
-          | {
-              content?: T;
-              sectionLayout?:
-                | T
-                | {
-                    hideSection?: T;
-                    backgroundColor?: T;
-                    paddingTop?: T;
-                    paddingBottom?: T;
-                    breakpoints?:
-                      | T
-                      | {
-                          minWidth?: T;
-                          paddingTop?: T;
-                          paddingBottom?: T;
-                          id?: T;
-                        };
-                  };
-              id?: T;
-              blockName?: T;
-            };
-        reusableContentBlock?:
-          | T
-          | {
-              reusableContent?: T;
-              id?: T;
-              blockName?: T;
-            };
+        hero?: T | HeroSelect<T>;
+        grid?: T | GridSelect<T>;
+        richText?: T | RichtextSelect<T>;
+        reusableContentBlock?: T | ReusableContentBlockSelect<T>;
       };
   disableIndex?: T;
   slug?: T;
@@ -503,6 +425,71 @@ export interface PagesSelect<T extends boolean = true> {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "Hero_select".
+ */
+export interface HeroSelect<T extends boolean = true> {
+  image?: T;
+  heading?: T;
+  description?: T;
+  sectionLayout?: T | SectionLayoutSelect<T>;
+  id?: T;
+  blockName?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "sectionLayout_select".
+ */
+export interface SectionLayoutSelect<T extends boolean = true> {
+  hideSection?: T;
+  backgroundColor?: T;
+  paddingTop?: T;
+  paddingBottom?: T;
+  breakpoints?:
+    | T
+    | {
+        minWidth?: T;
+        paddingTop?: T;
+        paddingBottom?: T;
+        id?: T;
+      };
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "Grid_select".
+ */
+export interface GridSelect<T extends boolean = true> {
+  heading?: T;
+  images?:
+    | T
+    | {
+        icon?: T;
+        id?: T;
+      };
+  sectionLayout?: T | SectionLayoutSelect<T>;
+  id?: T;
+  blockName?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "Richtext_select".
+ */
+export interface RichtextSelect<T extends boolean = true> {
+  content?: T;
+  sectionLayout?: T | SectionLayoutSelect<T>;
+  id?: T;
+  blockName?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "ReusableContentBlock_select".
+ */
+export interface ReusableContentBlockSelect<T extends boolean = true> {
+  reusableContent?: T;
+  id?: T;
+  blockName?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "reusable-content_select".
  */
 export interface ReusableContentSelect<T extends boolean = true> {
@@ -510,83 +497,9 @@ export interface ReusableContentSelect<T extends boolean = true> {
   layout?:
     | T
     | {
-        hero?:
-          | T
-          | {
-              image?: T;
-              heading?: T;
-              description?: T;
-              sectionLayout?:
-                | T
-                | {
-                    hideSection?: T;
-                    backgroundColor?: T;
-                    paddingTop?: T;
-                    paddingBottom?: T;
-                    breakpoints?:
-                      | T
-                      | {
-                          minWidth?: T;
-                          paddingTop?: T;
-                          paddingBottom?: T;
-                          id?: T;
-                        };
-                  };
-              id?: T;
-              blockName?: T;
-            };
-        grid?:
-          | T
-          | {
-              heading?: T;
-              images?:
-                | T
-                | {
-                    icon?: T;
-                    id?: T;
-                  };
-              sectionLayout?:
-                | T
-                | {
-                    hideSection?: T;
-                    backgroundColor?: T;
-                    paddingTop?: T;
-                    paddingBottom?: T;
-                    breakpoints?:
-                      | T
-                      | {
-                          minWidth?: T;
-                          paddingTop?: T;
-                          paddingBottom?: T;
-                          id?: T;
-                        };
-                  };
-              id?: T;
-              blockName?: T;
-            };
-        richText?:
-          | T
-          | {
-              content?: T;
-              sectionLayout?:
-                | T
-                | {
-                    hideSection?: T;
-                    backgroundColor?: T;
-                    paddingTop?: T;
-                    paddingBottom?: T;
-                    breakpoints?:
-                      | T
-                      | {
-                          minWidth?: T;
-                          paddingTop?: T;
-                          paddingBottom?: T;
-                          id?: T;
-                        };
-                  };
-              id?: T;
-              blockName?: T;
-            };
+        hero?: T | HeroSelect<T>;
+        grid?: T | GridSelect<T>;
+        richText?: T | RichtextSelect<T>;
       };
   updatedAt?: T;
   createdAt?: T;
@@ -789,16 +702,7 @@ export interface FooterSelect<T extends boolean = true> {
         navItems?:
           | T
           | {
-              link?:
-                | T
-                | {
-                    type?: T;
-                    newTab?: T;
-                    disableIndex?: T;
-                    reference?: T;
-                    url?: T;
-                    label?: T;
-                  };
+              link?: T | LinkSelect<T>;
               id?: T;
             };
         id?: T;
@@ -807,6 +711,18 @@ export interface FooterSelect<T extends boolean = true> {
   updatedAt?: T;
   createdAt?: T;
   globalType?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "Link_select".
+ */
+export interface LinkSelect<T extends boolean = true> {
+  type?: T;
+  newTab?: T;
+  disableIndex?: T;
+  reference?: T;
+  url?: T;
+  label?: T;
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema

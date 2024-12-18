@@ -21,7 +21,7 @@ const rewriteFieldDefaults = (
 
     const defaultValueFromOverrides = overrideDefaults[field.name as keyof SectionLayout];
     if (defaultValueFromOverrides !== undefined) {
-      if (field.type !== 'ui') {
+      if (field.type !== 'ui' && defaultValueFromOverrides) {
         field.defaultValue = defaultValueFromOverrides;
       }
     }
