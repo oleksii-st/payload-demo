@@ -108,4 +108,4 @@ yarn format
 
 ## Package Manager
 
-This project uses Yarn 4.5.1. Please do not use npm or older versions of Yarn to maintain consistency.
+This project uses Yarn 4 Please do not use npm or older versions of Yarn to maintain consistency.
