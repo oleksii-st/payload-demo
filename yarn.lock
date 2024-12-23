@@ -1402,9 +1402,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@payloadcms/graphql@npm:3.8.0":
-  version: 3.8.0
-  resolution: "@payloadcms/graphql@npm:3.8.0"
+"@payloadcms/graphql@npm:3.11.0":
+  version: 3.11.0
+  resolution: "@payloadcms/graphql@npm:3.11.0"
   dependencies:
     graphql-scalars: "npm:1.22.2"
     pluralize: "npm:8.0.0"
@@ -1412,10 +1412,10 @@ __metadata:
     tsx: "npm:4.19.2"
   peerDependencies:
     graphql: ^16.8.1
-    payload: 3.8.0
+    payload: 3.11.0
   bin:
     payload-graphql: bin.js
-  checksum: 10c0/e2154d70ee7a669e2474dab8e8e1ff38353e0eda7bd91f68aa7f06492fdb3330735899d21fe5e23d6b8546c72c7e54c6b140e1d33e723b37eb314b3f1c431135
+  checksum: 10c0/7ff9e59d45687cacf7ef0e32aaa0f951efbf1408968a6b7383e4cf4434f735337d1ba957529e77aeebeef9fea7483279a5fff82e18f67d27a8e90166facaa432
   languageName: node
   linkType: hard
 
@@ -1438,14 +1438,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@payloadcms/next@npm:3.8.0":
-  version: 3.8.0
-  resolution: "@payloadcms/next@npm:3.8.0"
+"@payloadcms/next@npm:3.11.0":
+  version: 3.11.0
+  resolution: "@payloadcms/next@npm:3.11.0"
   dependencies:
     "@dnd-kit/core": "npm:6.0.8"
-    "@payloadcms/graphql": "npm:3.8.0"
-    "@payloadcms/translations": "npm:3.8.0"
-    "@payloadcms/ui": "npm:3.8.0"
+    "@payloadcms/graphql": "npm:3.11.0"
+    "@payloadcms/translations": "npm:3.11.0"
+    "@payloadcms/ui": "npm:3.11.0"
     busboy: "npm:^1.6.0"
     file-type: "npm:19.3.0"
     graphql-http: "npm:^1.22.0"
@@ -1460,8 +1460,8 @@ __metadata:
   peerDependencies:
     graphql: ^16.8.1
     next: ^15.0.0
-    payload: 3.8.0
-  checksum: 10c0/3ff72fa374982f3f229c842456dd33a2c905c798bcc9eb5a0f09b7c4667420ab1477dd971580bd07e1717492589b98bf41b7ba4fc6d8a98c637f339fb6c979de
+    payload: 3.11.0
+  checksum: 10c0/c52181727e561b421480679da479829d51b4d9fc14123fd8bf5dd110a7e3f004ab4b8b1207b5bdf769883e1fc8dc8b40bef777473a55666df7a3460ec2f9227f
   languageName: node
   linkType: hard
 
@@ -1589,12 +1589,56 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@payloadcms/translations@npm:3.11.0":
+  version: 3.11.0
+  resolution: "@payloadcms/translations@npm:3.11.0"
+  dependencies:
+    date-fns: "npm:4.1.0"
+  checksum: 10c0/dd566cb3f36ef223b319fb226470e5c73bf88cd7c2056d4ed7c259480d0723a5f4ffe76a5fd9f75709a04174ad7b6a3591ae37bc91cff3eecc54f988f3f1732f
+  languageName: node
+  linkType: hard
+
 "@payloadcms/translations@npm:3.8.0":
   version: 3.8.0
   resolution: "@payloadcms/translations@npm:3.8.0"
   dependencies:
     date-fns: "npm:4.1.0"
   checksum: 10c0/073ec57aa065a7cb79e86dfc0bc067609ea73ae9b49e5cc8856257f336409f7c3c4ff670db1e955da01d8d624377738024d8dcaebabf8f49bb3e39b1b909d0a5
+  languageName: node
+  linkType: hard
+
+"@payloadcms/ui@npm:3.11.0":
+  version: 3.11.0
+  resolution: "@payloadcms/ui@npm:3.11.0"
+  dependencies:
+    "@dnd-kit/core": "npm:6.0.8"
+    "@dnd-kit/sortable": "npm:7.0.2"
+    "@faceless-ui/modal": "npm:3.0.0-beta.2"
+    "@faceless-ui/scroll-info": "npm:2.0.0-beta.0"
+    "@faceless-ui/window-info": "npm:3.0.0-beta.0"
+    "@monaco-editor/react": "npm:4.6.0"
+    "@payloadcms/translations": "npm:3.11.0"
+    body-scroll-lock: "npm:4.0.0-beta.0"
+    bson-objectid: "npm:2.0.4"
+    date-fns: "npm:4.1.0"
+    dequal: "npm:2.0.3"
+    md5: "npm:2.3.0"
+    object-to-formdata: "npm:4.5.1"
+    qs-esm: "npm:7.0.2"
+    react-datepicker: "npm:7.5.0"
+    react-image-crop: "npm:10.1.8"
+    react-select: "npm:5.9.0"
+    scheduler: "npm:0.25.0"
+    sonner: "npm:^1.7.0"
+    ts-essentials: "npm:10.0.3"
+    use-context-selector: "npm:2.0.0"
+    uuid: "npm:10.0.0"
+  peerDependencies:
+    next: ^15.0.0
+    payload: 3.11.0
+    react: ^19.0.0 || ^19.0.0-rc-65a56d0e-20241020
+    react-dom: ^19.0.0 || ^19.0.0-rc-65a56d0e-20241020
+  checksum: 10c0/5bca2cd1f0c8be93a8e31fab7b553135b61e51504d961eff949a5650fc532c7142eaa087bd61920bf1041108685ca6ff04997d3fffb39301ab5c5340bd97ad84
   languageName: node
   linkType: hard
 
@@ -6296,7 +6340,7 @@ __metadata:
     "@lexical/table": "npm:0.20.0"
     "@payloadcms/db-mongodb": "npm:3.8.0"
     "@payloadcms/live-preview-react": "npm:3.8.0"
-    "@payloadcms/next": "npm:3.8.0"
+    "@payloadcms/next": "npm:3.11.0"
     "@payloadcms/plugin-nested-docs": "npm:3.8.0"
     "@payloadcms/plugin-redirects": "npm:3.8.0"
     "@payloadcms/plugin-seo": "npm:3.8.0"
