@@ -1514,17 +1514,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@payloadcms/plugin-seo@npm:3.8.0":
-  version: 3.8.0
-  resolution: "@payloadcms/plugin-seo@npm:3.8.0"
+"@payloadcms/plugin-seo@npm:3.11.0":
+  version: 3.11.0
+  resolution: "@payloadcms/plugin-seo@npm:3.11.0"
   dependencies:
-    "@payloadcms/translations": "npm:3.8.0"
-    "@payloadcms/ui": "npm:3.8.0"
+    "@payloadcms/translations": "npm:3.11.0"
+    "@payloadcms/ui": "npm:3.11.0"
   peerDependencies:
-    payload: 3.8.0
+    payload: 3.11.0
     react: ^19.0.0 || ^19.0.0-rc-65a56d0e-20241020
     react-dom: ^19.0.0 || ^19.0.0-rc-65a56d0e-20241020
-  checksum: 10c0/0d2477673a8a6cafeae75f66f63c5009543aaacc9d0352c98a1fd625cae5d8bdffd9e2539575dc410e17299ca8ff077be3fb1c8c8e60228048a981071c403039
+  checksum: 10c0/7b3e54d21f8a64b0c9c70e39f7319043a84a87c70b8734f8da4ac506903f2a079a9ccb762b389de76037406cfcc2066d009be8422f634d1350f8691429511274
   languageName: node
   linkType: hard
 
@@ -1639,41 +1639,6 @@ __metadata:
     react: ^19.0.0 || ^19.0.0-rc-65a56d0e-20241020
     react-dom: ^19.0.0 || ^19.0.0-rc-65a56d0e-20241020
   checksum: 10c0/5bca2cd1f0c8be93a8e31fab7b553135b61e51504d961eff949a5650fc532c7142eaa087bd61920bf1041108685ca6ff04997d3fffb39301ab5c5340bd97ad84
-  languageName: node
-  linkType: hard
-
-"@payloadcms/ui@npm:3.8.0":
-  version: 3.8.0
-  resolution: "@payloadcms/ui@npm:3.8.0"
-  dependencies:
-    "@dnd-kit/core": "npm:6.0.8"
-    "@dnd-kit/sortable": "npm:7.0.2"
-    "@faceless-ui/modal": "npm:3.0.0-beta.2"
-    "@faceless-ui/scroll-info": "npm:2.0.0-beta.0"
-    "@faceless-ui/window-info": "npm:3.0.0-beta.0"
-    "@monaco-editor/react": "npm:4.6.0"
-    "@payloadcms/translations": "npm:3.8.0"
-    body-scroll-lock: "npm:4.0.0-beta.0"
-    bson-objectid: "npm:2.0.4"
-    date-fns: "npm:4.1.0"
-    dequal: "npm:2.0.3"
-    md5: "npm:2.3.0"
-    object-to-formdata: "npm:4.5.1"
-    qs-esm: "npm:7.0.2"
-    react-datepicker: "npm:7.5.0"
-    react-image-crop: "npm:10.1.8"
-    react-select: "npm:5.9.0"
-    scheduler: "npm:0.25.0"
-    sonner: "npm:^1.7.0"
-    ts-essentials: "npm:10.0.3"
-    use-context-selector: "npm:2.0.0"
-    uuid: "npm:10.0.0"
-  peerDependencies:
-    next: ^15.0.0
-    payload: 3.8.0
-    react: ^19.0.0 || ^19.0.0-rc-65a56d0e-20241020
-    react-dom: ^19.0.0 || ^19.0.0-rc-65a56d0e-20241020
-  checksum: 10c0/6ef31b239f4e5c77f7bf1b97f6f520a546ea31e5ef6aa5ebb990dbdab677031c0426b5a119cc471cb393854feffc9b8f45a5f814dd9026be8c2cceb761a50b5f
   languageName: node
   linkType: hard
 
@@ -6343,7 +6308,7 @@ __metadata:
     "@payloadcms/next": "npm:3.11.0"
     "@payloadcms/plugin-nested-docs": "npm:3.8.0"
     "@payloadcms/plugin-redirects": "npm:3.8.0"
-    "@payloadcms/plugin-seo": "npm:3.8.0"
+    "@payloadcms/plugin-seo": "npm:3.11.0"
     "@payloadcms/richtext-lexical": "npm:3.11.0"
     "@payloadcms/storage-vercel-blob": "npm:3.8.0"
     "@tailwindcss/typography": "npm:^0.5.15"
