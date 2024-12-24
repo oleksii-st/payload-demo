@@ -29,9 +29,7 @@ export interface Config {
     users: UsersSelect<false> | UsersSelect<true>;
     richTextDataInstances: RichTextDataInstancesSelect<false> | RichTextDataInstancesSelect<true>;
     redirects: RedirectsSelect<false> | RedirectsSelect<true>;
-    'payload-locked-documents':
-      | PayloadLockedDocumentsSelect<false>
-      | PayloadLockedDocumentsSelect<true>;
+    'payload-locked-documents': PayloadLockedDocumentsSelect<false> | PayloadLockedDocumentsSelect<true>;
     'payload-preferences': PayloadPreferencesSelect<false> | PayloadPreferencesSelect<true>;
     'payload-migrations': PayloadMigrationsSelect<false> | PayloadMigrationsSelect<true>;
   };
@@ -110,6 +108,9 @@ export interface Page {
   meta?: {
     title?: string | null;
     description?: string | null;
+    /**
+     * Maximum upload file size: 12MB. Recommended file size for images is <500KB.
+     */
     image?: (string | null) | Media;
   };
   parent?: (string | null) | Page;
@@ -664,6 +665,9 @@ export interface NotFound {
   meta?: {
     title?: string | null;
     description?: string | null;
+    /**
+     * Maximum upload file size: 12MB. Recommended file size for images is <500KB.
+     */
     image?: (string | null) | Media;
   };
   updatedAt?: string | null;
