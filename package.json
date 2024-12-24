@@ -25,7 +25,7 @@
     "@lexical/rich-text": "0.20.0",
     "@lexical/table": "0.20.0",
     "@payloadcms/db-mongodb": "3.8.0",
-    "@payloadcms/live-preview-react": "3.8.0",
+    "@payloadcms/live-preview-react": "3.11.0",
     "@payloadcms/next": "3.11.0",
     "@payloadcms/plugin-nested-docs": "3.8.0",
     "@payloadcms/plugin-redirects": "3.8.0",
