@@ -31,7 +31,7 @@
     "@payloadcms/plugin-redirects": "3.8.0",
     "@payloadcms/plugin-seo": "3.11.0",
     "@payloadcms/richtext-lexical": "3.11.0",
-    "@payloadcms/storage-vercel-blob": "3.8.0",
+    "@payloadcms/storage-vercel-blob": "3.11.0",
     "@tailwindcss/typography": "^0.5.15",
     "@types/escape-html": "^1.0.4",
     "@types/jsonwebtoken": "^9.0.7",

@@ -1472,9 +1472,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@payloadcms/plugin-cloud-storage@npm:3.8.0":
-  version: 3.8.0
-  resolution: "@payloadcms/plugin-cloud-storage@npm:3.8.0"
+"@payloadcms/plugin-cloud-storage@npm:3.11.0":
+  version: 3.11.0
+  resolution: "@payloadcms/plugin-cloud-storage@npm:3.11.0"
   dependencies:
     find-node-modules: "npm:^2.1.3"
     range-parser: "npm:^1.2.1"
@@ -1485,7 +1485,7 @@ __metadata:
     "@azure/storage-blob": ^12.11.0
     "@google-cloud/storage": ^7.7.0
     "@vercel/blob": ^0.22.3
-    payload: 3.8.0
+    payload: 3.11.0
   peerDependenciesMeta:
     "@aws-sdk/client-s3":
       optional: true
@@ -1499,7 +1499,7 @@ __metadata:
       optional: true
     "@vercel/blob":
       optional: true
-  checksum: 10c0/362ce205275451c8d586b215598b94edfa1642c5d7f567027f996c7966dc44381c583a17e12be1ae5987b4a5df66ae7d40c861311725be6859704ecb02ea2962
+  checksum: 10c0/4977d5a3da9ecec0768f9c2798993d4c0e56527e3b518801dcb0818bf8da5e512b290880cfd8b0f369394c6ea03f950632d945edff2629a10a3ea13ebf91598b
   languageName: node
   linkType: hard
 
@@ -1584,15 +1584,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@payloadcms/storage-vercel-blob@npm:3.8.0":
-  version: 3.8.0
-  resolution: "@payloadcms/storage-vercel-blob@npm:3.8.0"
+"@payloadcms/storage-vercel-blob@npm:3.11.0":
+  version: 3.11.0
+  resolution: "@payloadcms/storage-vercel-blob@npm:3.11.0"
   dependencies:
-    "@payloadcms/plugin-cloud-storage": "npm:3.8.0"
+    "@payloadcms/plugin-cloud-storage": "npm:3.11.0"
     "@vercel/blob": "npm:^0.22.3"
   peerDependencies:
-    payload: 3.8.0
-  checksum: 10c0/44a0ba888eddda859cc3fba38b7f4868753bdb5dbe0488567332c145cf2d5ef6ec3d7dc7ab4c76978e63ceacf59b127ec4e57cf3dc54aa23602b992a81178cfd
+    payload: 3.11.0
+  checksum: 10c0/b0fb7fee451babac70b20a306289cafe679454023662297e864998e992ef28b6ad7974efd53aa5e1809d2efd30cf67bd75d1b8c84a0e8d298a15e1b6222f838e
   languageName: node
   linkType: hard
 
@@ -6317,7 +6317,7 @@ __metadata:
     "@payloadcms/plugin-redirects": "npm:3.8.0"
     "@payloadcms/plugin-seo": "npm:3.11.0"
     "@payloadcms/richtext-lexical": "npm:3.11.0"
-    "@payloadcms/storage-vercel-blob": "npm:3.8.0"
+    "@payloadcms/storage-vercel-blob": "npm:3.11.0"
     "@tailwindcss/typography": "npm:^0.5.15"
     "@types/escape-html": "npm:^1.0.4"
     "@types/jsonwebtoken": "npm:^9.0.7"
