@@ -976,6 +976,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@lexical/clipboard@npm:0.22.0":
+  version: 0.22.0
+  resolution: "@lexical/clipboard@npm:0.22.0"
+  dependencies:
+    "@lexical/html": "npm:0.22.0"
+    "@lexical/list": "npm:0.22.0"
+    "@lexical/selection": "npm:0.22.0"
+    "@lexical/utils": "npm:0.22.0"
+    lexical: "npm:0.22.0"
+  checksum: 10c0/c70587d1d1aa972efdbe45c618979e79ed3561ee7191354c0a64811ddcf85273ceb80b03225deb097345fc8e7e38a36a1bf4fff8473854222c4755904bbd009f
+  languageName: node
+  linkType: hard
+
 "@lexical/code@npm:0.20.0":
   version: 0.20.0
   resolution: "@lexical/code@npm:0.20.0"
@@ -1053,6 +1066,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@lexical/html@npm:0.22.0":
+  version: 0.22.0
+  resolution: "@lexical/html@npm:0.22.0"
+  dependencies:
+    "@lexical/selection": "npm:0.22.0"
+    "@lexical/utils": "npm:0.22.0"
+    lexical: "npm:0.22.0"
+  checksum: 10c0/2d69417927b877341820d4c0cb4dcdf8aecea64b3c55d414811637f55547ae031ef8196589428001b52243b85fd831599d706cf04e835e18af26c8cfb7cf8671
+  languageName: node
+  linkType: hard
+
 "@lexical/link@npm:0.20.0":
   version: 0.20.0
   resolution: "@lexical/link@npm:0.20.0"
@@ -1070,6 +1094,16 @@ __metadata:
     "@lexical/utils": "npm:0.20.0"
     lexical: "npm:0.20.0"
   checksum: 10c0/4f9861262988fb49bf6bc1f8e8b362102de0466435f573fc5a749b5fb79ffed2b9272987a14d59f53f430332136bd80c5b01c0da407711821100c13b4914b5a2
+  languageName: node
+  linkType: hard
+
+"@lexical/list@npm:0.22.0":
+  version: 0.22.0
+  resolution: "@lexical/list@npm:0.22.0"
+  dependencies:
+    "@lexical/utils": "npm:0.22.0"
+    lexical: "npm:0.22.0"
+  checksum: 10c0/547df6e0880635e4fedff891aa6e467b37ff66976bacbbe95026a78aa9895762a33dd849639101a35522bb3b812ccb500967795de8b24deed0ce14ef663cd87a
   languageName: node
   linkType: hard
 
@@ -1180,6 +1214,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@lexical/selection@npm:0.22.0":
+  version: 0.22.0
+  resolution: "@lexical/selection@npm:0.22.0"
+  dependencies:
+    lexical: "npm:0.22.0"
+  checksum: 10c0/be5d5a862c2cc2519c9aea4ac71ff110330906b8d6f88b71051413697755089a942677a51c38063fba915d39b581ac5733074fe3642c37c6926f09de38c7fdd5
+  languageName: node
+  linkType: hard
+
 "@lexical/table@npm:0.20.0":
   version: 0.20.0
   resolution: "@lexical/table@npm:0.20.0"
@@ -1188,6 +1231,17 @@ __metadata:
     "@lexical/utils": "npm:0.20.0"
     lexical: "npm:0.20.0"
   checksum: 10c0/1c848c514603f08e821f9a320fc73d4b9df99810d6db3ff16f36f8d37152003bfa16f9694eb87dc9f006a08084ff953e0146bf0bcc84c1e301f2064e4712b646
+  languageName: node
+  linkType: hard
+
+"@lexical/table@npm:0.22.0":
+  version: 0.22.0
+  resolution: "@lexical/table@npm:0.22.0"
+  dependencies:
+    "@lexical/clipboard": "npm:0.22.0"
+    "@lexical/utils": "npm:0.22.0"
+    lexical: "npm:0.22.0"
+  checksum: 10c0/7f57f73be4509031d43d2e07152a9fbe588880932c0082d763ca2e0d0134351476ec4aa61e31e1e8cf6cda9b83390450aa4008c43ecfeb4b267f36e73e771a13
   languageName: node
   linkType: hard
 
@@ -1209,6 +1263,18 @@ __metadata:
     "@lexical/table": "npm:0.20.0"
     lexical: "npm:0.20.0"
   checksum: 10c0/1e451ebf9f9f86ee7b5f4f034b4260a10aedb29a58546076f1dedc2b3b74d2f3fd0e01c7533108cfb13eb392b8ba875e200f1db60a9f2dc55871c89bef33dc8d
+  languageName: node
+  linkType: hard
+
+"@lexical/utils@npm:0.22.0":
+  version: 0.22.0
+  resolution: "@lexical/utils@npm:0.22.0"
+  dependencies:
+    "@lexical/list": "npm:0.22.0"
+    "@lexical/selection": "npm:0.22.0"
+    "@lexical/table": "npm:0.22.0"
+    lexical: "npm:0.22.0"
+  checksum: 10c0/555e454cd82cfe9514c45a0f83da76eb1793a36fa63bc60c90d1e55e298de8054734b10391c768d1aa6796c009def60e10529264a4fff3195f7b77133bb52dd0
   languageName: node
   linkType: hard
 
@@ -5080,6 +5146,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"lexical@npm:0.22.0":
+  version: 0.22.0
+  resolution: "lexical@npm:0.22.0"
+  checksum: 10c0/c8e84b7f45bd8bf4ca19391efe06fbcab31587c600d03b2f91d1ce573d87e28ee921d2a48a83e78c4fb15d140e89e8ca1236d0356161f7d517c71bc6f7b199d4
+  languageName: node
+  linkType: hard
+
 "lilconfig@npm:^3.0.0, lilconfig@npm:^3.1.3, lilconfig@npm:~3.1.3":
   version: 3.1.3
   resolution: "lilconfig@npm:3.1.3"
@@ -6342,7 +6415,7 @@ __metadata:
     "@eslint/js": "npm:^9.17.0"
     "@faceless-ui/modal": "npm:^3.0.0-beta.2"
     "@faceless-ui/scroll-info": "npm:2.0.0-beta.0"
-    "@lexical/list": "npm:0.20.0"
+    "@lexical/list": "npm:0.22.0"
     "@lexical/rich-text": "npm:0.20.0"
     "@lexical/table": "npm:0.20.0"
     "@payloadcms/db-mongodb": "npm:3.11.0"
