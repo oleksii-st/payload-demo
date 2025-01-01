@@ -29,7 +29,7 @@
     "@payloadcms/next": "3.11.0",
     "@payloadcms/plugin-nested-docs": "3.11.0",
     "@payloadcms/plugin-redirects": "3.11.0",
-    "@payloadcms/plugin-seo": "3.11.0",
+    "@payloadcms/plugin-seo": "3.12.0",
     "@payloadcms/richtext-lexical": "3.11.0",
     "@payloadcms/storage-vercel-blob": "3.11.0",
     "@tailwindcss/typography": "^0.5.15",
