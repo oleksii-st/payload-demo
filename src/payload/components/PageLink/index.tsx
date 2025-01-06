@@ -8,7 +8,7 @@ const PageLink = () => {
   const breadcrumbsLength = fields.breadcrumbs.value as number;
   const pagePath = fields[`breadcrumbs.${breadcrumbsLength - 1}.url`]?.value;
   const path = pagePath === '/home' ? '/' : pagePath;
-  const url = `${process.env.NEXT_PUBLIC_APP_URL}${path}`;
+  const url = `${process.env.NEXT_PUBLIC_SITEMAP_URL}${path}`;
 
   return (
     <div className="field-type text" style={{ marginTop: '16px' }}>
