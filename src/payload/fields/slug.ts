@@ -1,22 +1,23 @@
-import { deepMerge, Field } from 'payload';
+import { Field } from 'payload';
 
 import formatSlug from '@/utils/formatSlug';
 
-type Slug = (fieldToUse?: string, overrides?: Partial<Field>) => Field;
+type Slug = (fieldToUse?: string) => Field;
 
-export const slugField: Slug = (fieldToUse = 'title', overrides = {}) =>
-  deepMerge<Field, Partial<Field>>(
-    {
-      name: 'slug',
-      label: 'Slug',
-      type: 'text',
-      index: true,
-      admin: {
-        position: 'sidebar',
-      },
-      hooks: {
-        beforeValidate: [formatSlug(fieldToUse)],
+export const slugField: Slug = (fieldToUse = 'title') => {
+  return {
+    name: 'slug',
+    label: 'Slug',
+    type: 'text',
+    index: true,
+    admin: {
+      position: 'sidebar',
+      components: {
+        afterInput: '@/payload/components/PageLink',
       },
     },
-    overrides,
-  );
+    hooks: {
+      beforeValidate: [formatSlug(fieldToUse)],
+    },
+  } as Field;
+};

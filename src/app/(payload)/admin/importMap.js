@@ -27,6 +27,7 @@ import { RscEntryLexicalCell as RscEntryLexicalCell_44fe37237e0ebf4470c9990d8cb7
 
 import { default as default_eaf0325d509b572e61f4a8e0b5a4d8f7 } from '@/payload/components/ColorPicker/';
 import { default as default_1a5e66e681ed270d6475628247af7d06 } from '@/payload/components/InlineRichText/';
+import { default as default_fa9c143d04f978935319bfd55ba198fc } from '@/payload/components/PageLink';
 import { default as default_0306300b891cef473b72ed8544be34b3 } from '@/payload/components/RichTextDataInstancesDescription/';
 
 export const importMap = {
@@ -76,6 +77,7 @@ export const importMap = {
     IndentFeatureClient_e70f5e05f09f93e00b997edb1ef0c864,
   '@payloadcms/richtext-lexical/client#SubscriptFeatureClient':
     SubscriptFeatureClient_e70f5e05f09f93e00b997edb1ef0c864,
+  '@/payload/components/PageLink#default': default_fa9c143d04f978935319bfd55ba198fc,
   '@payloadcms/plugin-seo/client#OverviewComponent':
     OverviewComponent_a8a977ebc872c5d5ea7ee689724c0860,
   '@payloadcms/plugin-seo/client#MetaTitleComponent':
