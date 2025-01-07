@@ -26,7 +26,7 @@
     "@lexical/table": "0.20.0",
     "@payloadcms/db-mongodb": "3.12.0",
     "@payloadcms/live-preview-react": "3.14.0",
-    "@payloadcms/next": "3.12.0",
+    "@payloadcms/next": "3.14.0",
     "@payloadcms/plugin-nested-docs": "3.12.0",
     "@payloadcms/plugin-redirects": "3.12.0",
     "@payloadcms/plugin-seo": "3.12.0",
