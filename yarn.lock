@@ -1402,9 +1402,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@payloadcms/graphql@npm:3.12.0":
-  version: 3.12.0
-  resolution: "@payloadcms/graphql@npm:3.12.0"
+"@payloadcms/graphql@npm:3.14.0":
+  version: 3.14.0
+  resolution: "@payloadcms/graphql@npm:3.14.0"
   dependencies:
     graphql-scalars: "npm:1.22.2"
     pluralize: "npm:8.0.0"
@@ -1412,10 +1412,10 @@ __metadata:
     tsx: "npm:4.19.2"
   peerDependencies:
     graphql: ^16.8.1
-    payload: 3.12.0
+    payload: 3.14.0
   bin:
     payload-graphql: bin.js
-  checksum: 10c0/a201bced76610f2aee487f7e5da8220424987523f5a96747c3c827bbd4ccea4fa65bd39578f9dac944ff1734cf9667938e8feeef4ad29b18e9f0788234b0ee94
+  checksum: 10c0/7656fb861ad70970bf91deefdf1e8e9f7fdbf9138e3a1563c3f973b579770cdedc746bc427f19026897d891444bafce2425175372a84afc90e6f1b433d3ce837
   languageName: node
   linkType: hard
 
@@ -1438,14 +1438,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@payloadcms/next@npm:3.12.0":
-  version: 3.12.0
-  resolution: "@payloadcms/next@npm:3.12.0"
+"@payloadcms/next@npm:3.14.0":
+  version: 3.14.0
+  resolution: "@payloadcms/next@npm:3.14.0"
   dependencies:
     "@dnd-kit/core": "npm:6.0.8"
-    "@payloadcms/graphql": "npm:3.12.0"
-    "@payloadcms/translations": "npm:3.12.0"
-    "@payloadcms/ui": "npm:3.12.0"
+    "@payloadcms/graphql": "npm:3.14.0"
+    "@payloadcms/translations": "npm:3.14.0"
+    "@payloadcms/ui": "npm:3.14.0"
     busboy: "npm:^1.6.0"
     file-type: "npm:19.3.0"
     graphql-http: "npm:^1.22.0"
@@ -1460,8 +1460,8 @@ __metadata:
   peerDependencies:
     graphql: ^16.8.1
     next: ^15.0.0
-    payload: 3.12.0
-  checksum: 10c0/43f27368bb32262df48a591f5c787223b57c447d5561b9b0949289bc6445eee8c16959fedf6e72ccd9d9d1b9c2172907b38cf6e51d546bf77ab97f2f0131c79a
+    payload: 3.14.0
+  checksum: 10c0/56b549b639ad10f9ba0be3f683d2e3a248b2e69b6ed703f6641d211f35ce850f48b02515c605c0c401d7d77b2187a641008b42955c3d95bc7c49083a2ff36d26
   languageName: node
   linkType: hard
 
@@ -6382,7 +6382,7 @@ __metadata:
     "@lexical/table": "npm:0.20.0"
     "@payloadcms/db-mongodb": "npm:3.14.0"
     "@payloadcms/live-preview-react": "npm:3.14.0"
-    "@payloadcms/next": "npm:3.12.0"
+    "@payloadcms/next": "npm:3.14.0"
     "@payloadcms/plugin-nested-docs": "npm:3.12.0"
     "@payloadcms/plugin-redirects": "npm:3.12.0"
     "@payloadcms/plugin-seo": "npm:3.12.0"
