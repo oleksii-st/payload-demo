@@ -1386,9 +1386,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@payloadcms/db-mongodb@npm:3.12.0":
-  version: 3.12.0
-  resolution: "@payloadcms/db-mongodb@npm:3.12.0"
+"@payloadcms/db-mongodb@npm:3.14.0":
+  version: 3.14.0
+  resolution: "@payloadcms/db-mongodb@npm:3.14.0"
   dependencies:
     http-status: "npm:1.6.2"
     mongoose: "npm:8.8.3"
@@ -1397,8 +1397,8 @@ __metadata:
     prompts: "npm:2.4.2"
     uuid: "npm:10.0.0"
   peerDependencies:
-    payload: 3.12.0
-  checksum: 10c0/ae16acdc9badd016387e404f76307789d66044622bd691c8638eeaf0e57b16a1558d5d56942379edb46b84f026f9be1071845be55330b467858690c7e367e517
+    payload: 3.14.0
+  checksum: 10c0/f82573a97dd5cf15a080574be2cb702cac5b63c23ee8acc0d805ee196d8c1b6d02b2d62548520bfcb33eda808af16b0dd86d937d2d0e89dcb9d5d17a5a24a89b
   languageName: node
   linkType: hard
 
@@ -6380,7 +6380,7 @@ __metadata:
     "@lexical/list": "npm:0.20.0"
     "@lexical/rich-text": "npm:0.20.0"
     "@lexical/table": "npm:0.20.0"
-    "@payloadcms/db-mongodb": "npm:3.12.0"
+    "@payloadcms/db-mongodb": "npm:3.14.0"
     "@payloadcms/live-preview-react": "npm:3.14.0"
     "@payloadcms/next": "npm:3.12.0"
     "@payloadcms/plugin-nested-docs": "npm:3.12.0"
