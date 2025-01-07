@@ -1509,9 +1509,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@payloadcms/richtext-lexical@npm:3.12.0":
-  version: 3.12.0
-  resolution: "@payloadcms/richtext-lexical@npm:3.12.0"
+"@payloadcms/richtext-lexical@npm:3.14.0":
+  version: 3.14.0
+  resolution: "@payloadcms/richtext-lexical@npm:3.14.0"
   dependencies:
     "@lexical/headless": "npm:0.20.0"
     "@lexical/html": "npm:0.20.0"
@@ -1522,8 +1522,8 @@ __metadata:
     "@lexical/rich-text": "npm:0.20.0"
     "@lexical/selection": "npm:0.20.0"
     "@lexical/utils": "npm:0.20.0"
-    "@payloadcms/translations": "npm:3.12.0"
-    "@payloadcms/ui": "npm:3.12.0"
+    "@payloadcms/translations": "npm:3.14.0"
+    "@payloadcms/ui": "npm:3.14.0"
     "@types/uuid": "npm:10.0.0"
     acorn: "npm:8.12.1"
     bson-objectid: "npm:2.0.4"
@@ -1550,12 +1550,12 @@ __metadata:
     "@lexical/selection": 0.20.0
     "@lexical/table": 0.20.0
     "@lexical/utils": 0.20.0
-    "@payloadcms/next": 3.12.0
+    "@payloadcms/next": 3.14.0
     lexical: 0.20.0
-    payload: 3.12.0
+    payload: 3.14.0
     react: ^19.0.0 || ^19.0.0-rc-65a56d0e-20241020
     react-dom: ^19.0.0 || ^19.0.0-rc-65a56d0e-20241020
-  checksum: 10c0/139b3001c85603cd7a55fe77de2ea035c977084fee12957a4ab5b2e2b2fd2ffeca8caeff22da0b47875314fd2db402342739d5a3c2bc6d0c2a1d5535e87aa475
+  checksum: 10c0/61066faab96d8e4193e6306a00259c24951c68dfd22550ec8c7264141fe0ca839ad3b5b5f6f0911f5287cef825d88a60415046aba05da133bff35f94a46e850d
   languageName: node
   linkType: hard
 
@@ -1577,6 +1577,15 @@ __metadata:
   dependencies:
     date-fns: "npm:4.1.0"
   checksum: 10c0/0445d8b728da78698a56bf50437aeea92264f8669ede6694b310098d5d40476e6d7aecaf5282092af310b9548b079ee9cee48d22a6656e00c98d25f665db056a
+  languageName: node
+  linkType: hard
+
+"@payloadcms/translations@npm:3.14.0":
+  version: 3.14.0
+  resolution: "@payloadcms/translations@npm:3.14.0"
+  dependencies:
+    date-fns: "npm:4.1.0"
+  checksum: 10c0/1e9223e9bf8a025fd0d5a7a9b5744d8bd68a7666c1817e671be57f61fe698c563a536af1fb469d51fb0cfd91e4c23cc494fd3e0cd2bb04549ec1db149a532458
   languageName: node
   linkType: hard
 
@@ -1612,6 +1621,41 @@ __metadata:
     react: ^19.0.0 || ^19.0.0-rc-65a56d0e-20241020
     react-dom: ^19.0.0 || ^19.0.0-rc-65a56d0e-20241020
   checksum: 10c0/a8390a111124107976fd23e2f3a617c5e49484f821331972a94dfe554008eb09f2a48bbcb84e16e8b7b5529d7b6c88efa2ea2ce056730efb60b22bface753fb0
+  languageName: node
+  linkType: hard
+
+"@payloadcms/ui@npm:3.14.0":
+  version: 3.14.0
+  resolution: "@payloadcms/ui@npm:3.14.0"
+  dependencies:
+    "@dnd-kit/core": "npm:6.0.8"
+    "@dnd-kit/sortable": "npm:7.0.2"
+    "@faceless-ui/modal": "npm:3.0.0-beta.2"
+    "@faceless-ui/scroll-info": "npm:2.0.0-beta.0"
+    "@faceless-ui/window-info": "npm:3.0.0-beta.0"
+    "@monaco-editor/react": "npm:4.6.0"
+    "@payloadcms/translations": "npm:3.14.0"
+    body-scroll-lock: "npm:4.0.0-beta.0"
+    bson-objectid: "npm:2.0.4"
+    date-fns: "npm:4.1.0"
+    dequal: "npm:2.0.3"
+    md5: "npm:2.3.0"
+    object-to-formdata: "npm:4.5.1"
+    qs-esm: "npm:7.0.2"
+    react-datepicker: "npm:7.5.0"
+    react-image-crop: "npm:10.1.8"
+    react-select: "npm:5.9.0"
+    scheduler: "npm:0.25.0"
+    sonner: "npm:^1.7.0"
+    ts-essentials: "npm:10.0.3"
+    use-context-selector: "npm:2.0.0"
+    uuid: "npm:10.0.0"
+  peerDependencies:
+    next: ^15.0.0
+    payload: 3.14.0
+    react: ^19.0.0 || ^19.0.0-rc-65a56d0e-20241020
+    react-dom: ^19.0.0 || ^19.0.0-rc-65a56d0e-20241020
+  checksum: 10c0/15741314708d220b53615c90572e6387a33cfdc44bfe031e92828d280e45bbb85798cb1aa2e06f25c18dbd5654f354bf2dd4034dcfcf07949974866fd27553ae
   languageName: node
   linkType: hard
 
@@ -6342,7 +6386,7 @@ __metadata:
     "@payloadcms/plugin-nested-docs": "npm:3.12.0"
     "@payloadcms/plugin-redirects": "npm:3.12.0"
     "@payloadcms/plugin-seo": "npm:3.12.0"
-    "@payloadcms/richtext-lexical": "npm:3.12.0"
+    "@payloadcms/richtext-lexical": "npm:3.14.0"
     "@payloadcms/storage-vercel-blob": "npm:3.14.0"
     "@tailwindcss/typography": "npm:^0.5.15"
     "@types/escape-html": "npm:^1.0.4"
