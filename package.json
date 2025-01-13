@@ -23,7 +23,7 @@
     "@faceless-ui/scroll-info": "2.0.0-beta.0",
     "@lexical/list": "0.20.0",
     "@lexical/rich-text": "0.20.0",
-    "@lexical/table": "0.20.0",
+    "@lexical/table": "0.23.1",
     "@payloadcms/db-mongodb": "3.14.0",
     "@payloadcms/live-preview-react": "3.14.0",
     "@payloadcms/next": "3.14.0",
