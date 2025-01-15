@@ -1580,6 +1580,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@payloadcms/translations@npm:3.16.0":
+  version: 3.16.0
+  resolution: "@payloadcms/translations@npm:3.16.0"
+  dependencies:
+    date-fns: "npm:4.1.0"
+  checksum: 10c0/37fb617d909e53e03d65c4954af41492ddb5996046d923b8a9e8bf9349140e1cc6c0c43dc5093b0c4c5e92bfc09aa851f4fe9ce1fb1cbf1bb74525f4b7e8f3a2
+  languageName: node
+  linkType: hard
+
 "@payloadcms/ui@npm:3.14.0":
   version: 3.14.0
   resolution: "@payloadcms/ui@npm:3.14.0"
@@ -6321,6 +6330,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"path-to-regexp@npm:6.2.1":
+  version: 6.2.1
+  resolution: "path-to-regexp@npm:6.2.1"
+  checksum: 10c0/7a73811ca703e5c199e5b50b9649ab8f6f7b458a37f7dff9ea338815203f5b1f95fe8cb24d4fdfe2eab5d67ce43562d92534330babca35cdf3231f966adb9360
+  languageName: node
+  linkType: hard
+
 "path-to-regexp@npm:^6.2.1":
   version: 6.2.2
   resolution: "path-to-regexp@npm:6.2.2"
@@ -6373,7 +6389,7 @@ __metadata:
     lexical: "npm:0.20.0"
     lint-staged: "npm:^15.3.0"
     next: "npm:15.1.3"
-    payload: "npm:3.14.0"
+    payload: "npm:3.16.0"
     prettier: "npm:^3.4.2"
     react: "npm:19.0.0"
     react-dom: "npm:19.0.0"
@@ -6385,16 +6401,17 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"payload@npm:3.14.0":
-  version: 3.14.0
-  resolution: "payload@npm:3.14.0"
+"payload@npm:3.16.0":
+  version: 3.16.0
+  resolution: "payload@npm:3.16.0"
   dependencies:
     "@monaco-editor/react": "npm:4.6.0"
     "@next/env": "npm:^15.0.0"
-    "@payloadcms/translations": "npm:3.14.0"
+    "@payloadcms/translations": "npm:3.16.0"
     "@types/busboy": "npm:1.5.4"
     ajv: "npm:8.17.1"
     bson-objectid: "npm:2.0.4"
+    busboy: "npm:^1.6.0"
     ci-info: "npm:^4.0.0"
     console-table-printer: "npm:2.12.1"
     croner: "npm:9.0.0"
@@ -6407,9 +6424,11 @@ __metadata:
     jose: "npm:5.9.6"
     json-schema-to-typescript: "npm:15.0.3"
     minimist: "npm:1.2.8"
+    path-to-regexp: "npm:6.2.1"
     pino: "npm:9.5.0"
     pino-pretty: "npm:13.0.0"
     pluralize: "npm:8.0.0"
+    qs-esm: "npm:7.0.2"
     sanitize-filename: "npm:1.6.3"
     scmp: "npm:2.1.0"
     ts-essentials: "npm:10.0.3"
@@ -6420,7 +6439,7 @@ __metadata:
     graphql: ^16.8.1
   bin:
     payload: bin.js
-  checksum: 10c0/a299a5e338bd382cddeddccafa888a0385138b4096013a8c64551ba216b2b73f9829fbc07d0f6d347ac1b95aa0f0d25ecc6e45a748f485d8cf496be1a03b6514
+  checksum: 10c0/a52acb5d7cc5e9ddfbfdcc3499c8be352519f223a1db5957ccd9c6c2bc88946a32a6956ebe665f2b183e418e9a27225c7cac5a8ae861cda0ef73a81ba6c8f557
   languageName: node
   linkType: hard
 
