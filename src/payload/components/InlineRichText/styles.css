@@ -49,3 +49,7 @@
 .inline-rich-text .editor [data-lexical-editor="true"] > *:not(:first-child) {
     display: none;
 }
+
+.inline-rich-text .insert-paragraph-at-end {
+    display: none;
+}
