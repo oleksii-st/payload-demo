@@ -59,7 +59,6 @@ yarn dev
 - `yarn start` - Start production server
 - `yarn lint` - Run ESLint
 - `yarn lint:fix` - Fix ESLint issues
-- `yarn format` - Format code using Prettier
 - `yarn generate:types` - Generate Payload types
 - `yarn prepare` - Setup Husky git hooks
 - `yarn presets` - Restore database from example
@@ -101,7 +100,6 @@ payload-demo/
 
 ```bash
 yarn lint
-yarn format
 ```
 
 4. Submit a pull request
