@@ -10,8 +10,7 @@
     "preset": "mongorestore -d payload-demo dump/payload-demo",
     "generate:types": "payload generate:types",
     "generate:importmap": "payload generate:importmap",
-    "lint:fix": "eslint . --fix",
-    "format": "prettier --write \"**/*.{ts,tsx,js,json,md}\"",
+    "lint:fix": "prettier --write \"**/*.{ts,tsx,js,json,md}\" && eslint . --fix",
     "prepare": "husky"
   },
   "lint-staged": {
