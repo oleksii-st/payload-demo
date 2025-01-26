@@ -12,7 +12,7 @@ A Next.js project using Payload CMS with TypeScript and modern React.
 ## Prerequisites
 
 - Node.js (LTS version recommended)
-- Yarn 4.5.1
+- PNPM
 - MongoDB (for database)
 
 ## Tech Stack
@@ -33,12 +33,12 @@ A Next.js project using Payload CMS with TypeScript and modern React.
 2. Install dependencies:
 
 ```bash
-yarn install
+pnpm install
 ```
 
 3. Set up your environment variables (create a `.env` file based on `.env.example`)
 
-4. You can use restore database to not fill it manual with `yarn preset`. This step is optional
+4. You can use restore database to not fill it manual with `pnpm preset`. This step is optional
 
 User's credentials for this DB:
 
@@ -49,25 +49,23 @@ User's credentials for this DB:
 5. Run the development server:
 
 ```bash
-yarn dev
+pnpm dev
 ```
 
 ## Available Scripts
 
-- `yarn dev` - Start development server
-- `yarn build` - Build for production
-- `yarn start` - Start production server
-- `yarn lint` - Run ESLint
-- `yarn lint:fix` - Fix ESLint issues
-- `yarn generate:types` - Generate Payload types
-- `yarn prepare` - Setup Husky git hooks
-- `yarn presets` - Restore database from example
+- `pnpm dev` - Start development server
+- `pnpm build` - Build for production
+- `pnpm start` - Start production server
+- `pnpm lint` - Run ESLint
+- `pnpm lint:fix` - Fix ESLint issues
+- `pnpm generate:types` - Generate Payload types
+- `pnpm presets` - Restore database from example
 
 ## Code Quality Tools
 
 - **ESLint** - JavaScript/TypeScript linting
 - **Prettier** - Code formatting
-- **Husky** - Git hooks
 - **lint-staged** - Run linters on staged files
 
 ## Features
@@ -99,11 +97,7 @@ payload-demo/
 3. Run tests and ensure code quality:
 
 ```bash
-yarn lint
+pnpm lint
 ```
 
 4. Submit a pull request
-
-## Package Manager
-
-This project uses Yarn 4 Please do not use npm or older versions of Yarn to maintain consistency.
