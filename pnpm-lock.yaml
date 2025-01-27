@@ -54,8 +54,8 @@ importers:
         specifier: ^1.0.4
         version: 1.0.4
       '@types/jsonwebtoken':
-        specifier: ^9.0.7
-        version: 9.0.7
+        specifier: ^9.0.8
+        version: 9.0.8
       babel-plugin-react-compiler:
         specifier: 0.0.0-experimental-7449567-20240905
         version: 0.0.0-experimental-7449567-20240905
@@ -180,6 +180,10 @@ packages:
 
   '@babel/runtime@7.25.6':
     resolution: {integrity: sha512-VBj9MYyDb9tuLq7yzqjgzt6Q+IBQLrGZfdjOekyEirZPHxXWoTSGUTMrpsfi58Up73d13NfYLv8HT9vmznjzhQ==}
+    engines: {node: '>=6.9.0'}
+
+  '@babel/runtime@7.26.7':
+    resolution: {integrity: sha512-AOPI3D+a8dXnja+iwsUqGRjr1BbZIe771sXdapOtYI531gSqpi92vXivKcq2asu/DFpdl1ceFAKZyRzK2PCVcQ==}
     engines: {node: '>=6.9.0'}
 
   '@babel/template@7.25.0':
@@ -948,8 +952,8 @@ packages:
   '@types/json5@0.0.29':
     resolution: {integrity: sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==}
 
-  '@types/jsonwebtoken@9.0.7':
-    resolution: {integrity: sha512-ugo316mmTYBl2g81zDFnZ7cfxlut3o+/EQdaP7J8QN2kY6lJ22hmQYCK5EHcJHbrW+dkCGSCPgbG8JtYj6qSrg==}
+  '@types/jsonwebtoken@9.0.8':
+    resolution: {integrity: sha512-7fx54m60nLFUVYlxAB1xpe9CBWX2vSrk50Y6ogRJ1v5xxtba7qXTg5BgYDN5dq+yuQQ9HaVlHJyAAt1/mxryFg==}
 
   '@types/lodash@4.17.13':
     resolution: {integrity: sha512-lfx+dftrEZcdBPczf9d0Qv0x+j/rfNCMuC6OcfXmO8gkfeNAY88PgKUbvG56whcN23gc27yenwF6oJZXGFpYxg==}
@@ -957,8 +961,8 @@ packages:
   '@types/mdast@4.0.4':
     resolution: {integrity: sha512-kGaNbPh1k7AFzgpud/gMdvIm5xuECykRR+JnWKQno9TAXVa6WIVCGTPvYGekIDL4uwCZQSYbUxNBSb1aUo79oA==}
 
-  '@types/ms@0.7.34':
-    resolution: {integrity: sha512-nG96G3Wp6acyAgJqGasjODb+acrI7KltPiRxzHPXnP3NgI28bpQDRv53olbqGXbfcgF5aiiHmO3xpwEpS5Ld9g==}
+  '@types/ms@2.1.0':
+    resolution: {integrity: sha512-GsCCIZDE/p3i96vtEqx+7dBUGXrc7zeSK3wwPHIaRThS+9OhWIXRqzs4d6k1SVU8g91DrNRWxWUGhp5KXQb2VA==}
 
   '@types/node@22.10.7':
     resolution: {integrity: sha512-V09KvXxFiutGp6B7XkpaDXlNadZxrzajcY50EuoLIpQ6WWYCSvf19lVIazzfIzQvhUN2HjX12spLojTnhuKlGg==}
@@ -3432,6 +3436,10 @@ snapshots:
     dependencies:
       regenerator-runtime: 0.14.1
 
+  '@babel/runtime@7.26.7':
+    dependencies:
+      regenerator-runtime: 0.14.1
+
   '@babel/template@7.25.0':
     dependencies:
       '@babel/code-frame': 7.24.7
@@ -4262,7 +4270,7 @@ snapshots:
 
   '@types/debug@4.1.12':
     dependencies:
-      '@types/ms': 0.7.34
+      '@types/ms': 2.1.0
 
   '@types/escape-html@1.0.4': {}
 
@@ -4291,8 +4299,9 @@ snapshots:
 
   '@types/json5@0.0.29': {}
 
-  '@types/jsonwebtoken@9.0.7':
+  '@types/jsonwebtoken@9.0.8':
     dependencies:
+      '@types/ms': 2.1.0
       '@types/node': 22.10.7
 
   '@types/lodash@4.17.13': {}
@@ -4301,7 +4310,7 @@ snapshots:
     dependencies:
       '@types/unist': 3.0.3
 
-  '@types/ms@0.7.34': {}
+  '@types/ms@2.1.0': {}
 
   '@types/node@22.10.7':
     dependencies:
@@ -6486,7 +6495,7 @@ snapshots:
 
   react-error-boundary@3.1.4(react@19.0.0):
     dependencies:
-      '@babel/runtime': 7.25.6
+      '@babel/runtime': 7.26.7
       react: 19.0.0
 
   react-error-boundary@4.1.2(react@19.0.0):
