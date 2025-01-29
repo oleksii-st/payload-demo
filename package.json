@@ -29,7 +29,7 @@
     "@payloadcms/storage-vercel-blob": "3.18.0",
     "@tailwindcss/typography": "^0.5.16",
     "@types/escape-html": "^1.0.4",
-    "@types/jsonwebtoken": "^9.0.7",
+    "@types/jsonwebtoken": "^9.0.8",
     "babel-plugin-react-compiler": "0.0.0-experimental-7449567-20240905",
     "clsx": "^2.1.1",
     "escape-html": "^1.0.3",
