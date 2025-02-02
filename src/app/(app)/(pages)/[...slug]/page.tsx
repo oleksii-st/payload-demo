@@ -8,6 +8,7 @@ import { Blocks } from '@/components/Blocks';
 import { PayloadRedirects } from '@/components/PayloadRedirects';
 import { IS_PRODUCTION } from '@/utils/constants';
 import { generateNotFoundMetadata } from '@/utils/generateNotFoundMetadata';
+import { getPageSlug, getPageSlugParts } from '@/utils/getPageSlug';
 import { mergeOpenGraph } from '@/utils/mergeOpenGraph';
 import { robotsNoIndex } from '@/utils/robotsNoIndex';
 
@@ -42,7 +43,7 @@ export async function generateStaticParams() {
   });
 
   return pages.docs.map(({ breadcrumbs }) => ({
-    slug: breadcrumbs?.[breadcrumbs.length - 1]?.url?.replace(/^\/|\/$/g, '').split('/'),
+    slug: getPageSlugParts(breadcrumbs),
   }));
 }
 
@@ -78,7 +79,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 }
 
 function getCanonicalUrl(baseUrl: string, breadcrumbs?: { url: string }[]): string {
-  let url = breadcrumbs?.[breadcrumbs.length - 1]?.url ?? '';
+  let url = getPageSlug(breadcrumbs!);
   url = url === '/home' ? '' : url;
   return `${baseUrl}${url}/`;
 }

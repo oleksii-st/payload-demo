@@ -2,6 +2,7 @@ import configPromise from '@payload-config';
 import { getPayload } from 'payload';
 
 import { IS_PRODUCTION } from '@/utils/constants';
+import { getPageSlug } from '@/utils/getPageSlug';
 import { getCachedRedirects } from '@/utils/getRedirects';
 
 export default async function sitemap() {
@@ -21,7 +22,7 @@ export default async function sitemap() {
 
   const pagesMap = pages.docs
     .map((page) => {
-      let url = page.breadcrumbs?.[page.breadcrumbs?.length - 1]?.url;
+      let url = getPageSlug(page.breadcrumbs);
 
       if (redirects.some((redirect) => redirect.from === url) || page.disableIndex) {
         return null;
