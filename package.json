@@ -20,7 +20,6 @@
     "@lexical/rich-text": "0.21.0",
     "@lexical/table": "0.21.0",
     "@payloadcms/db-mongodb": "^3.20.0",
-    "@payloadcms/ui": "^3.20.0",
     "@payloadcms/live-preview-react": "^3.20.0",
     "@payloadcms/next": "^3.20.0",
     "@payloadcms/plugin-nested-docs": "^3.20.0",
@@ -28,6 +27,7 @@
     "@payloadcms/plugin-seo": "^3.20.0",
     "@payloadcms/richtext-lexical": "^3.20.0",
     "@payloadcms/storage-vercel-blob": "^3.20.0",
+    "@payloadcms/ui": "^3.20.0",
     "@tailwindcss/typography": "^0.5.16",
     "@types/escape-html": "^1.0.4",
     "@types/jsonwebtoken": "^9.0.8",
@@ -48,7 +48,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.19.0",
-    "@types/node": "^22.13.0",
+    "@types/node": "^22.13.1",
     "@types/react": "19.0.8",
     "eslint": "^9.19.0",
     "eslint-config-next": "^15.1.6",
@@ -56,9 +56,9 @@
     "eslint-plugin-react": "^7.37.4",
     "globals": "^15.14.0",
     "lint-staged": "^15.4.3",
-    "tailwindcss": "^4.0.3",
+    "tailwindcss": "^3.4.17",
     "typescript": "^5.7.3",
-    "typescript-eslint": "^8.22.0"
+    "typescript-eslint": "^8.23.0"
   },
-  "packageManager": "pnpm@9.15.4"
+  "packageManager": "pnpm@10.2.0"
 }
