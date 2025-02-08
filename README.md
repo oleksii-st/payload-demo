@@ -60,7 +60,7 @@ pnpm dev
 - `pnpm lint` - Run ESLint
 - `pnpm lint:fix` - Fix ESLint issues
 - `pnpm generate:types` - Generate Payload types
-- `pnpm presets` - Restore database from example
+- `pnpm preset` - Restore database from example
 
 ## Code Quality Tools
 
