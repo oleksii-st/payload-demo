@@ -21,8 +21,8 @@ importers:
         specifier: 0.21.0
         version: 0.21.0
       '@lexical/table':
-        specifier: 0.21.0
-        version: 0.21.0
+        specifier: 0.26.0
+        version: 0.26.0
       '@payloadcms/db-mongodb':
         specifier: ^3.24.0
         version: 3.24.0(payload@3.24.0(graphql@16.10.0)(typescript@5.7.3))
@@ -119,7 +119,7 @@ importers:
         version: 15.1.7(eslint@9.21.0(jiti@1.21.6))(typescript@5.7.3)
       eslint-plugin-import:
         specifier: ^2.31.0
-        version: 2.31.0(@typescript-eslint/parser@8.21.0(eslint@9.21.0(jiti@1.21.6))(typescript@5.7.3))(eslint-import-resolver-typescript@3.6.3)(eslint@9.21.0(jiti@1.21.6))
+        version: 2.31.0(@typescript-eslint/parser@8.25.0(eslint@9.21.0(jiti@1.21.6))(typescript@5.7.3))(eslint@9.21.0(jiti@1.21.6))
       eslint-plugin-react:
         specifier: ^7.37.4
         version: 7.37.4(eslint@9.21.0(jiti@1.21.6))
@@ -661,6 +661,9 @@ packages:
   '@lexical/clipboard@0.21.0':
     resolution: {integrity: sha512-3lNMlMeUob9fcnRXGVieV/lmPbmet/SVWckNTOwzfKrZ/YW5HiiyJrWviLRVf50dGXTbmBGt7K/2pfPYvWCHFA==}
 
+  '@lexical/clipboard@0.26.0':
+    resolution: {integrity: sha512-jv8EeYko15e2iZRjj+Szh6rVgniUSp9qfa7LUwoIfApkRave/Jtap6vUxdNyFfJzOdbTBYFRXzXjm9845zxUsw==}
+
   '@lexical/code@0.21.0':
     resolution: {integrity: sha512-E0DNSFu4I+LMn3ft+UT0Dbntc8ZKjIA0BJj6BDewm0qh3bir40YUf5DkI2lpiFNRF2OpcmmcIxakREeU6avqTA==}
 
@@ -685,11 +688,17 @@ packages:
   '@lexical/html@0.21.0':
     resolution: {integrity: sha512-UGahVsGz8OD7Ya39qwquE+JPStTxCw/uaQrnUNorCM7owtPidO2H+tsilAB3A1GK3ksFGdHeEjBjG0Gf7gOg+Q==}
 
+  '@lexical/html@0.26.0':
+    resolution: {integrity: sha512-kTLFS7pChW9j2XPugCQ8usU56tWBAxgoT3u6QLWlED14B9S3pKFsRaaGsilNfXUnpYs2+wNGwnh8ifjqHPDOpg==}
+
   '@lexical/link@0.21.0':
     resolution: {integrity: sha512-/coktIyRXg8rXz/7uxXsSEfSQYxPIx8CmignAXWYhcyYtCWA0fD2mhEhWwVvHH9ofNzvidclRPYKUnrmUm3z3Q==}
 
   '@lexical/list@0.21.0':
     resolution: {integrity: sha512-WItGlwwNJCS8b6SO1QPKzArShmD+OXQkLbhBcAh+EfpnkvmCW5T5LqY+OfIRmEN1dhDOnwqCY7mXkivWO8o5tw==}
+
+  '@lexical/list@0.26.0':
+    resolution: {integrity: sha512-pSsi64vF0VpiniF9ghP3sURSSripANGSSgTe1H45kltbGKzKrIDi58sujjlziGXstOcFRgsTTqTwnsZTHUEoJA==}
 
   '@lexical/mark@0.21.0':
     resolution: {integrity: sha512-2x/LoHDYPOkZbKHz4qLFWsPywjRv9KggTOtmRazmaNRUG0FpkImJwUbbaKjWQXeESVGpzfL3qNFSAmCWthsc4g==}
@@ -718,14 +727,23 @@ packages:
   '@lexical/selection@0.21.0':
     resolution: {integrity: sha512-4u53bc8zlPPF0rnHjsGQExQ1St8NafsDd70/t1FMw7yvoMtUsKdH7+ap00esLkJOMv45unJD7UOzKRqU1X0sEA==}
 
+  '@lexical/selection@0.26.0':
+    resolution: {integrity: sha512-PM/7VybeaeI1hqiI6yPcmBB20/nKZ3oLMwLnZ3N44mp5Qnz2Ohf8n3/TTpKZnZyGUBQA31LARAwkMhCutm1L2g==}
+
   '@lexical/table@0.21.0':
     resolution: {integrity: sha512-JhylAWcf4qKD4FmxMUt3YzH5zg2+baBr4+/haLZL7178hMvUzJwGIiWk+3hD3phzmW3WrP49uFXzM7DMSCkE8w==}
+
+  '@lexical/table@0.26.0':
+    resolution: {integrity: sha512-slxhQ3CAyKfM+p6QB9Bh/BmMhtI5KnpyBadqqqrIKWVBAog1H/T2/R2nWFG1upBx4DAWAtzTwT2xDlWx462R4w==}
 
   '@lexical/text@0.21.0':
     resolution: {integrity: sha512-ceB4fhYejCoR8ID4uIs0sO/VyQoayRjrRWTIEMvOcQtwUkcyciKRhY0A7f2wVeq/MFStd+ajLLjy4WKYK5zUnA==}
 
   '@lexical/utils@0.21.0':
     resolution: {integrity: sha512-YzsNOAiLkCy6R3DuP18gtseDrzgx+30lFyqRvp5M7mckeYgQElwdfG5biNFDLv7BM9GjSzgU5Cunjycsx6Sjqg==}
+
+  '@lexical/utils@0.26.0':
+    resolution: {integrity: sha512-RRh3Y7wajH2grXl6SpaMW6muJ3Y0maBKNCaJ7OV6v4BQsKlvZzAEzUbiU3Fu2ohY8AfxmgxFjZIKJF5CfOe7IA==}
 
   '@lexical/yjs@0.21.0':
     resolution: {integrity: sha512-AtPhC3pJ92CHz3dWoniSky7+MSK2WSd0xijc76I2qbTeXyeuFfYyhR6gWMg4knuY9Wz3vo9/+dXGdbQIPD8efw==}
@@ -2251,6 +2269,9 @@ packages:
 
   lexical@0.21.0:
     resolution: {integrity: sha512-Dxc5SCG4kB+wF+Rh55ism3SuecOKeOtCtGHFGKd6pj2QKVojtjkxGTQPMt7//2z5rMSue4R+hmRM0pCEZflupA==}
+
+  lexical@0.26.0:
+    resolution: {integrity: sha512-qvcDoeDembWbJfv19k9d5ETK+v2HzSXCN+7wTsLbWyTuyieIiI1GFzK4Dvu/L4VFyXoKCS1I+jIvbBfNDJjycA==}
 
   lib0@0.2.99:
     resolution: {integrity: sha512-vwztYuUf1uf/1zQxfzRfO5yzfNKhTtgOByCruuiQQxWQXnPb8Itaube5ylofcV0oM0aKal9Mv+S1s1Ky0UYP1w==}
@@ -3931,6 +3952,14 @@ snapshots:
       '@lexical/utils': 0.21.0
       lexical: 0.21.0
 
+  '@lexical/clipboard@0.26.0':
+    dependencies:
+      '@lexical/html': 0.26.0
+      '@lexical/list': 0.26.0
+      '@lexical/selection': 0.26.0
+      '@lexical/utils': 0.26.0
+      lexical: 0.26.0
+
   '@lexical/code@0.21.0':
     dependencies:
       '@lexical/utils': 0.21.0
@@ -3972,6 +4001,12 @@ snapshots:
       '@lexical/utils': 0.21.0
       lexical: 0.21.0
 
+  '@lexical/html@0.26.0':
+    dependencies:
+      '@lexical/selection': 0.26.0
+      '@lexical/utils': 0.26.0
+      lexical: 0.26.0
+
   '@lexical/link@0.21.0':
     dependencies:
       '@lexical/utils': 0.21.0
@@ -3981,6 +4016,11 @@ snapshots:
     dependencies:
       '@lexical/utils': 0.21.0
       lexical: 0.21.0
+
+  '@lexical/list@0.26.0':
+    dependencies:
+      '@lexical/utils': 0.26.0
+      lexical: 0.26.0
 
   '@lexical/mark@0.21.0':
     dependencies:
@@ -4050,11 +4090,21 @@ snapshots:
     dependencies:
       lexical: 0.21.0
 
+  '@lexical/selection@0.26.0':
+    dependencies:
+      lexical: 0.26.0
+
   '@lexical/table@0.21.0':
     dependencies:
       '@lexical/clipboard': 0.21.0
       '@lexical/utils': 0.21.0
       lexical: 0.21.0
+
+  '@lexical/table@0.26.0':
+    dependencies:
+      '@lexical/clipboard': 0.26.0
+      '@lexical/utils': 0.26.0
+      lexical: 0.26.0
 
   '@lexical/text@0.21.0':
     dependencies:
@@ -4066,6 +4116,13 @@ snapshots:
       '@lexical/selection': 0.21.0
       '@lexical/table': 0.21.0
       lexical: 0.21.0
+
+  '@lexical/utils@0.26.0':
+    dependencies:
+      '@lexical/list': 0.26.0
+      '@lexical/selection': 0.26.0
+      '@lexical/table': 0.26.0
+      lexical: 0.26.0
 
   '@lexical/yjs@0.21.0(yjs@13.6.23)':
     dependencies:
@@ -5182,7 +5239,7 @@ snapshots:
       is-bun-module: 1.2.1
       is-glob: 4.0.3
     optionalDependencies:
-      eslint-plugin-import: 2.31.0(@typescript-eslint/parser@8.21.0(eslint@9.21.0(jiti@1.21.6))(typescript@5.7.3))(eslint-import-resolver-typescript@3.6.3)(eslint@9.21.0(jiti@1.21.6))
+      eslint-plugin-import: 2.31.0(@typescript-eslint/parser@8.25.0(eslint@9.21.0(jiti@1.21.6))(typescript@5.7.3))(eslint@9.21.0(jiti@1.21.6))
     transitivePeerDependencies:
       - '@typescript-eslint/parser'
       - eslint-import-resolver-node
@@ -5197,6 +5254,16 @@ snapshots:
       eslint: 9.21.0(jiti@1.21.6)
       eslint-import-resolver-node: 0.3.9
       eslint-import-resolver-typescript: 3.6.3(@typescript-eslint/parser@8.21.0(eslint@9.21.0(jiti@1.21.6))(typescript@5.7.3))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.31.0)(eslint@9.21.0(jiti@1.21.6))
+    transitivePeerDependencies:
+      - supports-color
+
+  eslint-module-utils@2.12.0(@typescript-eslint/parser@8.25.0(eslint@9.21.0(jiti@1.21.6))(typescript@5.7.3))(eslint-import-resolver-node@0.3.9)(eslint@9.21.0(jiti@1.21.6)):
+    dependencies:
+      debug: 3.2.7
+    optionalDependencies:
+      '@typescript-eslint/parser': 8.25.0(eslint@9.21.0(jiti@1.21.6))(typescript@5.7.3)
+      eslint: 9.21.0(jiti@1.21.6)
+      eslint-import-resolver-node: 0.3.9
     transitivePeerDependencies:
       - supports-color
 
@@ -5224,6 +5291,35 @@ snapshots:
       tsconfig-paths: 3.15.0
     optionalDependencies:
       '@typescript-eslint/parser': 8.21.0(eslint@9.21.0(jiti@1.21.6))(typescript@5.7.3)
+    transitivePeerDependencies:
+      - eslint-import-resolver-typescript
+      - eslint-import-resolver-webpack
+      - supports-color
+
+  eslint-plugin-import@2.31.0(@typescript-eslint/parser@8.25.0(eslint@9.21.0(jiti@1.21.6))(typescript@5.7.3))(eslint@9.21.0(jiti@1.21.6)):
+    dependencies:
+      '@rtsao/scc': 1.1.0
+      array-includes: 3.1.8
+      array.prototype.findlastindex: 1.2.5
+      array.prototype.flat: 1.3.2
+      array.prototype.flatmap: 1.3.3
+      debug: 3.2.7
+      doctrine: 2.1.0
+      eslint: 9.21.0(jiti@1.21.6)
+      eslint-import-resolver-node: 0.3.9
+      eslint-module-utils: 2.12.0(@typescript-eslint/parser@8.25.0(eslint@9.21.0(jiti@1.21.6))(typescript@5.7.3))(eslint-import-resolver-node@0.3.9)(eslint@9.21.0(jiti@1.21.6))
+      hasown: 2.0.2
+      is-core-module: 2.15.1
+      is-glob: 4.0.3
+      minimatch: 3.1.2
+      object.fromentries: 2.0.8
+      object.groupby: 1.0.3
+      object.values: 1.2.1
+      semver: 6.3.1
+      string.prototype.trimend: 1.0.9
+      tsconfig-paths: 3.15.0
+    optionalDependencies:
+      '@typescript-eslint/parser': 8.25.0(eslint@9.21.0(jiti@1.21.6))(typescript@5.7.3)
     transitivePeerDependencies:
       - eslint-import-resolver-typescript
       - eslint-import-resolver-webpack
@@ -5893,6 +5989,8 @@ snapshots:
       type-check: 0.4.0
 
   lexical@0.21.0: {}
+
+  lexical@0.26.0: {}
 
   lib0@0.2.99:
     dependencies:
