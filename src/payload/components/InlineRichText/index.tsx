@@ -457,6 +457,7 @@ const InlineRichText = ({
   return (
     <div className="inline-rich-text">
       <RichTextField
+        featureClientImportMap={{}}
         path={path}
         schemaPath={schemaPath}
         initialLexicalFormState={{}}
