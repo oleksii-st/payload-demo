@@ -5,9 +5,19 @@ import React from 'react';
 
 const PageLink = () => {
   const [fields] = useAllFormFields();
-  const breadcrumbsLength = fields.breadcrumbs.value as number;
-  const pagePath = fields[`breadcrumbs.${breadcrumbsLength - 1}.url`]?.value;
-  const path = pagePath === '/home' ? '/' : pagePath;
+  const getPath = (): string => {
+    if (!('breadcrumbs' in fields)) {
+      return `/blog/${fields.slug}`;
+    }
+
+    const breadcrumbsLength = fields.breadcrumbs.value as number;
+    const pagePath = fields[`breadcrumbs.${breadcrumbsLength - 1}.url`]?.value;
+    const path = pagePath === '/home' ? '/' : pagePath;
+
+    return path as string;
+  };
+
+  const path = getPath();
   const url = `${process.env.NEXT_PUBLIC_SITEMAP_URL}${path}`;
 
   return (

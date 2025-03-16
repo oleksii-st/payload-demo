@@ -11,6 +11,7 @@ import { buildConfig } from 'payload';
 
 import { Media } from '@/payload/collections/Media';
 import { Pages } from '@/payload/collections/Pages';
+import { Posts } from '@/payload/collections/Posts';
 import { ReusableContent } from '@/payload/collections/ReusableContent';
 import { RichTextDataInstances } from '@/payload/collections/RichTextDataInstances';
 import Users from '@/payload/collections/Users';
@@ -58,14 +59,14 @@ export default buildConfig({
         (feature) => feature.key !== 'relationship' && feature.key !== 'checklist',
       ),
       LinkFeature({
-        enabledCollections: ['pages'],
+        enabledCollections: ['pages', 'posts'],
       }),
       BlocksFeature({
         inlineBlocks: INLINE_BLOCKS,
       }),
     ],
   }),
-  collections: [Media, Pages, ReusableContent, Users, RichTextDataInstances],
+  collections: [Media, Pages, Posts, ReusableContent, Users, RichTextDataInstances],
   globals: [Header, Footer, NotFound, Settings],
   typescript: {
     outputFile: path.resolve(dirname, 'payload-types.ts'),
@@ -77,7 +78,7 @@ export default buildConfig({
   },
   plugins: [
     seoPlugin({
-      collections: ['pages'],
+      collections: ['pages', 'posts'],
       globals: ['notFound'],
       uploadsCollection: 'media',
     }),
