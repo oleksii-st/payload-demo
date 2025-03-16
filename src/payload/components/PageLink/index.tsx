@@ -7,11 +7,22 @@ const PageLink = () => {
   const [fields] = useAllFormFields();
   const getPath = (): string => {
     if (!('breadcrumbs' in fields)) {
-      return `/blog/${fields.slug}`;
+      const slug = fields.slug.value;
+
+      if (!slug) {
+        return '';
+      }
+
+      return `/blog/${slug}`;
     }
 
     const breadcrumbsLength = fields.breadcrumbs.value as number;
     const pagePath = fields[`breadcrumbs.${breadcrumbsLength - 1}.url`]?.value;
+
+    if (!pagePath) {
+      return '';
+    }
+
     const path = pagePath === '/home' ? '/' : pagePath;
 
     return path as string;
@@ -19,6 +30,10 @@ const PageLink = () => {
 
   const path = getPath();
   const url = `${process.env.NEXT_PUBLIC_SITEMAP_URL}${path}`;
+
+  if (!path) {
+    return null;
+  }
 
   return (
     <div className="field-type text" style={{ marginTop: '16px' }}>
