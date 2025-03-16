@@ -1,8 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
 
-import { Button } from './ui/Button';
-
 import { Media } from '@/components/Media';
 import type { Post } from '@/payload-types';
 import { cn } from '@/utils/cn';
@@ -60,10 +58,6 @@ export const PostCard = ({ image, slug, title, content, isFirst }: PostCardProps
         >
           {getTextFromRichText(content).split(/\s+/).slice(0, 30).join(' ')}
         </p>
-
-        <Button href={link} variant="default" size="lg" className="w-full mt-auto">
-          Read more
-        </Button>
       </div>
     </article>
   );
