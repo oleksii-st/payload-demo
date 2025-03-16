@@ -21,5 +21,5 @@ const Page = async () => {
 export default Page;
 
 export async function generateMetadata(): Promise<Metadata> {
-  return generateBlogMetadata();
+  return generateBlogMetadata(1);
 }

@@ -16,7 +16,11 @@ export const BlogTemplate = ({ page = 1, posts, totalPages, title }: BlogTemplat
   return (
     <div className="container break-words">
       <div className="my-6 mb:mt-0">
-        {title && <h1 className="mb-5">{title}</h1>}
+        {title && (
+          <h1 className="mb-5">
+            {title} {page !== 1 && <> - Page {page}</>}
+          </h1>
+        )}
 
         <div className="mb-8">
           <div className={cn('grid grid-cols-1 gap-6', 'sm:grid-cols-3')}>

@@ -28,10 +28,12 @@ export async function generateNotFoundMetadata(): Promise<Metadata> {
   };
 }
 
-export async function generateBlogMetadata(): Promise<Metadata> {
+export async function generateBlogMetadata(page: number = 1): Promise<Metadata> {
   const blog: Blog = (await getCachedGlobal('blog', 2)()) as Blog;
 
-  const title = blog?.meta?.title ?? '';
+  const prefix = page === 1 ? '' : `Page ${page} - `;
+
+  const title = prefix + (blog?.meta?.title ?? '');
   const description = blog?.meta?.description || '';
   const robots = getRobots();
   const ogImage = getOgImage(blog?.meta?.image as string);

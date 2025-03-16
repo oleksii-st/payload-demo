@@ -46,7 +46,7 @@ const getHref = ({ baseUrl, page, searchQuery }: GetHrefArguments): string => {
     return `/search?q=${searchQuery}${pageParam}`;
   }
 
-  return page > 1 ? `${baseUrl}${page}` : baseUrl;
+  return page > 1 ? `${baseUrl}/${page}` : baseUrl;
 };
 
 const PageNumber = ({ page, currentPage, baseUrl, searchQuery }: PageNumberProps) => {
