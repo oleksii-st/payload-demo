@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 
-import { NotFound as NotFoundType } from '@/payload-types';
+import { Blog, NotFound as NotFoundType } from '@/payload-types';
 import { IS_PRODUCTION } from '@/utils/constants';
 import { getCachedGlobal } from '@/utils/getGlobals';
 import { mergeOpenGraph } from '@/utils/mergeOpenGraph';
@@ -22,6 +22,28 @@ export async function generateNotFoundMetadata(): Promise<Metadata> {
       title,
       description,
       url: '/404',
+      images: ogImage ? [{ url: ogImage }] : undefined,
+    }),
+    robots,
+  };
+}
+
+export async function generateBlogMetadata(): Promise<Metadata> {
+  const blog: Blog = (await getCachedGlobal('blog', 2)()) as Blog;
+
+  const title = blog?.meta?.title ?? '';
+  const description = blog?.meta?.description || '';
+  const robots = getRobots();
+  const ogImage = getOgImage(blog?.meta?.image as string);
+
+  return {
+    title,
+    description,
+    alternates: { canonical: '/blog' },
+    openGraph: mergeOpenGraph({
+      title,
+      description,
+      url: '/blog',
       images: ogImage ? [{ url: ogImage }] : undefined,
     }),
     robots,

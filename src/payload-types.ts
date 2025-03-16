@@ -100,12 +100,14 @@ export interface Config {
     footer: Footer;
     notFound: NotFound;
     settings: Settings;
+    blog: Blog;
   };
   globalsSelect: {
     header: HeaderSelect<false> | HeaderSelect<true>;
     footer: FooterSelect<false> | FooterSelect<true>;
     notFound: NotFoundSelect<false> | NotFoundSelect<true>;
     settings: SettingsSelect<false> | SettingsSelect<true>;
+    blog: BlogSelect<false> | BlogSelect<true>;
   };
   locale: null;
   user: User & {
@@ -808,6 +810,24 @@ export interface Settings {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "blog".
+ */
+export interface Blog {
+  id: string;
+  title: string;
+  meta?: {
+    title?: string | null;
+    description?: string | null;
+    /**
+     * Maximum upload file size: 12MB. Recommended file size for images is <500KB.
+     */
+    image?: (string | null) | Media;
+  };
+  updatedAt?: string | null;
+  createdAt?: string | null;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "header_select".
  */
 export interface HeaderSelect<T extends boolean = true> {
@@ -875,6 +895,23 @@ export interface SettingsSelect<T extends boolean = true> {
   container?: T;
   horizontalPaddings?: T;
   horizontalPaddingsDesktop?: T;
+  updatedAt?: T;
+  createdAt?: T;
+  globalType?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "blog_select".
+ */
+export interface BlogSelect<T extends boolean = true> {
+  title?: T;
+  meta?:
+    | T
+    | {
+        title?: T;
+        description?: T;
+        image?: T;
+      };
   updatedAt?: T;
   createdAt?: T;
   globalType?: T;

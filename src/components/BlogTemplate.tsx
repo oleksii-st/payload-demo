@@ -7,12 +7,11 @@ type BlogTemplateProps = {
   posts: Post[];
   page?: number;
   totalPages: number;
+  title?: string;
 };
 
-export const BlogTemplate = ({ page = 1, posts, totalPages }: BlogTemplateProps) => {
+export const BlogTemplate = ({ page = 1, posts, totalPages, title }: BlogTemplateProps) => {
   const baseUrl = '/blog';
-
-  const title = 'Blog'; // To do: add a setting
 
   return (
     <div className="container break-words">
