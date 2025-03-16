@@ -28,7 +28,7 @@ export async function generateNotFoundMetadata(): Promise<Metadata> {
   };
 }
 
-function getRobots(): object {
+export function getRobots(): object {
   return IS_PRODUCTION ? {} : robotsNoIndex;
 }
 
