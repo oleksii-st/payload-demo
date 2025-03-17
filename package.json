@@ -16,7 +16,7 @@
   "dependencies": {
     "@faceless-ui/modal": "3.0.0-beta.2",
     "@faceless-ui/scroll-info": "2.0.0",
-    "@lexical/list": "0.27.1",
+    "@lexical/list": "0.27.2",
     "@lexical/rich-text": "0.27.2",
     "@lexical/table": "0.27.1",
     "@payloadcms/db-mongodb": "^3.28.0",
