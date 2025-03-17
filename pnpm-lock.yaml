@@ -78,8 +78,8 @@ importers:
         specifier: ^9.0.2
         version: 9.0.2
       lexical:
-        specifier: 0.27.1
-        version: 0.27.1
+        specifier: 0.27.2
+        version: 0.27.2
       next:
         specifier: ^15.2.2
         version: 15.2.2(babel-plugin-react-compiler@0.0.0-experimental-7449567-20240905)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.77.4)
