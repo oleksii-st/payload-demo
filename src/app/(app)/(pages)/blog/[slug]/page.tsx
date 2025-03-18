@@ -1,13 +1,14 @@
-// import { Metadata } from 'next';
+import { Metadata } from 'next';
 import { draftMode } from 'next/headers';
-// import { notFound } from 'next/navigation';
+import { notFound } from 'next/navigation';
 
 import { BlogTemplate } from '@/components/BlogTemplate';
 import { PayloadRedirects } from '@/components/PayloadRedirects';
 import { PostTemplate } from '@/components/PostTemplate';
 import { Blog } from '@/payload-types';
-// import { generateBlogMetadata } from '@/utils/generateNotFoundMetadata';
+import { generateBlogMetadata, getOgImage } from '@/utils/generateNotFoundMetadata';
 import { getCachedGlobal } from '@/utils/getGlobals';
+import { mergeOpenGraph } from '@/utils/mergeOpenGraph';
 import { getPost, getPosts } from '@/utils/posts';
 
 type PageProps = {
@@ -41,16 +42,41 @@ const Page = async ({ params }: PageProps) => {
 
 export default Page;
 
-// export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
-//   const { slug } = await params;
-//   const page = parseInt(slug);
-//
-//   if (!page) {
-//     notFound();
-//   }
-//
-//   return generateBlogMetadata(page);
-// }
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+  const { slug } = await params;
+  const page = parseInt(slug);
+  const { isEnabled: draft } = await draftMode();
+
+  if (!page) {
+    const post = await getPost({ slug, draft });
+
+    if (!post) {
+      notFound();
+    }
+
+    const baseUrl = process.env.NEXT_PUBLIC_SITEMAP_URL ?? '';
+
+    const url = `${baseUrl}/blog/${slug}`;
+    const ogImage = getOgImage(post?.meta?.image as string);
+
+    const title = post?.meta?.title ?? '';
+    const description = post?.meta?.description || '';
+
+    return {
+      title,
+      description,
+      alternates: { canonical: url },
+      openGraph: mergeOpenGraph({
+        title,
+        description,
+        url: `/blog/${slug}`,
+        images: ogImage ? [{ url: ogImage }] : undefined,
+      }),
+    };
+  }
+
+  return generateBlogMetadata(page);
+}
 
 export async function generateStaticParams() {
   const { totalPages } = await getPosts();

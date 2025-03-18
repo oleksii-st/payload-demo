@@ -56,7 +56,7 @@ export function getRobots(): object {
   return IS_PRODUCTION ? {} : robotsNoIndex;
 }
 
-function getOgImage(image: string | { url?: string } | undefined): string {
+export function getOgImage(image: string | { url?: string } | undefined): string {
   const baseUrl = process.env.NEXT_PUBLIC_SITEMAP_URL ?? '';
   const imageUrl = typeof image === 'string' ? image : (image?.url ?? '');
   return `${baseUrl}${imageUrl}`;
