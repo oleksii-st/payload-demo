@@ -9,7 +9,7 @@ import { Blog } from '@/payload-types';
 import { generateBlogMetadata, getOgImage } from '@/utils/generateNotFoundMetadata';
 import { getCachedGlobal } from '@/utils/getGlobals';
 import { mergeOpenGraph } from '@/utils/mergeOpenGraph';
-import { getPost, getPosts } from '@/utils/posts';
+import { getAllPosts, getPost, getPosts } from '@/utils/posts';
 
 type PageProps = {
   params: Promise<{ slug: string }>;
@@ -81,7 +81,12 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 export async function generateStaticParams() {
   const { totalPages } = await getPosts();
 
-  return Array.from({ length: totalPages }, (_, i) => ({ slug: `${i + 1}` })).filter(
+  const pages = Array.from({ length: totalPages }, (_, i) => ({ slug: `${i + 1}` })).filter(
     (_, index) => index,
   );
+
+  const allPosts = await getAllPosts();
+  const posts = allPosts.map(({ slug }) => ({ slug: slug as string }));
+
+  return [...pages, ...posts];
 }
