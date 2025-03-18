@@ -16,12 +16,12 @@ export const PostCard = ({ image, slug, title, content, isFirst }: PostCardProps
   const loading = isFirst ? 'eager' : 'lazy';
 
   return (
-    <article className="bg-white dark:bg-gray-800/40 rounded-lg shadow-md overflow-hidden flex flex-col">
+    <article className="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
       <Link
         href={link}
         className={cn(
           'w-full aspect-[4/3] rounded-t-lg overflow-hidden',
-          'focus-visible:outline-0 focus-visible:border-4 focus-visible:border-black dark:focus-visible:border-white',
+          'focus-visible:outline-0 focus-visible:border-4 focus-visible:border-black',
         )}
         style={{ viewTransitionName: `${pageSlug}-image` }}
       >
@@ -44,7 +44,7 @@ export const PostCard = ({ image, slug, title, content, isFirst }: PostCardProps
           <Link
             href={link}
             className={cn(
-              'not-prose dark:text-white block font-bold text-xl text-left text-black mb-2',
+              'not-prose block font-bold text-xl text-left text-black mb-2',
               'hover:underline',
             )}
             style={{ viewTransitionName: `${pageSlug}-title` }}
@@ -53,7 +53,7 @@ export const PostCard = ({ image, slug, title, content, isFirst }: PostCardProps
           </Link>
         </header>
         <p
-          className="text-gray-600 dark:text-gray-300 mb-4 flex-grow max-h-[80px] line-clamp-3"
+          className="text-gray-600 mb-4 flex-grow max-h-[80px] line-clamp-3"
           style={{ viewTransitionName: `${pageSlug}-description` }}
         >
           {getTextFromRichText(content).split(/\s+/).slice(0, 30).join(' ')}
