@@ -68,3 +68,34 @@ export const getAllPosts = async (args?: GetAllPostsArguments): Promise<PostMeta
 
   return posts.docs;
 };
+
+type GetPostArguments = {
+  slug: string;
+  draft?: boolean;
+};
+
+export const getPost = async ({
+  slug,
+  draft = false,
+}: GetPostArguments): Promise<Post | undefined> => {
+  const payload = await getPayload({ config: configPromise });
+  return (
+    (await payload.find({
+      collection: 'posts',
+      draft,
+      limit: 1,
+      where: {
+        ...(!draft
+          ? {
+              _status: {
+                equals: 'published',
+              },
+            }
+          : {}),
+        slug: {
+          equals: slug,
+        },
+      },
+    })) as unknown as { docs: Post[] }
+  ).docs[0];
+};

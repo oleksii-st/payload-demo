@@ -11,7 +11,7 @@ type PostCardProps = Pick<Post, 'title' | 'slug' | 'image' | 'content' | 'publis
 };
 
 export const PostCard = ({ image, slug, title, content, isFirst }: PostCardProps) => {
-  const link = `/${slug}`;
+  const link = `/blog/${slug}`;
   const pageSlug = slug?.split('/').at(-1);
   const loading = isFirst ? 'eager' : 'lazy';
 
