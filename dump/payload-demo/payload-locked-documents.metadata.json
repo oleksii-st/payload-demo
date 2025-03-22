@@ -3,12 +3,6 @@
     { "v": { "$numberInt": "2" }, "key": { "_id": { "$numberInt": "1" } }, "name": "_id_" },
     {
       "v": { "$numberInt": "2" },
-      "key": { "updatedAt": { "$numberInt": "1" } },
-      "name": "updatedAt_1",
-      "background": true
-    },
-    {
-      "v": { "$numberInt": "2" },
       "key": { "document": { "$numberInt": "1" } },
       "name": "document_1",
       "background": true
@@ -24,9 +18,15 @@
       "key": { "createdAt": { "$numberInt": "1" } },
       "name": "createdAt_1",
       "background": true
+    },
+    {
+      "v": { "$numberInt": "2" },
+      "key": { "updatedAt": { "$numberInt": "1" } },
+      "name": "updatedAt_1",
+      "background": true
     }
   ],
-  "uuid": "fbbeadbc771f4dd79f2fcaefcafd8937",
+  "uuid": "ba87683b7364442fb84ae9fb99109bcd",
   "collectionName": "payload-locked-documents",
   "type": "collection"
 }

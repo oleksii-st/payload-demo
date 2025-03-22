@@ -9,6 +9,12 @@
     },
     {
       "v": { "$numberInt": "2" },
+      "key": { "updatedAt": { "$numberInt": "1" } },
+      "name": "updatedAt_1",
+      "background": true
+    },
+    {
+      "v": { "$numberInt": "2" },
       "key": { "slug": { "$numberInt": "1" } },
       "name": "slug_1",
       "background": true
@@ -18,15 +24,9 @@
       "key": { "_status": { "$numberInt": "1" } },
       "name": "_status_1",
       "background": true
-    },
-    {
-      "v": { "$numberInt": "2" },
-      "key": { "updatedAt": { "$numberInt": "1" } },
-      "name": "updatedAt_1",
-      "background": true
     }
   ],
-  "uuid": "9eacbfc0a58d47d5ad40cc7e741e9edf",
-  "collectionName": "pages",
+  "uuid": "2112e00a400e4fc99ec632f94c512179",
+  "collectionName": "posts",
   "type": "collection"
 }
