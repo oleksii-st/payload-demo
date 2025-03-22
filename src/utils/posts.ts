@@ -13,7 +13,7 @@ type GetPostsResult = {
   totalPages: number;
 };
 
-const PAGE_SIZE = 6;
+export const PAGE_SIZE = 6;
 const LIMIT = 100000;
 
 export const getPosts = async (args?: GetPostsArguments): Promise<GetPostsResult> => {
