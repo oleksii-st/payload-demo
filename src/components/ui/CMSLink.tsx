@@ -1,13 +1,13 @@
 import Link from 'next/link';
 import React, { ComponentProps, ReactNode } from 'react';
 
-import { Link as LinkType, Page } from '@/payload-types';
+import { Link as LinkType, Page, Post } from '@/payload-types';
 
 type CMSLinkProps = Omit<ComponentProps<'a'>, 'type'> & LinkType & { children?: ReactNode };
 
 export type GenerateSlugType = {
   type?: LinkType['type'];
-  url?: string;
+  url?: string | null;
   reference?: LinkType['reference'];
 };
 
@@ -32,6 +32,12 @@ const generateHref = (args: GenerateSlugType): string => {
       }
     }
 
+    if (reference.relationTo === 'posts') {
+      const value = reference.value as Post;
+
+      return `/blog/${value.slug}`;
+    }
+
     return `/${reference.relationTo}/${reference.value.slug}`;
   }
 
@@ -48,10 +54,6 @@ export const CMSLink = ({
   children,
   ...rest
 }: CMSLinkProps) => {
-  if (!url) {
-    return null;
-  }
-
   let href = generateHref({ type, url, reference });
 
   if (!href) {

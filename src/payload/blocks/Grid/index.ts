@@ -1,5 +1,6 @@
 import type { Block } from 'payload';
 
+import link from '@/payload/fields/link';
 import { SECTION_LAYOUT } from '@/payload/fields/sectionLayout';
 
 export const Grid: Block = {
@@ -29,6 +30,7 @@ export const Grid: Block = {
           label: 'Icon',
           required: true,
         },
+        link(),
       ],
     },
     SECTION_LAYOUT(),

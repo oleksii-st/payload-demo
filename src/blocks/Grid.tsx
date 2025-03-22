@@ -3,6 +3,7 @@ import React from 'react';
 import { Media } from '@/components/Media';
 import { Section } from '@/components/Section';
 import { SectionHeading } from '@/components/SectionHeading';
+import { CMSLink } from '@/components/ui/CMSLink';
 import { Grid as GridType } from '@/payload-types';
 import { cn } from '@/utils/cn';
 import { Block } from '@/utils/types';
@@ -19,21 +20,25 @@ export const Grid = ({ heading, images, isFirst, sectionLayout }: SocialsProps) 
 
         {!!images?.length && (
           <div className="flex gap-6 flex-wrap items-center">
-            {images.map(({ icon }, index) => {
+            {images.map(({ icon, link }, index) => {
               if (!icon) {
                 return null;
               }
 
+              const image = (
+                <Media
+                  className={cn('m-0 w-full aspect-square rounded-2xl')}
+                  sizes={'(min-width: 576px) 342px, 500px'}
+                  source={icon}
+                  width={500}
+                  height={500}
+                  loading={loading}
+                />
+              );
+
               return (
                 <div key={index} className={cn('w-[calc(50%-12px)]', 'sm:w-[calc(25%-18px)]')}>
-                  <Media
-                    className={cn('m-0 w-full aspect-square rounded-2xl')}
-                    sizes={'(min-width: 576px) 342px, 500px'}
-                    source={icon}
-                    width={500}
-                    height={500}
-                    loading={loading}
-                  />
+                  {link ? <CMSLink {...link}>{image}</CMSLink> : image}
                 </div>
               );
             })}

@@ -68,7 +68,7 @@ const link: LinkType = ({ overrides = {} } = {}) => {
       name: 'reference',
       label: 'Document to link to',
       type: 'relationship',
-      relationTo: ['pages'],
+      relationTo: ['pages', 'posts'],
       required: true,
       maxDepth: 1,
       admin: {

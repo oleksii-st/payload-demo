@@ -255,6 +255,7 @@ export interface Grid {
   images?:
     | {
         icon: string | Media;
+        link?: Link;
         id?: string | null;
       }[]
     | null;
@@ -262,6 +263,63 @@ export interface Grid {
   id?: string | null;
   blockName?: string | null;
   blockType: 'grid';
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "Link".
+ */
+export interface Link {
+  type?: ('reference' | 'custom') | null;
+  newTab?: boolean | null;
+  disableIndex?: boolean | null;
+  reference?:
+    | ({
+        relationTo: 'pages';
+        value: string | Page;
+      } | null)
+    | ({
+        relationTo: 'posts';
+        value: string | Post;
+      } | null);
+  url?: string | null;
+  label?: string | null;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "posts".
+ */
+export interface Post {
+  id: string;
+  title: string;
+  publishedAt?: string | null;
+  image: string | Media;
+  content: {
+    root: {
+      type: string;
+      children: {
+        type: string;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  };
+  slug?: string | null;
+  meta?: {
+    title?: string | null;
+    description?: string | null;
+    /**
+     * Maximum upload file size: 12MB. Recommended file size for images is <500KB.
+     */
+    image?: (string | null) | Media;
+  };
+  updatedAt: string;
+  createdAt: string;
+  _status?: ('draft' | 'published') | null;
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
@@ -308,43 +366,6 @@ export interface ReusableContent {
   layout: (Hero | Grid | Richtext)[];
   updatedAt: string;
   createdAt: string;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "posts".
- */
-export interface Post {
-  id: string;
-  title: string;
-  publishedAt?: string | null;
-  image: string | Media;
-  content: {
-    root: {
-      type: string;
-      children: {
-        type: string;
-        version: number;
-        [k: string]: unknown;
-      }[];
-      direction: ('ltr' | 'rtl') | null;
-      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-      indent: number;
-      version: number;
-    };
-    [k: string]: unknown;
-  };
-  slug?: string | null;
-  meta?: {
-    title?: string | null;
-    description?: string | null;
-    /**
-     * Maximum upload file size: 12MB. Recommended file size for images is <500KB.
-     */
-    image?: (string | null) | Media;
-  };
-  updatedAt: string;
-  createdAt: string;
-  _status?: ('draft' | 'published') | null;
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
@@ -566,11 +587,24 @@ export interface GridSelect<T extends boolean = true> {
     | T
     | {
         icon?: T;
+        link?: T | LinkSelect<T>;
         id?: T;
       };
   sectionLayout?: T | SectionLayoutSelect<T>;
   id?: T;
   blockName?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "Link_select".
+ */
+export interface LinkSelect<T extends boolean = true> {
+  type?: T;
+  newTab?: T;
+  disableIndex?: T;
+  reference?: T;
+  url?: T;
+  label?: T;
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
@@ -750,21 +784,6 @@ export interface Footer {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "Link".
- */
-export interface Link {
-  type?: ('reference' | 'custom') | null;
-  newTab?: boolean | null;
-  disableIndex?: boolean | null;
-  reference?: {
-    relationTo: 'pages';
-    value: string | Page;
-  } | null;
-  url?: string | null;
-  label?: string | null;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "notFound".
  */
 export interface NotFound {
@@ -856,18 +875,6 @@ export interface FooterSelect<T extends boolean = true> {
   updatedAt?: T;
   createdAt?: T;
   globalType?: T;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "Link_select".
- */
-export interface LinkSelect<T extends boolean = true> {
-  type?: T;
-  newTab?: T;
-  disableIndex?: T;
-  reference?: T;
-  url?: T;
-  label?: T;
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
