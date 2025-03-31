@@ -44,7 +44,7 @@
     "next": "^15.2.4",
     "payload": "^3.30.0",
     "prettier": "^3.5.3",
-    "react": "^19.0.0",
+    "react": "^19.1.0",
     "react-dom": "^19.0.0",
     "sharp": "^0.33.5",
     "tailwind-merge": "^3.0.2"
