@@ -18,8 +18,8 @@ importers:
         specifier: 0.29.0
         version: 0.29.0
       '@lexical/rich-text':
-        specifier: 0.28.0
-        version: 0.28.0
+        specifier: 0.29.0
+        version: 0.29.0
       '@lexical/table':
         specifier: 0.29.0
         version: 0.29.0
@@ -749,6 +749,9 @@ packages:
 
   '@lexical/rich-text@0.28.0':
     resolution: {integrity: sha512-y+vUWI+9uFupIb9UvssKU/DKcT9dFUZuQBu7utFkLadxCNyXQHeRjxzjzmvFiM3DBV0guPUDGu5VS5TPnIA+OA==}
+
+  '@lexical/rich-text@0.29.0':
+    resolution: {integrity: sha512-fSKgXGxJUOWo7dwSTUYFVBNNk4pPN8norsZfdmKM1kGDS1/GKuVzlzHLKZ7rQb8RLD5a43p4ifEL+28P+q0Qqg==}
 
   '@lexical/selection@0.28.0':
     resolution: {integrity: sha512-AJDi67Nsexyejzp4dEQSVoPov4P+FJ0t1v6DxUU+YmcvV56QyJQi6ue0i/xd8unr75ZufzLsAC0cDJJCEI7QDA==}
@@ -4296,6 +4299,13 @@ snapshots:
       '@lexical/selection': 0.28.0
       '@lexical/utils': 0.28.0
       lexical: 0.28.0
+
+  '@lexical/rich-text@0.29.0':
+    dependencies:
+      '@lexical/clipboard': 0.29.0
+      '@lexical/selection': 0.29.0
+      '@lexical/utils': 0.29.0
+      lexical: 0.29.0
 
   '@lexical/selection@0.28.0':
     dependencies:
