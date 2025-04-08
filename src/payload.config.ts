@@ -4,6 +4,7 @@ import path from 'path';
 import { mongooseAdapter } from '@payloadcms/db-mongodb';
 import { nestedDocsPlugin } from '@payloadcms/plugin-nested-docs';
 import { redirectsPlugin } from '@payloadcms/plugin-redirects';
+import { searchPlugin } from '@payloadcms/plugin-search';
 import { seoPlugin } from '@payloadcms/plugin-seo';
 import { BlocksFeature, lexicalEditor, LinkFeature } from '@payloadcms/richtext-lexical';
 import { vercelBlobStorage } from '@payloadcms/storage-vercel-blob';
@@ -22,6 +23,7 @@ import { Header } from '@/payload/globals/Header';
 import { NotFound } from '@/payload/globals/NotFound';
 import { Settings } from '@/payload/globals/Settings/Settings';
 import { BASE_URL } from '@/utils/constants';
+import { getTextFromRichText } from '@/utils/getTextFromRichText';
 
 const filename = fileURLToPath(import.meta.url);
 const dirname = path.dirname(filename);
@@ -90,6 +92,25 @@ export default buildConfig({
     }),
     redirectsPlugin({
       collections: ['pages'],
+    }),
+    searchPlugin({
+      collections: ['posts'],
+      searchOverrides: {
+        fields: ({ defaultFields }) => [
+          ...defaultFields,
+          {
+            name: 'content',
+            type: 'textarea',
+            admin: { readOnly: true },
+          },
+        ],
+      },
+      beforeSync: ({ originalDoc, searchDoc }) => {
+        return {
+          ...searchDoc,
+          content: getTextFromRichText(originalDoc?.content ?? {}),
+        };
+      },
     }),
     ...(process.env.BLOB_READ_WRITE_TOKEN
       ? [
