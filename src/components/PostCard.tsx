@@ -2,15 +2,17 @@ import Link from 'next/link';
 import React from 'react';
 
 import { Media } from '@/components/Media';
+import { HighlightQuery } from '@/components/ui/HighlightQuery';
 import type { Post } from '@/payload-types';
 import { cn } from '@/utils/cn';
 import { getTextFromRichText } from '@/utils/getTextFromRichText';
 
 type PostCardProps = Pick<Post, 'title' | 'slug' | 'image' | 'content' | 'publishedAt'> & {
   isFirst: boolean;
+  searchQuery?: string;
 };
 
-export const PostCard = ({ image, slug, title, content, isFirst }: PostCardProps) => {
+export const PostCard = ({ image, slug, title, content, isFirst, searchQuery }: PostCardProps) => {
   const link = `/blog/${slug}`;
   const pageSlug = slug?.split('/').at(-1);
   const loading = isFirst ? 'eager' : 'lazy';
@@ -56,7 +58,12 @@ export const PostCard = ({ image, slug, title, content, isFirst }: PostCardProps
           className="text-gray-600 mb-4 flex-grow max-h-[80px] line-clamp-3"
           style={{ viewTransitionName: `${pageSlug}-description` }}
         >
-          {getTextFromRichText(content).split(/\s+/).slice(0, 30).join(' ')}
+          <HighlightQuery
+            text={getTextFromRichText(content)}
+            query={searchQuery}
+            removeOffset={3}
+            maxLength={40}
+          />
         </p>
       </div>
     </article>

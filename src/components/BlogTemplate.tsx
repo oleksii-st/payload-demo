@@ -47,6 +47,7 @@ export const BlogTemplate = ({
                     content={post.content}
                     publishedAt={post.publishedAt}
                     isFirst={index === 0}
+                    searchQuery={searchQuery}
                   />
                 );
               })}
