@@ -7,7 +7,7 @@ import { cache } from 'react';
 import { Blocks } from '@/components/Blocks';
 import { PayloadRedirects } from '@/components/PayloadRedirects';
 import { IS_PRODUCTION } from '@/utils/constants';
-import { generateNotFoundMetadata } from '@/utils/generateNotFoundMetadata';
+import { generateNotFoundMetadata } from '@/utils/generateMetadata';
 import { getPageSlug, getPageSlugParts } from '@/utils/getPageSlug';
 import { mergeOpenGraph } from '@/utils/mergeOpenGraph';
 import { robotsNoIndex } from '@/utils/robotsNoIndex';

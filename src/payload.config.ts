@@ -21,6 +21,7 @@ import { Blog } from '@/payload/globals/Blog/Blog';
 import { Footer } from '@/payload/globals/Footer';
 import { Header } from '@/payload/globals/Header';
 import { NotFound } from '@/payload/globals/NotFound';
+import { Search } from '@/payload/globals/Search';
 import { Settings } from '@/payload/globals/Settings/Settings';
 import { BASE_URL } from '@/utils/constants';
 import { getTextFromRichText } from '@/utils/getTextFromRichText';
@@ -70,7 +71,7 @@ export default buildConfig({
     ],
   }),
   collections: [Media, Pages, Posts, ReusableContent, Users, RichTextDataInstances],
-  globals: [Header, Footer, NotFound, Settings, Blog],
+  globals: [Header, Footer, NotFound, Settings, Blog, Search],
   typescript: {
     outputFile: path.resolve(dirname, 'payload-types.ts'),
     declare: false,
@@ -82,7 +83,7 @@ export default buildConfig({
   plugins: [
     seoPlugin({
       collections: ['pages', 'posts'],
-      globals: ['notFound', 'blog'],
+      globals: ['notFound', 'blog', 'searchTemplate'],
       uploadsCollection: 'media',
     }),
     nestedDocsPlugin({

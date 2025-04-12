@@ -6,7 +6,7 @@ import { BlogTemplate } from '@/components/BlogTemplate';
 import { PayloadRedirects } from '@/components/PayloadRedirects';
 import { PostTemplate } from '@/components/PostTemplate';
 import { Blog } from '@/payload-types';
-import { generateBlogMetadata, getOgImage } from '@/utils/generateNotFoundMetadata';
+import { generateBlogMetadata, getOgImage } from '@/utils/generateMetadata';
 import { getCachedGlobal } from '@/utils/getGlobals';
 import { mergeOpenGraph } from '@/utils/mergeOpenGraph';
 import { getAllPosts, getPost, getPosts } from '@/utils/posts';

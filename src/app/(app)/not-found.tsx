@@ -1,6 +1,6 @@
 import { ErrorMessage } from '@/components/ErrorMessage';
 import { NotFound as NotFoundType } from '@/payload-types';
-import { generateNotFoundMetadata } from '@/utils/generateNotFoundMetadata';
+import { generateNotFoundMetadata } from '@/utils/generateMetadata';
 import { getCachedGlobal } from '@/utils/getGlobals';
 
 export default async function NotFound() {

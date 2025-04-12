@@ -3,7 +3,7 @@ import { Metadata } from 'next';
 import { BlogTemplate } from '@/components/BlogTemplate';
 import { PayloadRedirects } from '@/components/PayloadRedirects';
 import { Blog } from '@/payload-types';
-import { generateBlogMetadata } from '@/utils/generateNotFoundMetadata';
+import { generateBlogMetadata } from '@/utils/generateMetadata';
 import { getCachedGlobal } from '@/utils/getGlobals';
 import { getPosts } from '@/utils/posts';
 

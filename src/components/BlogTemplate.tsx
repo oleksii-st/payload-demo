@@ -1,5 +1,6 @@
 import { PostCard } from '@/components/PostCard';
 import { Pagination } from '@/components/ui/Pagination';
+import { SearchForm } from '@/components/ui/SearchForm';
 import { Post } from '@/payload-types';
 import { cn } from '@/utils/cn';
 
@@ -8,9 +9,18 @@ type BlogTemplateProps = {
   page?: number;
   totalPages: number;
   title?: string;
+  isSearch?: boolean;
+  searchQuery?: string;
 };
 
-export const BlogTemplate = ({ page = 1, posts, totalPages, title }: BlogTemplateProps) => {
+export const BlogTemplate = ({
+  page = 1,
+  posts,
+  totalPages,
+  title,
+  isSearch,
+  searchQuery,
+}: BlogTemplateProps) => {
   const baseUrl = '/blog';
 
   return (
@@ -22,26 +32,37 @@ export const BlogTemplate = ({ page = 1, posts, totalPages, title }: BlogTemplat
           </h1>
         )}
 
+        {isSearch && <SearchForm defaultQuery={searchQuery ?? ''} />}
+
         <div className="mb-8">
-          <div className={cn('grid grid-cols-1 gap-6', 'sm:grid-cols-3')}>
-            {posts?.map((post, index) => {
-              return (
-                <PostCard
-                  key={post.slug}
-                  title={post.title}
-                  slug={post.slug}
-                  image={post.image}
-                  content={post.content}
-                  publishedAt={post.publishedAt}
-                  isFirst={index === 0}
-                />
-              );
-            })}
-          </div>
+          {posts?.length > 0 ? (
+            <div className={cn('grid grid-cols-1 gap-6', 'sm:grid-cols-3')}>
+              {posts?.map((post, index) => {
+                return (
+                  <PostCard
+                    key={post.slug}
+                    title={post.title}
+                    slug={post.slug}
+                    image={post.image}
+                    content={post.content}
+                    publishedAt={post.publishedAt}
+                    isFirst={index === 0}
+                  />
+                );
+              })}
+            </div>
+          ) : (
+            <div>Nothing found</div>
+          )}
         </div>
 
         {totalPages > 1 && (
-          <Pagination currentPage={page} totalPages={totalPages} baseUrl={baseUrl} />
+          <Pagination
+            searchQuery={searchQuery}
+            currentPage={page}
+            totalPages={totalPages}
+            baseUrl={baseUrl}
+          />
         )}
       </div>
     </div>

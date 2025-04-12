@@ -1,7 +1,7 @@
 import configPromise from '@payload-config';
-import { getPayload } from 'payload';
+import { getPayload, SelectType } from 'payload';
 
-import { Post } from '@/payload-types';
+import { Post, Search } from '@/payload-types';
 
 type GetPostsArguments = {
   page?: number;
@@ -98,4 +98,74 @@ export const getPost = async ({
       },
     })) as unknown as { docs: Post[] }
   ).docs[0];
+};
+
+type SearchPostsArguments = {
+  page?: number;
+  query: string;
+  limit?: number;
+  select?: SelectType;
+};
+
+type SearchPostsResult = {
+  data: Post[];
+  totalPages: number;
+  totalDocs: number;
+};
+
+export const searchPosts = async (args?: SearchPostsArguments): Promise<SearchPostsResult> => {
+  const { page = 1, query, limit = PAGE_SIZE, select } = args ?? {};
+
+  const payload = await getPayload({ config: configPromise });
+  const searches = (await payload.find({
+    collection: 'search',
+    draft: false,
+    limit,
+    page,
+    where: {
+      and: [
+        {
+          title: {
+            like: query,
+          },
+        },
+        {
+          content: {
+            like: query,
+          },
+        },
+      ],
+    },
+  })) as unknown as { docs: Search[]; totalPages: number; totalDocs: number };
+
+  const postIds = searches.docs.map(({ doc }) =>
+    typeof doc.value === 'string' ? doc.value : doc.value.id,
+  );
+
+  const posts = (
+    (await payload.find({
+      collection: 'posts',
+      draft: false,
+      limit: PAGE_SIZE,
+      ...(select
+        ? {
+            select,
+          }
+        : {}),
+      where: {
+        id: {
+          in: postIds,
+        },
+        _status: {
+          equals: 'published',
+        },
+      },
+    })) as unknown as { docs: Post[] }
+  ).docs;
+
+  return {
+    data: posts,
+    totalPages: searches.totalPages,
+    totalDocs: searches.totalDocs,
+  } as SearchPostsResult;
 };

@@ -54,6 +54,7 @@ export type SupportedTimezones =
   | 'Asia/Singapore'
   | 'Asia/Tokyo'
   | 'Asia/Seoul'
+  | 'Australia/Brisbane'
   | 'Australia/Sydney'
   | 'Pacific/Guam'
   | 'Pacific/Noumea'
@@ -73,6 +74,7 @@ export interface Config {
     users: User;
     richTextDataInstances: RichTextDataInstance;
     redirects: Redirect;
+    search: Search;
     'payload-locked-documents': PayloadLockedDocument;
     'payload-preferences': PayloadPreference;
     'payload-migrations': PayloadMigration;
@@ -86,6 +88,7 @@ export interface Config {
     users: UsersSelect<false> | UsersSelect<true>;
     richTextDataInstances: RichTextDataInstancesSelect<false> | RichTextDataInstancesSelect<true>;
     redirects: RedirectsSelect<false> | RedirectsSelect<true>;
+    search: SearchSelect<false> | SearchSelect<true>;
     'payload-locked-documents':
       | PayloadLockedDocumentsSelect<false>
       | PayloadLockedDocumentsSelect<true>;
@@ -101,6 +104,7 @@ export interface Config {
     notFound: NotFound;
     settings: Settings;
     blog: Blog;
+    searchTemplate: SearchTemplate;
   };
   globalsSelect: {
     header: HeaderSelect<false> | HeaderSelect<true>;
@@ -108,6 +112,7 @@ export interface Config {
     notFound: NotFoundSelect<false> | NotFoundSelect<true>;
     settings: SettingsSelect<false> | SettingsSelect<true>;
     blog: BlogSelect<false> | BlogSelect<true>;
+    searchTemplate: SearchTemplateSelect<false> | SearchTemplateSelect<true>;
   };
   locale: null;
   user: User & {
@@ -416,6 +421,24 @@ export interface Redirect {
   createdAt: string;
 }
 /**
+ * This is a collection of automatically created search results. These results are used by the global site search and will be updated automatically as documents in the CMS are created or updated.
+ *
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "search".
+ */
+export interface Search {
+  id: string;
+  title?: string | null;
+  priority?: number | null;
+  doc: {
+    relationTo: 'posts';
+    value: string | Post;
+  };
+  content?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
  * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "payload-locked-documents".
  */
@@ -449,6 +472,10 @@ export interface PayloadLockedDocument {
     | ({
         relationTo: 'redirects';
         value: string | Redirect;
+      } | null)
+    | ({
+        relationTo: 'search';
+        value: string | Search;
       } | null);
   globalSlug?: string | null;
   user: {
@@ -707,6 +734,18 @@ export interface RedirectsSelect<T extends boolean = true> {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "search_select".
+ */
+export interface SearchSelect<T extends boolean = true> {
+  title?: T;
+  priority?: T;
+  doc?: T;
+  content?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "payload-locked-documents_select".
  */
 export interface PayloadLockedDocumentsSelect<T extends boolean = true> {
@@ -847,6 +886,23 @@ export interface Blog {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "searchTemplate".
+ */
+export interface SearchTemplate {
+  id: string;
+  meta?: {
+    title?: string | null;
+    description?: string | null;
+    /**
+     * Maximum upload file size: 12MB. Recommended file size for images is <500KB.
+     */
+    image?: (string | null) | Media;
+  };
+  updatedAt?: string | null;
+  createdAt?: string | null;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "header_select".
  */
 export interface HeaderSelect<T extends boolean = true> {
@@ -912,6 +968,22 @@ export interface SettingsSelect<T extends boolean = true> {
  */
 export interface BlogSelect<T extends boolean = true> {
   title?: T;
+  meta?:
+    | T
+    | {
+        title?: T;
+        description?: T;
+        image?: T;
+      };
+  updatedAt?: T;
+  createdAt?: T;
+  globalType?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "searchTemplate_select".
+ */
+export interface SearchTemplateSelect<T extends boolean = true> {
   meta?:
     | T
     | {
