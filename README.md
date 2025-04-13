@@ -8,6 +8,7 @@ A Next.js project using Payload CMS with TypeScript and modern React.
 - [How to build inline rich text field in Payload CMS](https://oleksii-s.dev/blog/how-to-build-inline-rich-text-field-in-payload-cms) - [PR](https://github.com/oleksii-st/payload-demo/pull/49)
 - [How to build color input in Payload CMS 3](https://oleksii-s.dev/blog/how-to-build-color-input-in-payload-cms-3) - [PR](https://github.com/oleksii-st/payload-demo/pull/67)
 - [How to add dynamic data in rich text using inline blocks in Payload CMS](https://oleksii-s.dev/blog/how-to-add-dynamic-data-in-rich-text-using-inline-blocks-in-payload-cms) - [PR](https://github.com/oleksii-st/payload-demo/pull/78)
+- [How to build a search in Payload CMS](https://oleksii-s.dev/blog/how-to-build-a-search-in-payload-cms) - [PR](https://github.com/oleksii-st/payload-demo/pull/227)
 
 ## Prerequisites
 

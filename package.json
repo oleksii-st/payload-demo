@@ -1,6 +1,6 @@
 {
   "name": "payload-demo",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -24,6 +24,7 @@
     "@payloadcms/next": "^3.34.0",
     "@payloadcms/plugin-nested-docs": "^3.34.0",
     "@payloadcms/plugin-redirects": "^3.34.0",
+    "@payloadcms/plugin-search": "^3.34.0",
     "@payloadcms/plugin-seo": "^3.34.0",
     "@payloadcms/richtext-lexical": "^3.34.0",
     "@payloadcms/storage-vercel-blob": "^3.34.0",

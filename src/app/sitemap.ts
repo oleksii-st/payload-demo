@@ -52,7 +52,10 @@ export default async function sitemap() {
     };
   });
 
-  const staticPagesMap = [{ url: `${baseUrl}/blog`, lastModified: dateFallback }];
+  const staticPagesMap = [
+    { url: `${baseUrl}/blog`, lastModified: dateFallback },
+    { url: `${baseUrl}/search`, lastModified: dateFallback },
+  ];
 
   const blogPagesNumber = Math.ceil(posts.length / PAGE_SIZE);
 

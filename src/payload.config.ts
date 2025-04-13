@@ -4,6 +4,7 @@ import path from 'path';
 import { mongooseAdapter } from '@payloadcms/db-mongodb';
 import { nestedDocsPlugin } from '@payloadcms/plugin-nested-docs';
 import { redirectsPlugin } from '@payloadcms/plugin-redirects';
+import { searchPlugin } from '@payloadcms/plugin-search';
 import { seoPlugin } from '@payloadcms/plugin-seo';
 import { BlocksFeature, lexicalEditor, LinkFeature } from '@payloadcms/richtext-lexical';
 import { vercelBlobStorage } from '@payloadcms/storage-vercel-blob';
@@ -20,8 +21,10 @@ import { Blog } from '@/payload/globals/Blog/Blog';
 import { Footer } from '@/payload/globals/Footer';
 import { Header } from '@/payload/globals/Header';
 import { NotFound } from '@/payload/globals/NotFound';
+import { Search } from '@/payload/globals/Search';
 import { Settings } from '@/payload/globals/Settings/Settings';
 import { BASE_URL } from '@/utils/constants';
+import { getTextFromRichText } from '@/utils/getTextFromRichText';
 
 const filename = fileURLToPath(import.meta.url);
 const dirname = path.dirname(filename);
@@ -68,7 +71,7 @@ export default buildConfig({
     ],
   }),
   collections: [Media, Pages, Posts, ReusableContent, Users, RichTextDataInstances],
-  globals: [Header, Footer, NotFound, Settings, Blog],
+  globals: [Header, Footer, NotFound, Settings, Blog, Search],
   typescript: {
     outputFile: path.resolve(dirname, 'payload-types.ts'),
     declare: false,
@@ -80,7 +83,7 @@ export default buildConfig({
   plugins: [
     seoPlugin({
       collections: ['pages', 'posts'],
-      globals: ['notFound', 'blog'],
+      globals: ['notFound', 'blog', 'searchTemplate'],
       uploadsCollection: 'media',
     }),
     nestedDocsPlugin({
@@ -90,6 +93,25 @@ export default buildConfig({
     }),
     redirectsPlugin({
       collections: ['pages'],
+    }),
+    searchPlugin({
+      collections: ['posts'],
+      searchOverrides: {
+        fields: ({ defaultFields }) => [
+          ...defaultFields,
+          {
+            name: 'content',
+            type: 'textarea',
+            admin: { readOnly: true },
+          },
+        ],
+      },
+      beforeSync: ({ originalDoc, searchDoc }) => {
+        return {
+          ...searchDoc,
+          content: getTextFromRichText(originalDoc?.content ?? {}),
+        };
+      },
     }),
     ...(process.env.BLOB_READ_WRITE_TOKEN
       ? [
