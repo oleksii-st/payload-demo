@@ -14,7 +14,6 @@ type PostCardProps = Pick<Post, 'title' | 'slug' | 'image' | 'content' | 'publis
 
 export const PostCard = ({ image, slug, title, content, isFirst, searchQuery }: PostCardProps) => {
   const link = `/blog/${slug}`;
-  const pageSlug = slug?.split('/').at(-1);
   const loading = isFirst ? 'eager' : 'lazy';
 
   return (
@@ -25,7 +24,6 @@ export const PostCard = ({ image, slug, title, content, isFirst, searchQuery }: 
           'w-full aspect-[4/3] rounded-t-lg overflow-hidden',
           'focus-visible:outline-0 focus-visible:border-4 focus-visible:border-black',
         )}
-        style={{ viewTransitionName: `${pageSlug}-image` }}
       >
         {image && (
           <Media
@@ -49,15 +47,11 @@ export const PostCard = ({ image, slug, title, content, isFirst, searchQuery }: 
               'not-prose block font-bold text-xl text-left text-black mb-2',
               'hover:underline',
             )}
-            style={{ viewTransitionName: `${pageSlug}-title` }}
           >
             {title}
           </Link>
         </header>
-        <p
-          className="text-gray-600 mb-4 flex-grow max-h-[80px] line-clamp-3"
-          style={{ viewTransitionName: `${pageSlug}-description` }}
-        >
+        <p className="text-gray-600 mb-4 flex-grow max-h-[80px] line-clamp-3">
           <HighlightQuery
             text={getTextFromRichText(content)}
             query={searchQuery}
