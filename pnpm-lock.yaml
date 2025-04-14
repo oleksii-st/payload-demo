@@ -87,8 +87,8 @@ importers:
         specifier: ^9.0.2
         version: 9.0.2
       lexical:
-        specifier: 0.28.0
-        version: 0.28.0
+        specifier: 0.30.0
+        version: 0.30.0
       lucide-react:
         specifier: ^0.487.0
         version: 0.487.0(react@19.1.0)
@@ -2521,8 +2521,11 @@ packages:
   lexical@0.28.0:
     resolution: {integrity: sha512-dLE3O1PZg0TlZxRQo9YDpjCjDUj8zluGyBO9MHdjo21qZmMUNrxQPeCRt8fn2s5l4HKYFQ1YNgl7k1pOJB/vZQ==}
 
-  lib0@0.2.102:
-    resolution: {integrity: sha512-g70kydI0I1sZU0ChO8mBbhw0oUW/8U0GHzygpvEIx8k+jgOpqnTSb/E+70toYVqHxBhrERD21TwD5QcZJQ40ZQ==}
+  lexical@0.30.0:
+    resolution: {integrity: sha512-6gxYeXaJiAcreJD0whCofvO0MuJmnWoIgIl1w7L5FTigfhnEohuCx2SoI/oywzfzXE9gzZnyr3rVvZrMItPL8A==}
+
+  lib0@0.2.104:
+    resolution: {integrity: sha512-1tqKRANSPTcjs/yjPoKh52oRM2u5AYdd8jie8sDiN8/5kpWWiQSHUGgtB4VEXLw1chVL3QPSPp8q9RWqzSn2FA==}
     engines: {node: '>=16'}
     hasBin: true
 
@@ -6525,7 +6528,9 @@ snapshots:
 
   lexical@0.28.0: {}
 
-  lib0@0.2.102:
+  lexical@0.30.0: {}
+
+  lib0@0.2.104:
     dependencies:
       isomorphic.js: 0.2.5
 
@@ -8064,7 +8069,7 @@ snapshots:
 
   yjs@13.6.23:
     dependencies:
-      lib0: 0.2.102
+      lib0: 0.2.104
 
   yocto-queue@0.1.0: {}
 
