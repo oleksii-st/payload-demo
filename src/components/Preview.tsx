@@ -7,15 +7,15 @@ import { Page } from '@/payload-types';
 import { BASE_URL } from '@/utils/constants';
 
 export const Preview = ({ initial }: { initial: Page }) => {
-  const { data: page } = useLivePreview<Page>({
-    initialData: initial,
+  const { data: page } = useLivePreview({
+    initialData: initial as unknown as Record<string, unknown>,
     serverURL: BASE_URL,
     depth: 2,
   });
 
   return (
     <>
-      <Blocks blocks={page.layout} />
+      <Blocks blocks={(page as unknown as Page).layout} />
     </>
   );
 };
