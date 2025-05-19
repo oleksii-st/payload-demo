@@ -19,7 +19,7 @@
     "@lexical/list": "0.28.0",
     "@lexical/rich-text": "0.28.0",
     "@lexical/table": "0.28.0",
-    "@payloadcms/db-mongodb": "^3.36.1",
+    "@payloadcms/db-mongodb": "^3.38.0",
     "@payloadcms/live-preview-react": "^3.36.1",
     "@payloadcms/next": "^3.36.1",
     "@payloadcms/plugin-nested-docs": "^3.36.1",
