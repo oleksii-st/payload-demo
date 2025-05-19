@@ -26,7 +26,7 @@
     "@payloadcms/plugin-redirects": "^3.36.1",
     "@payloadcms/plugin-search": "^3.36.1",
     "@payloadcms/plugin-seo": "^3.36.1",
-    "@payloadcms/richtext-lexical": "^3.36.1",
+    "@payloadcms/richtext-lexical": "^3.38.0",
     "@payloadcms/storage-vercel-blob": "^3.36.1",
     "@payloadcms/ui": "^3.36.1",
     "@radix-ui/react-slot": "^1.2.0",
