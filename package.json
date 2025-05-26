@@ -25,7 +25,7 @@
     "@payloadcms/plugin-nested-docs": "^3.38",
     "@payloadcms/plugin-redirects": "^3.38",
     "@payloadcms/plugin-search": "^3.38",
-    "@payloadcms/plugin-seo": "^3.38",
+    "@payloadcms/plugin-seo": "^3.39",
     "@payloadcms/richtext-lexical": "^3.38",
     "@payloadcms/storage-vercel-blob": "^3.38",
     "@payloadcms/ui": "^3.38",
