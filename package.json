@@ -23,7 +23,7 @@
     "@payloadcms/live-preview-react": "^3.39.1",
     "@payloadcms/next": "^3.39.1",
     "@payloadcms/plugin-nested-docs": "^3.39.1",
-    "@payloadcms/plugin-redirects": "^3.39.1",
+    "@payloadcms/plugin-redirects": "^3.40.0",
     "@payloadcms/plugin-search": "^3.39.1",
     "@payloadcms/plugin-seo": "^3.39.1",
     "@payloadcms/richtext-lexical": "^3.39.1",
