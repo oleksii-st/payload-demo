@@ -90,8 +90,8 @@ importers:
         specifier: 0.28.0
         version: 0.28.0
       lucide-react:
-        specifier: ^0.513.0
-        version: 0.513.0(react@19.1.0)
+        specifier: ^0.525.0
+        version: 0.525.0(react@19.1.0)
       next:
         specifier: ^15.3.1
         version: 15.3.3(babel-plugin-react-compiler@0.0.0-experimental-7449567-20240905)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(sass@1.77.4)
@@ -2431,8 +2431,8 @@ packages:
   lexical@0.28.0:
     resolution: {integrity: sha512-dLE3O1PZg0TlZxRQo9YDpjCjDUj8zluGyBO9MHdjo21qZmMUNrxQPeCRt8fn2s5l4HKYFQ1YNgl7k1pOJB/vZQ==}
 
-  lib0@0.2.108:
-    resolution: {integrity: sha512-+3eK/B0SqYoZiQu9fNk4VEc6EX8cb0Li96tPGKgugzoGj/OdRdREtuTLvUW+mtinoB2mFiJjSqOJBIaMkAGhxQ==}
+  lib0@0.2.109:
+    resolution: {integrity: sha512-jP0gbnyW0kwlx1Atc4dcHkBbrVAkdHjuyHxtClUPYla7qCmwIif1qZ6vQeJdR5FrOVdn26HvQT0ko01rgW7/Xw==}
     engines: {node: '>=16'}
     hasBin: true
 
@@ -2500,8 +2500,8 @@ packages:
   lru-cache@10.4.3:
     resolution: {integrity: sha512-JNAzZcXrCt42VGLuYz0zfAzDfAvJWW6AfYlDBQyDV5DClI2m5sAmK+OIO7s59XfsRsWHp02jAJrRadPRGTt6SQ==}
 
-  lucide-react@0.513.0:
-    resolution: {integrity: sha512-CJZKq2g8Y8yN4Aq002GahSXbG2JpFv9kXwyiOAMvUBv7pxeOFHUWKB0mO7MiY4ZVFCV4aNjv2BJFq/z3DgKPQg==}
+  lucide-react@0.525.0:
+    resolution: {integrity: sha512-Tm1txJ2OkymCGkvwoHt33Y2JpN5xucVq1slHcgE6Lk0WjDfjgKWor5CdVER8U6DvcfMwh4M8XxmpTiyzfmfDYQ==}
     peerDependencies:
       react: ^16.5.1 || ^17.0.0 || ^18.0.0 || ^19.0.0
 
@@ -6353,7 +6353,7 @@ snapshots:
 
   lexical@0.28.0: {}
 
-  lib0@0.2.108:
+  lib0@0.2.109:
     dependencies:
       isomorphic.js: 0.2.5
 
@@ -6425,7 +6425,7 @@ snapshots:
 
   lru-cache@10.4.3: {}
 
-  lucide-react@0.513.0(react@19.1.0):
+  lucide-react@0.525.0(react@19.1.0):
     dependencies:
       react: 19.1.0
 
@@ -7856,7 +7856,7 @@ snapshots:
 
   yjs@13.6.23:
     dependencies:
-      lib0: 0.2.108
+      lib0: 0.2.109
 
   yocto-queue@0.1.0: {}
 
