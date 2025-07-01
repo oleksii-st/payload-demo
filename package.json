@@ -17,7 +17,7 @@
     "@faceless-ui/modal": "3.0.0-beta.2",
     "@faceless-ui/scroll-info": "2.0.0",
     "@lexical/list": "0.28.0",
-    "@lexical/rich-text": "0.28.0",
+    "@lexical/rich-text": "0.32.1",
     "@lexical/table": "0.28.0",
     "@payloadcms/db-mongodb": "^3.42.0",
     "@payloadcms/live-preview-react": "^3.42.0",
