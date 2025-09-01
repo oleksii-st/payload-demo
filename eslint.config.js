@@ -25,6 +25,7 @@ export default [
       import: pluginImport,
     },
     rules: {
+      '@typescript-eslint/triple-slash-reference': 'off',
       'react/react-in-jsx-scope': 'off',
       'import/order': [
         'error',
