@@ -30,7 +30,7 @@
     "@payloadcms/storage-vercel-blob": "^3.54.0",
     "@payloadcms/ui": "^3.54.0",
     "@radix-ui/react-slot": "^1.2.3",
-    "@tailwindcss/typography": "^0.5.16",
+    "@tailwindcss/typography": "^0.5.19",
     "@types/escape-html": "^1.0.4",
     "@types/jsonwebtoken": "^9.0.10",
     "babel-plugin-react-compiler": "0.0.0-experimental-7449567-20240905",
