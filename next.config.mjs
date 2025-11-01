@@ -19,9 +19,8 @@ const config = {
   compiler: {
     styledComponents: true,
   },
-  experimental: {
-    reactCompiler: true,
-  },
+  reactCompiler: true,
+  turbopack: {},
 };
 
 export default withPayload(config);
