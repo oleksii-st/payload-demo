@@ -100,6 +100,7 @@ export interface Config {
   db: {
     defaultIDType: string;
   };
+  fallbackLocale: null;
   globals: {
     header: Header;
     footer: Footer;
@@ -502,10 +503,6 @@ export interface PayloadLockedDocument {
     | ({
         relationTo: 'search';
         value: string | Search;
-      } | null)
-    | ({
-        relationTo: 'payload-kv';
-        value: string | PayloadKv;
       } | null);
   globalSlug?: string | null;
   user: {
