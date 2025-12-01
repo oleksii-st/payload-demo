@@ -29,7 +29,7 @@
     "@payloadcms/richtext-lexical": "^3.62.0",
     "@payloadcms/storage-vercel-blob": "^3.62.0",
     "@payloadcms/ui": "^3.62.0",
-    "@radix-ui/react-slot": "^1.2.3",
+    "@radix-ui/react-slot": "^1.2.4",
     "@tailwindcss/typography": "^0.5.19",
     "@types/escape-html": "^1.0.4",
     "@types/jsonwebtoken": "^9.0.10",
