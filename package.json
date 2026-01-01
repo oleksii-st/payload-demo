@@ -40,7 +40,7 @@
     "geist": "^1.5.1",
     "graphql": "^16.12.0",
     "jsonwebtoken": "^9.0.2",
-    "lexical": " 0.35.0",
+    "lexical": "0.39.0",
     "lucide-react": "^0.552.0",
     "next": "^16.0.6",
     "payload": "^3.65.0",
