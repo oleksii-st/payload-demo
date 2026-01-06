@@ -44,7 +44,7 @@
     "lucide-react": "^0.552.0",
     "next": "^16.1.1",
     "payload": "^3.65.0",
-    "prettier": "^3.7.3",
+    "prettier": "^3.7.4",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "sharp": "^0.34.5",
