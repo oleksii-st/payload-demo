@@ -40,7 +40,7 @@ export const SearchForm = ({
             type="text"
             autoComplete="off"
             placeholder="Enter your search query"
-            className="appearance-none bg-transparent border-none w-full mr-3 py-1 px-2 leading-tight focus:outline-none"
+            className="appearance-none bg-transparent border-none w-full mr-3 py-1 px-2 leading-tight focus:outline-hidden"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
           />
@@ -48,13 +48,13 @@ export const SearchForm = ({
             <button
               type="button"
               onClick={() => setQuery('')}
-              className="flex-shrink-0 mr-2 p-1 reset"
+              className="shrink-0 mr-2 p-1 reset"
               aria-label="Clear search"
             >
               <Cross className="size-[20px]" />
             </button>
           )}
-          <button type="submit" aria-label="Submit search" className="flex-shrink-0 py-1">
+          <button type="submit" aria-label="Submit search" className="shrink-0 py-1">
             <Search />
           </button>
         </div>

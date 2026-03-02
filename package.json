@@ -30,6 +30,7 @@
     "@payloadcms/storage-vercel-blob": "^3.78.0",
     "@payloadcms/ui": "^3.78.0",
     "@radix-ui/react-slot": "^1.2.4",
+    "@tailwindcss/postcss": "^4.2.1",
     "@tailwindcss/typography": "^0.5.19",
     "@types/escape-html": "^1.0.4",
     "@types/jsonwebtoken": "^9.0.10",
@@ -60,7 +61,7 @@
     "eslint-plugin-react": "^7.37.5",
     "globals": "^17.4.0",
     "lint-staged": "^16.3.1",
-    "tailwindcss": "^3.4.19",
+    "tailwindcss": "^4.2.1",
     "typescript": "5.9.3",
     "typescript-eslint": "^8.56.1"
   },

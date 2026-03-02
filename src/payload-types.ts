@@ -118,9 +118,10 @@ export interface Config {
     searchTemplate: SearchTemplateSelect<false> | SearchTemplateSelect<true>;
   };
   locale: null;
-  user: User & {
-    collection: 'users';
+  widgets: {
+    collections: CollectionsWidget;
   };
+  user: User;
   jobs: {
     tasks: unknown;
     workflows: unknown;
@@ -171,7 +172,81 @@ export interface Page {
   id: string;
   title: string;
   publishedAt?: string | null;
-  layout: (Hero | Grid | Richtext | ReusableContentBlock)[];
+  layout: (
+    | {
+        image: string | Media;
+        heading: {
+          root: {
+            type: string;
+            children: {
+              type: any;
+              version: number;
+              [k: string]: unknown;
+            }[];
+            direction: ('ltr' | 'rtl') | null;
+            format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+            indent: number;
+            version: number;
+          };
+          [k: string]: unknown;
+        };
+        description?: {
+          root: {
+            type: string;
+            children: {
+              type: any;
+              version: number;
+              [k: string]: unknown;
+            }[];
+            direction: ('ltr' | 'rtl') | null;
+            format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+            indent: number;
+            version: number;
+          };
+          [k: string]: unknown;
+        } | null;
+        sectionLayout: SectionLayout;
+        id?: string | null;
+        blockName?: string | null;
+        blockType: 'hero';
+      }
+    | {
+        heading?: string | null;
+        images?:
+          | {
+              icon: string | Media;
+              link?: Link;
+              id?: string | null;
+            }[]
+          | null;
+        sectionLayout: SectionLayout;
+        id?: string | null;
+        blockName?: string | null;
+        blockType: 'grid';
+      }
+    | {
+        content: {
+          root: {
+            type: string;
+            children: {
+              type: any;
+              version: number;
+              [k: string]: unknown;
+            }[];
+            direction: ('ltr' | 'rtl') | null;
+            format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+            indent: number;
+            version: number;
+          };
+          [k: string]: unknown;
+        };
+        sectionLayout: SectionLayout;
+        id?: string | null;
+        blockName?: string | null;
+        blockType: 'richText';
+      }
+    | ReusableContentBlock
+  )[];
   disableIndex?: boolean | null;
   slug?: string | null;
   meta?: {
@@ -197,47 +272,6 @@ export interface Page {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "Hero".
- */
-export interface Hero {
-  image: string | Media;
-  heading: {
-    root: {
-      type: string;
-      children: {
-        type: any;
-        version: number;
-        [k: string]: unknown;
-      }[];
-      direction: ('ltr' | 'rtl') | null;
-      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-      indent: number;
-      version: number;
-    };
-    [k: string]: unknown;
-  };
-  description?: {
-    root: {
-      type: string;
-      children: {
-        type: any;
-        version: number;
-        [k: string]: unknown;
-      }[];
-      direction: ('ltr' | 'rtl') | null;
-      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-      indent: number;
-      version: number;
-    };
-    [k: string]: unknown;
-  } | null;
-  sectionLayout: SectionLayout;
-  id?: string | null;
-  blockName?: string | null;
-  blockType: 'hero';
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "sectionLayout".
  */
 export interface SectionLayout {
@@ -253,24 +287,6 @@ export interface SectionLayout {
         id?: string | null;
       }[]
     | null;
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "Grid".
- */
-export interface Grid {
-  heading?: string | null;
-  images?:
-    | {
-        icon: string | Media;
-        link?: Link;
-        id?: string | null;
-      }[]
-    | null;
-  sectionLayout: SectionLayout;
-  id?: string | null;
-  blockName?: string | null;
-  blockType: 'grid';
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
@@ -331,6 +347,86 @@ export interface Post {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "ReusableContentBlock".
+ */
+export interface ReusableContentBlock {
+  reusableContent?: (string | null) | ReusableContent;
+  id?: string | null;
+  blockName?: string | null;
+  blockType: 'reusableContentBlock';
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "reusable-content".
+ */
+export interface ReusableContent {
+  id: string;
+  title: string;
+  layout: (Hero | Grid | Richtext)[];
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "Hero".
+ */
+export interface Hero {
+  image: string | Media;
+  heading: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  };
+  description?: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  } | null;
+  sectionLayout: SectionLayout;
+  id?: string | null;
+  blockName?: string | null;
+  blockType: 'hero';
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "Grid".
+ */
+export interface Grid {
+  heading?: string | null;
+  images?:
+    | {
+        icon: string | Media;
+        link?: Link;
+        id?: string | null;
+      }[]
+    | null;
+  sectionLayout: SectionLayout;
+  id?: string | null;
+  blockName?: string | null;
+  blockType: 'grid';
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "Richtext".
  */
 export interface Richtext {
@@ -353,27 +449,6 @@ export interface Richtext {
   id?: string | null;
   blockName?: string | null;
   blockType: 'richText';
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "ReusableContentBlock".
- */
-export interface ReusableContentBlock {
-  reusableContent?: (string | null) | ReusableContent;
-  id?: string | null;
-  blockName?: string | null;
-  blockType: 'reusableContentBlock';
-}
-/**
- * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "reusable-content".
- */
-export interface ReusableContent {
-  id: string;
-  title: string;
-  layout: (Hero | Grid | Richtext)[];
-  updatedAt: string;
-  createdAt: string;
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
@@ -400,6 +475,7 @@ export interface User {
       }[]
     | null;
   password?: string | null;
+  collection: 'users';
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
@@ -1036,6 +1112,16 @@ export interface SearchTemplateSelect<T extends boolean = true> {
   updatedAt?: T;
   createdAt?: T;
   globalType?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "collections_widget".
+ */
+export interface CollectionsWidget {
+  data?: {
+    [k: string]: unknown;
+  };
+  width: 'full';
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema

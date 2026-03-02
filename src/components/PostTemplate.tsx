@@ -24,7 +24,7 @@ export const PostTemplate = ({ post }: Props) => {
               <h1 className="mb-6">{title}</h1>
 
               <div className="mb-3">
-                <time className="text-gray-500 flex-shrink-0" dateTime={date}>
+                <time className="text-gray-500 shrink-0" dateTime={date}>
                   {date}
                 </time>
               </div>

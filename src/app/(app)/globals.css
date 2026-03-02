@@ -1,6 +1,35 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@theme {
+  /* Screens — replaces all defaults (was top-level `screens`, not inside `extend`) */
+  --breakpoint-*: initial;
+  --breakpoint-xs: 576px;
+  --breakpoint-sm: 768px;
+  --breakpoint-md: 992px;
+
+  /* Font families */
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+
+  /* Box shadows */
+  --shadow-3xl: rgba(99, 99, 99, 0.2) 0px 0 8px 0px;
+
+  /* Colors */
+  --color-text: #1d1f21;
+}
+
+/* Custom prose-basic typography variant */
+.prose-basic {
+  --tw-prose-code: #172B4D;
+  --tw-prose-bullets: #000000;
+  --tw-prose-counters: #000000;
+}
+
+/* Registered as a utility so it can be used with @apply */
+@utility text-link {
+  @apply underline underline-offset-2 hover:no-underline;
+}
 
 @layer utilities {
   body {
@@ -27,10 +56,6 @@
   *:not(.input):focus-visible {
     outline: 2px solid #000000;
     outline-offset: 2px;
-  }
-
-  .text-link {
-    @apply underline underline-offset-2 hover:no-underline
   }
 
   .rich-text a {
