@@ -1,7 +1,7 @@
 import globals from 'globals';
 import pluginJs from '@eslint/js';
 import * as tseslint from 'typescript-eslint';
-import pluginReact from 'eslint-plugin-react';
+import pluginReact from '@eslint-react/eslint-plugin';
 import pluginImport from 'eslint-plugin-import';
 
 export default [
@@ -12,21 +12,14 @@ export default [
   { languageOptions: { globals: globals.browser } },
   pluginJs.configs.recommended,
   ...tseslint.configs.recommended,
-  pluginReact.configs.flat.recommended,
-  {
-    settings: {
-      react: {
-        version: 'detect',
-      },
-    },
-  },
+  pluginReact.configs['recommended-typescript'],
   {
     plugins: {
       import: pluginImport,
     },
     rules: {
       '@typescript-eslint/triple-slash-reference': 'off',
-      'react/react-in-jsx-scope': 'off',
+      '@eslint-react/no-array-index-key': 'off',
       'import/order': [
         'error',
         {

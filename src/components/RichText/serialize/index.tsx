@@ -198,6 +198,7 @@ export function serializeLexical({ nodes, inline = false }: Props) {
 
             return (
               <Media
+                key={index}
                 source={source}
                 className="mx-auto"
                 sizes="(min-width: 1440px) 1408px, (min-width: 768px) calc(100vw - 64px), calc(100vw - 32px)"
