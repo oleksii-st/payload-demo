@@ -452,7 +452,7 @@ const InlineRichText = ({
         },
       });
     }
-  }, [value]);
+  }, [setValue, value]);
 
   return (
     <div className="inline-rich-text">

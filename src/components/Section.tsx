@@ -32,11 +32,13 @@ export const Section = ({
   children,
   ...rest
 }: SectionProps) => {
+  const generatedId = useId();
+
   if (hideSection) {
     return null;
   }
 
-  const id = rest.id ?? useId();
+  const id = rest.id ?? generatedId;
 
   const initialStyles = `
   [id="${id}"] {

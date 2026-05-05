@@ -1,4 +1,4 @@
-import { notFound, redirect } from 'next/navigation';
+import { notFound, redirect, unstable_rethrow } from 'next/navigation';
 
 import { getCachedRedirects } from '@/utils/getRedirects';
 
@@ -30,6 +30,7 @@ export const PayloadRedirects = async ({ url }: { url: string }) => {
       return notFound();
     }
   } catch (error) {
+    unstable_rethrow(error);
     console.log(error);
     return notFound();
   } finally {

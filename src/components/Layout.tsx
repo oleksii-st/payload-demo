@@ -21,7 +21,7 @@ export const Layout = async ({ children }: { children: ReactNode }) => {
 
   return (
     <div className="flex flex-col min-h-[100vh]">
-      <style dangerouslySetInnerHTML={{ __html: styles }} />
+      <style>{styles}</style>
       <Header {...header} />
       <main
         className={cn(

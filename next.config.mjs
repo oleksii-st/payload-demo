@@ -1,10 +1,15 @@
 import { withPayload } from '@payloadcms/next/withPayload';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 const url = new URL(process.env.NEXT_PUBLIC_SITEMAP_URL || "http://localhost:3000");
 
 const protocol = url.protocol.substring(0, url.protocol.length - 1);
 
 const config = {
+  outputFileTracingRoot: __dirname,
   images: {
     deviceSizes: [360, 393, 414, 575, 767, 991, 1199, 1440, 1600, 1920],
     imageSizes: [130, 170, 200, 260, 360, 393, 414, 575, 767, 991, 1199, 1440, 1600, 1920, 180, 197, 207, 288, 384, 340, 496, 600, 720, 800, 960],

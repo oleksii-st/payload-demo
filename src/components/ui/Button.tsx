@@ -65,21 +65,22 @@ const Button = ({
     children
   );
 
+  const buttonContent = withArrow ? (
+    <>
+      {content}{' '}
+      <ArrowRight
+        className={cn(
+          'ml-2 h-6 w-6 translate-x-0 transition-transform duration-300',
+          'group-hover:translate-x-1',
+          'group-active:translate-x-1',
+        )}
+      />
+    </>
+  ) : (
+    <>{content}</>
+  );
+
   const props = {
-    children: withArrow ? (
-      <>
-        {content}{' '}
-        <ArrowRight
-          className={cn(
-            'ml-2 h-6 w-6 translate-x-0 transition-transform duration-300',
-            'group-hover:translate-x-1',
-            'group-active:translate-x-1',
-          )}
-        />
-      </>
-    ) : (
-      <>{content}</>
-    ),
     className: cn(buttonVariants({ variant, size, className }), {
       'pointer-events-none': isLoading,
     }),
@@ -87,14 +88,18 @@ const Button = ({
   };
 
   if (asChild) {
-    return <Slot {...props} />;
+    return <Slot {...props}>{buttonContent}</Slot>;
   }
 
   if (href) {
-    return <Link {...props} href={href} />;
+    return (
+      <Link {...props} href={href}>
+        {buttonContent}
+      </Link>
+    );
   }
 
-  return <button {...props} />;
+  return <button {...props}>{buttonContent}</button>;
 };
 Button.displayName = 'Button';
 
