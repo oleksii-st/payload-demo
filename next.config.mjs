@@ -25,7 +25,9 @@ const config = {
     styledComponents: true,
   },
   reactCompiler: true,
-  turbopack: {},
+  turbopack: {
+    root: __dirname,
+  },
 };
 
 export default withPayload(config);
