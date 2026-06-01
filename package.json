@@ -42,7 +42,7 @@
     "graphql": "^16.13.2",
     "jsonwebtoken": "^9.0.3",
     "lexical": " 0.41.0",
-    "lucide-react": "^1.14.0",
+    "lucide-react": "^1.17.0",
     "next": "^16.2.4",
     "payload": "^3.84.1",
     "prettier": "^3.8.3",
