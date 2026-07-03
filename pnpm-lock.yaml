@@ -27,8 +27,8 @@ importers:
         specifier: ^3.84.1
         version: 3.85.0(payload@3.85.0(graphql@16.14.1)(typescript@6.0.3))
       '@payloadcms/live-preview-react':
-        specifier: ^3.84.1
-        version: 3.85.0(react-dom@19.2.6(react@19.2.6))(react@19.2.6)
+        specifier: ^3.85.1
+        version: 3.85.1(react-dom@19.2.6(react@19.2.6))(react@19.2.6)
       '@payloadcms/next':
         specifier: ^3.84.1
         version: 3.85.0(@types/react@19.2.15)(graphql@16.14.1)(monaco-editor@0.55.1)(next@16.2.9(@babel/core@7.29.7)(babel-plugin-react-compiler@0.0.0-experimental-7449567-20240905)(react-dom@19.2.6(react@19.2.6))(react@19.2.6)(sass@1.77.4))(payload@3.85.0(graphql@16.14.1)(typescript@6.0.3))(react-dom@19.2.6(react@19.2.6))(react@19.2.6)(typescript@6.0.3)
@@ -986,14 +986,14 @@ packages:
       graphql: ^16.8.1
       payload: 3.85.0
 
-  '@payloadcms/live-preview-react@3.85.0':
-    resolution: {integrity: sha512-QgPVGPOJz57jTGu2j6DBhCCASuT4YiZE4itVK7uKMcxZi8adtsSgz/G0BuU/XepOV62pApbTdMQxRQAwo198cg==}
+  '@payloadcms/live-preview-react@3.85.1':
+    resolution: {integrity: sha512-rfw/US7dDt2+0T4rLlstkKt5heZIoKKLfLs5h6WiYZcnmQKxoch07DcKUIaoQpCgExT5tYdxSTGHQybCIb1QgA==}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.1 || ^19.1.2 || ^19.2.1
       react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.1 || ^19.1.2 || ^19.2.1
 
-  '@payloadcms/live-preview@3.85.0':
-    resolution: {integrity: sha512-IMx9ymbAqwgwoYxeoGcVtXwvD5O+/Qu9jW3IikxwI44fCH08kZSxLe1FXtc3WFRaemhc5clMWPB9RDehg16QXA==}
+  '@payloadcms/live-preview@3.85.1':
+    resolution: {integrity: sha512-nyHVt38sXx4KFtCdoMnPbFu06y5Isp6iCKhK8Y8biXTnNVk+YyhhaIRVVHMSzttMBft8VEPlXsIUvrwtj5+Z0g==}
 
   '@payloadcms/next@3.85.0':
     resolution: {integrity: sha512-9Q0kaKgd1CBl2Nu6QMISqRKfDlGraCkLWxKlWH59MO0Fu+vhvqhqEIv/gjzNj6wWMMH8e4yzFm8knZjTJTzzWQ==}
@@ -4727,13 +4727,13 @@ snapshots:
     transitivePeerDependencies:
       - typescript
 
-  '@payloadcms/live-preview-react@3.85.0(react-dom@19.2.6(react@19.2.6))(react@19.2.6)':
+  '@payloadcms/live-preview-react@3.85.1(react-dom@19.2.6(react@19.2.6))(react@19.2.6)':
     dependencies:
-      '@payloadcms/live-preview': 3.85.0
+      '@payloadcms/live-preview': 3.85.1
       react: 19.2.6
       react-dom: 19.2.6(react@19.2.6)
 
-  '@payloadcms/live-preview@3.85.0': {}
+  '@payloadcms/live-preview@3.85.1': {}
 
   '@payloadcms/next@3.85.0(@types/react@19.2.15)(graphql@16.14.1)(monaco-editor@0.55.1)(next@16.2.9(@babel/core@7.29.7)(babel-plugin-react-compiler@0.0.0-experimental-7449567-20240905)(react-dom@19.2.6(react@19.2.6))(react@19.2.6)(sass@1.77.4))(payload@3.85.0(graphql@16.14.1)(typescript@6.0.3))(react-dom@19.2.6(react@19.2.6))(react@19.2.6)(typescript@6.0.3)':
     dependencies:
