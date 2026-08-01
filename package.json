@@ -63,7 +63,7 @@
     "lint-staged": "^17.0.8",
     "tailwindcss": "^4.3.2",
     "typescript": "6.0.3",
-    "typescript-eslint": "^8.62.1"
+    "typescript-eslint": "^8.65.0"
   },
   "packageManager": "pnpm@11.9.0"
 }
